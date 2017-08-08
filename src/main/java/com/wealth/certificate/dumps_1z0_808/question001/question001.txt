@@ -3,5 +3,3 @@ A. SercurityException
 B. DuplicatePathException
 C. IllegalArgumentException
 D. TooManyArgumentsException
-
-Answer: A,C
