@@ -1,0 +1,8 @@
+[Question]
+What is the output?
+
+[Answer] 
+D.
+
+[Reference]
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
