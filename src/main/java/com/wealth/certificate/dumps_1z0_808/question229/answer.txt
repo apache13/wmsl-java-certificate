@@ -1,0 +1,12 @@
+[Question]
+What is the result?
+A. 5 : 5
+B. 6 : 4
+C. 6 : 5
+D. 5 : 4 
+
+[Answer]
+A
+
+[Console log]
+5 : 5
