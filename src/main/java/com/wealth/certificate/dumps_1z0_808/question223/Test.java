@@ -4,7 +4,7 @@ public class Test {
 	
 	static void dispResult(int[] num) {
 		try {
-			// Operator precedences * / % + -
+			// Operator precedences (* / %) following (+ -) from left to right
 			// subtract before division cause () with more priority
 			System.out.println(num[1] / (num[1]-num[2])); 
 		} catch (ArithmeticException e) {
