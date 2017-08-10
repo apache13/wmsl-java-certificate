@@ -1,0 +1,14 @@
+
+Question No : 10
+
+What is the output?
+
+
+------------------
+A. Option A
+B. Option B
+C. Option C
+D. Option D
+E. Option E
+-------------------
+ANSWER : C 
