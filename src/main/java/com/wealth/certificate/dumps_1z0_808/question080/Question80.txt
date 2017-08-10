@@ -1,0 +1,14 @@
+Question 80
+
+What is the result?
+A. Pass
+B. Fail
+C. Class MarketOutOfBoundsException
+D. Class IndexOutOfBoundsException
+E. Class Exception
+
+-----------------
+Answer: C
+-----------------
+
+Explanation: The value 104 will cause a MarketOutOfBoundsException

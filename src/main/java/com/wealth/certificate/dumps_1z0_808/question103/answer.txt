@@ -1,0 +1,22 @@
+[Question]
+What is the result?
+A. 
+	0 unknown
+	0 unknown
+
+B. 
+	1200 Strawberry
+	1200 Strawberry
+	
+C. 
+	1200 Strawberry
+	1230 Chocolate
+	
+D. Compilation fails 
+
+[Answer]
+C.
+
+[Console log]
+1200 Strawberry
+1230 Chocolate

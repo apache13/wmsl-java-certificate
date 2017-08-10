@@ -1,0 +1,15 @@
+What is the result?
+
+
+A. Result = 2
+B. Result = 3
+C. Result = 28
+D. Result = 29
+E. Result = 30
+
+--------------
+
+Answer: E
+
+--------------
+Result = 30

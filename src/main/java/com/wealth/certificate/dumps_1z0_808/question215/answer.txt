@@ -1,0 +1,13 @@
+[Question]
+What is the result?
+A. true true
+B. true false
+C. false true
+D. false false
+E. Compilation fails 
+
+[Answer]
+C
+
+[Console log]
+false true
