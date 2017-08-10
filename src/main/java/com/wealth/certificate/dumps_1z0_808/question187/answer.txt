@@ -1,0 +1,15 @@
+[Question]
+
+Which code fragment must be inserted at line 6 to enable the code to compile?
+A. 
+	DBConfiguration f;
+	return f;
+B. 
+	Return DBConfiguration;
+C. 
+	Return new DBConfiguration;
+D. 
+	Retutn 0; 
+
+[Answer]
+no answer

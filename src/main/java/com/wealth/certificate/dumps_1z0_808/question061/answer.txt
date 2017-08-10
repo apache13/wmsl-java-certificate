@@ -1,0 +1,21 @@
+[Question]
+Which method can be inserted at line // insert code here to enable the code to compile?
+
+A. 
+	public int[] subArray(int[] src, int start, int end) {
+		return src;
+	}
+B. 
+	public int subArray(int src, int start, int end) {
+		return src;
+	}
+C. 
+	public int[] subArray(int src, int start, int end) {
+		return src;
+	}
+D. 
+	public int subArray(int[] src, int start, int end) {
+		return src;
+	} 
+	
+[Answer] A.
