@@ -21,4 +21,3 @@ hence we can use double or float for the blank. As explained above options B and
 long and int can't be used with floating point numbers so option A is incorrect.
 Option E is incorrect as it have smaller range and also can't be used with floating point numbers.
 
-hnpsy/docs.oracle.com/javase/tutorial/java/javaOO/variables.html
