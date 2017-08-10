@@ -1,4 +1,6 @@
-Given:public class FieldInit {
+package question012;
+
+public class Test12 {
 	char c;
 	boolean b;
 	float f;
@@ -15,8 +17,3 @@ Given:public class FieldInit {
 	}
 
 }
-
-What is the result?A. c = null b = false   f = 0.0F 
-B. c = 0   b = false   f = 0.0fC. c = null b = true   f = 0.0 
-D. c =   b = false 
-   f = 0.0
