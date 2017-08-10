@@ -1,0 +1,28 @@
+Which two are benefits of polymorphism?
+A. Faster code at runtime
+B. More efficient code at runtime
+C. More dynamic code at runtime
+D. More flexible and reusable code
+E. Code that is protected from extension by other classes
+
+Answer: C,D
+---------------------------------------------------------
+Explanation:
+A. Faster code at runtime
+	<< not relevant
+B. More efficient code at runtime
+C. More dynamic code at runtime
+D. More flexible and reusable code
+E. Code that is protected from extension by other classes
+	<< final class or private constructor
+
+Example :
+public interface Vegetarian{}
+public class Animal{}
+public class Deer extends Animal implements Vegetarian{}
+
+Deer d = new Deer();
+Animal a = d;
+Vegetarian v = d;
+Object o = d;
+---------------------------------------------------------
