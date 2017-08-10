@@ -13,6 +13,7 @@ public class Test {
 //	Static ArrayList update(String [] strs)
 //	C.
 //	Static List update (String [] strs)
+	static List update (String [] strs)
 //	D. 
 //	Static void update (String[] strs)
 //	E. 
