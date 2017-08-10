@@ -1,0 +1,14 @@
+Question 94
+
+What is the result?
+
+A. Option A
+B. Option B
+C. Option C
+D. Option D
+
+-------------------
+Answer: D
+-------------------
+Result : 	5+2=34
+			5+2=7

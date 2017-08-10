@@ -1,0 +1,9 @@
+[Question]
+What is the result if the integer aVar is 9?
+A. 10 Hello world!
+B. 10 Hello universe!
+C. 9 Hello world!
+D. Compilation fails. 
+
+[Answer]
+A.
