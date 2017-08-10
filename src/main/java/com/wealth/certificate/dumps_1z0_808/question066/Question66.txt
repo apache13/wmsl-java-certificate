@@ -1,0 +1,15 @@
+
+What is the result?
+
+A. 11, 11
+B. 10, 10
+C. 21, 11
+D. 20, 20
+E. 11, 12
+
+---------------------------
+Answer: A
+Explanation: The code doubling(iObj++, iVar++); increases both variables from to 10 to
+11.
+
+---------------------------
