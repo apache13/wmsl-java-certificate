@@ -1,0 +1,16 @@
+
+What is the result?
+
+A. Unix Linux Solaris
+B. Null Unix Linux Solaris
+C. Class java.lang.Exception
+D. Class java.lang.NullPointerException
+
+
+-------------------------------------------
+
+Answer: B
+Explanation: null Unix Linux Solarios
+The first element, arr[0], has not been defined.
+Default of String is null.
+-------------------------------------------

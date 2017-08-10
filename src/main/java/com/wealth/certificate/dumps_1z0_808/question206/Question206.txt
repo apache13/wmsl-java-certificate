@@ -1,0 +1,18 @@
+Question 220
+
+What is the result?
+	A. 	Base
+		DerivedA
+	B. 	Base
+		DerivedB
+	C. 	DerivedB
+		DerivedB
+	D. 	DerivedB
+		DerivedA
+	E. 	A classcast Except ion is thrown at runtime.
+	
+---------------------------------
+Answer: C
+--------------------------------
+DerivedB 
+DerivedB 

@@ -1,0 +1,27 @@
+[Question]
+What is the result?
+
+A. 
+	Invalid Divisor
+	Divisor Changed
+	Successful Division 30
+B. 
+	Invalid Divisor
+	Successful Division 30
+C. 
+	Invalid Divisor
+	Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at test.Teagle.main(Teagle.java:14)
+D. 
+	Invalid Divisor
+	Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at test.Teagle.main(Teagle.java:14)
+	Successful Division 1 
+	
+[Answer] 
+C.
+
+[Console Log]
+Invalid Divisor
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.wealth.certificate.dumps_1z0_808.question089.Test.main(Test.java:16)
