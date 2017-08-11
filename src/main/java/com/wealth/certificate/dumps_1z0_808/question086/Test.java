@@ -57,4 +57,3 @@ Answer: no correct answer
  * - static method can access only static member
  */
 
-

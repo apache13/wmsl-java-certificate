@@ -9,11 +9,11 @@ public class Test {
 			System.out.println(c1);
 		} catch (Exception e) {
 			e.printStackTrace();
-		//} catch (MissingInfoException e) {
-		//	e.printStackTrace();
-		//} catch (AgeOutofRangeException e) {
-		//	e.printStackTrace();
-		}
+		} /*catch (MissingInfoException e) {
+			e.printStackTrace();
+		} catch (AgeOutofRangeException e) {
+			e.printStackTrace();
+		}*/
 	}
 }
 

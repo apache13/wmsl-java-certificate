@@ -72,4 +72,3 @@ Now if we change the signature of main method and try to run same Java program w
 		there is no standard constructor is defined for main class.
 		
 		main method is void in Java because it doesn't return any thing to caller which is JVM .
-

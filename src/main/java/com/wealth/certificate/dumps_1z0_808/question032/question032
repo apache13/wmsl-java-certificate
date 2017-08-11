@@ -20,4 +20,3 @@ such a primitive type is double, it has wider range and also can hold floating p
 hence we can use double or float for the blank. As explained above options B and D are correct.
 long and int can't be used with floating point numbers so option A is incorrect.
 Option E is incorrect as it have smaller range and also can't be used with floating point numbers.
-
