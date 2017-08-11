@@ -1,0 +1,30 @@
+Question No : 106
+Which two items can legally be contained within a java class declaration?
+
+A. An import statement
+B. A field declaration
+C. A package declaration
+D. A method declaration
+
+Answer: B,D
+
+Reference:
+http://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
+
+กฎการประกาศ java class declaration
+1. Modifiers such as public, private, and a number of others that you will encounter later.
+2. The class name, with the initial letter capitalized by convention.
+3. The name of the class's parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+4. A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+5. The class body, surrounded by braces, {}.
+
+- modifiers ของคลาสจะเป็น public, abstract, or final ถ้าไม่ใส่ถือว่าเป็น public
+- ตั้งชื่อคลาสที่ประกาศตามหลักสากล
+- ถ้า subclass มีการอ้างอิงถึง superclass ให้ใช้   extend ตามด้วยชื่อของ superclass ซึ่งจะอ้างได้แค่คลาสเดียวเท่านั้น
+- ถ้ามีการอ้างถึง interfaces ให้ใช้  implements ตามด้วยชื่อของ class interface ซึ่งสามารถใส่ได้หลายคลาสโดยใช้ , คั่น
+- ส่วนในคลาสจะเปิดปิดด้วย {}  ซึ่งด้านในใว้สำหรับ ประกาศตัวแปร constructor หรือเมทท็อดได้
+ 
+[ modifiers ] class ClassName [ extends SuperClassName ] [ implements InterfaceNames ] {
+    // field, constructor, and
+    // method declarations
+}

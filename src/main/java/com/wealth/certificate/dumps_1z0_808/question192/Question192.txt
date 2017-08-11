@@ -1,0 +1,15 @@
+Question 192
+
+Which answer fails to compile?
+A. Option A
+B. Option B
+C. Option C
+D. Option D
+E. Option E
+
+
+------------------------------------------
+Answer: E
+Explanation: Look at the right side of the declaration ArrayLIst() rather than ArrayList
+
+
