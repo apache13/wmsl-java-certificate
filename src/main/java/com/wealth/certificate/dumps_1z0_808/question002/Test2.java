@@ -12,7 +12,7 @@ class Test2 {
 //		t.fvar = 200;
 		
 //		B
-//		cvar = 400;
+		cvar = 400;
 		
 //		C
 //		fvar = 200;

@@ -13,5 +13,6 @@ public class X {
 		System.out.println(x1.i+" "+x1.j+" "+x2.i+" "+x2.j);
 		
 	}
+	/*Answer: C because i is static*/
 
 }
