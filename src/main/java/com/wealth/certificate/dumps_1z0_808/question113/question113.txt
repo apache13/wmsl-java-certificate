@@ -28,4 +28,22 @@ boolean log4 = (4 != 4) || (4 == 4);
 System.out.println("log3:"+ log3 + "\nlog4:" + log4);
 
 
+------------------ Operator Precedence -----------------
+Operators				Precedence
+--------------------------------------------------------
+postfix					expr++ expr--
+unary					++expr --expr +expr -expr ~ !
+multiplicative			* / %
+additive				+ -
+shift					<< >> >>>
+relational				< > <= >= instanceof
+equality				== !=
+bitwise AND				&
+bitwise exclusive OR	^
+bitwise inclusive OR	|
+logical AND				&&
+logical OR				||
+ternary					? :
+assignment				= += -= *= /= %= &= ^= |= <<= >>= >>>=
+--------------------------------------------------------
 
