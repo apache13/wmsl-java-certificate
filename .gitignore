@@ -3,4 +3,6 @@
 /.settings/
 .classpath
 .project
+.DS_Store
 /.metadata/
+/bin/
