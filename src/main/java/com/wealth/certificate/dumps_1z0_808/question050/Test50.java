@@ -5,11 +5,30 @@ public class Test50 {
 	 		int x = 5;
 	 		while (isAvailable(x)) {
 	 			System.out.print(x);
-	 			x--;
+	 			
 	 		}
+	 		
+	 		//A
+//	 		while (isAvailable(x)) {
+//	 			System.out.print(--x);
+//	 			
+//	 		}
+	 		
+	 		//B
+//	 		while (isAvailable(x)) {
+//	 			System.out.print(x);
+//	 			x--;
+//	 		}
+	 		
+	 		//C
+//	 		while (isAvailable(x)) {
+//	 			--x;
+//	 			System.out.print(x);
+//	 		}
 	}
 	 
 	public static boolean isAvailable(int x) { 
-	 	return x-- > 0 ? true : false;
+	 	return x-- > 0 ? true : false; //D return (x > 0) ? false: true;
 	}
+	
 }
