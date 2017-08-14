@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.question152;
+package question152;
 
 interface Z {
 }
@@ -26,5 +26,3 @@ class Y extends Test152 {
 		return "Y ";
 	}
 }
-
-//Answer : D. Y YY but result is Y Y Y

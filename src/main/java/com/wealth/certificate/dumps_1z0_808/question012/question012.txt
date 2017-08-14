@@ -5,8 +5,8 @@ Given:public class FieldInit {
 
 	void printAll() {
 		System.out.println("c = " + c);
-		System.out.println("c = " + b);
-		System.out.println("c = " + f);
+		System.out.println("b = " + b);
+		System.out.println("f = " + f);
 	}
 
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ Given:public class FieldInit {
 
 }
 
-What is the result?A. c = null b = false   f = 0.0F 
+What is the result?A. c = null    b = false   f = 0.0F 
 B. c = 0   b = false   f = 0.0fC. c = null b = true   f = 0.0 
 D. c =   b = false 
    f = 0.0
