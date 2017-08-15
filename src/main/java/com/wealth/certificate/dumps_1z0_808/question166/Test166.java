@@ -1,4 +1,4 @@
-package question166;
+package com.wealth.certificate.dumps_1z0_808.question166;
 
 public class Test166 extends Root {
 	
@@ -23,3 +23,5 @@ class Root {
 		return a;
 	}
 }
+
+//Answer : A. Line n1

@@ -1,4 +1,4 @@
-package question236;
+package com.wealth.certificate.dumps_1z0_808.question236;
 
 class Vehicle {
 	String type = "4W";
@@ -14,13 +14,13 @@ public class Test236 extends Vehicle{
 	String trans;
 
 	Test236(String trans){ // line n1
-		super("T4", 140);
+		super("T4", 140); // add ++
 		this.trans = trans;
 	}
 	
 	Test236(String type, int maxSpeed, String trans){
 		super(type,maxSpeed);
-//		this(trans); // line n2
+//		this(trans); // line n2 // comment ++
 	}
 	public static void main(String[] args) {
 		Test236 c1 = new Test236("Auto");
@@ -31,3 +31,7 @@ public class Test236 extends Vehicle{
 	}
 
 }
+
+
+
+//Answer : E. Compilation fails at both line n1 and line n2

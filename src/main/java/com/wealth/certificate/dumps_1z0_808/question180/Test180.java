@@ -1,4 +1,4 @@
-package question180;
+package com.wealth.certificate.dumps_1z0_808.question180;
 
 public class Test180 {
 
@@ -12,3 +12,6 @@ public class Test180 {
 	}
 	
 }
+
+
+//Answer : A. 6 7 8
