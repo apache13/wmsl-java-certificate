@@ -10,3 +10,14 @@ public class MyFor3 {
 		}
 	}
 }
+
+/*
+What is the result?
+A. Null
+B. Compilation fails
+C. An exception is thrown at runtime
+D. 0
+
+-------------------------------------
+Answer: C
+-------------------------------------*/

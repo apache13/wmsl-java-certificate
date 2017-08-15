@@ -19,3 +19,14 @@ public class Student {
 		System.out.println(student1.major);
 	}
 }
+/*
+Which line of code initializes a student instance?
+A. Student student1;
+B. Student student1 = Student.new();
+C. Student student1 = new Student();
+D. Student student1 = Student();
+
+-------------------------
+Answer: C
+-------------------------
+*/

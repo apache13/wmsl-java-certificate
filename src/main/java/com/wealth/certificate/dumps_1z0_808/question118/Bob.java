@@ -24,6 +24,31 @@ public class Bob {
 		((Sun) obj3).doStuff();
 		((Star) obj2).doStuff();
 		((Universe) obj2).doStuff();
+		
+		//Dynamic Binding
+		System.out.println(obj3.getClass().toString());
+		System.out.println(obj2.getClass().toString());
+		System.out.println(((Sun) obj3).getClass().toString());
+		System.out.println(((Star) obj2).getClass().toString());
+		System.out.println(((Universe) obj2).getClass().toString());
 	}
 
 }
+/*
+What is the result?
+A. 	Shining Sun
+	Shining Sun
+	Shining Sun
+	
+B. 	Shining Sun
+	Twinkling Star
+	Shining Sun
+	
+C. Compilation fails
+
+D. A ClassCastException is thrown at runtime
+
+[Answer]
+A.
+
+*/
