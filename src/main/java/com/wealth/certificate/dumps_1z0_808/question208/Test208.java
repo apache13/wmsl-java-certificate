@@ -1,4 +1,4 @@
-package question208;
+package com.wealth.certificate.dumps_1z0_808.question208;
 
 abstract class A1 {
 	public abstract void m1();
@@ -40,3 +40,7 @@ public class Test208 extends A2 {
 		tp.m3();
 	}
 }
+
+//Answer : A. Yellow 
+//			Pink
+//			Red

@@ -6,7 +6,7 @@ Given:public class Whizlabs {
 		} catch (NumberFormatException ex) {
 			
 		}
-//		System.out.println(number);  //line 8
+		System.out.println(number);  //line 8
 	}
 
 }

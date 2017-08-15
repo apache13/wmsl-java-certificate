@@ -1,4 +1,4 @@
-package question012;
+package com.wealth.certificate.dumps_1z0_808.question012;
 
 public class Test12 {
 	char c;
@@ -17,3 +17,4 @@ public class Test12 {
 	}
 
 }
+// Answer : D.

@@ -1,10 +1,10 @@
-package question054;
+package com.wealth.certificate.dumps_1z0_808.question054;
 
 abstract class Vehicle {
 	int x;
 
 	Vehicle() {
-//		this(10); // line n1
+		// this(10); // line n1
 	}
 
 	Vehicle(int x) {
@@ -16,8 +16,8 @@ class Car extends Vehicle {
 	int y;
 
 	Car() {
-		super();
-//		this(20); //line n2
+		// super();
+		this(20); // line n2
 	}
 
 	Car(int y) {
@@ -37,3 +37,6 @@ public class Test54 {
 	}
 
 }
+
+//Answer : B.  0:20
+// this() may only be called as the first line of a constructor.
