@@ -41,4 +41,4 @@ public class A3 extends A2 {
 
 
 What is the result?
-A. Yellow Pink   RedB. Cyan Blue   RedC. Cyan   Green   RedD. Compilation Fails
+A. Yellow    Pink   RedB. Cyan    Blue   RedC. Cyan   Green   RedD. Compilation Fails
