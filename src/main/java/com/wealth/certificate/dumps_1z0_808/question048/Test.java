@@ -3,7 +3,7 @@ package com.wealth.certificate.dumps_1z0_808.question048;
 
 public class Test {
 	public static void main(String[] args) 
-	//A. 
+	//A. not enough
 	//throws MissingInfoException,AgeOutofRangeException
 	//B.
 	//throws Exception
@@ -13,7 +13,7 @@ public class Test {
 			Candidate c1 = new Candidate("Williams", 32);
 			System.out.println(c);
 			System.out.println(c1);
-		// C. 
+		// C. order of exception can be small >> big
 		/* } catch (Exception e) {
 			e.printStackTrace();
 		} catch (MissingInfoException e) {
@@ -22,7 +22,7 @@ public class Test {
 			e.printStackTrace();
 		}*/
 			
-		// D.
+		// D. not enough
 		/*} catch (MissingInfoException e) {
 			e.printStackTrace();
 		} catch (AgeOutofRangeException e) {
