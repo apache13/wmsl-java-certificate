@@ -19,8 +19,15 @@ Answer : A,C,E
 
 ---------------------
 
-A - correct sperated error handling in catch block
+https://docs.oracle.com/javase/tutorial/essential/exceptions/advantages.html
+Advantage 1: Separating Error-Handling Code from "Regular" Code
+Advantage 2: Propagating Errors Up the Call Stack
+Advantage 3: Grouping and Differentiating Error Types
+
+
+A - correct sperated error handling in catch block (Advantage 1)
 B - incorrect because not cover all the posible errors
-C - correct programmer can throws exception to handle exception
-D - incorrect you can handled in catch block not method
-E - correct you can create new exception for particular program
+C - correct you can choose where to handle exception catch block or throws to caller (Advantage 2)
+D - incorrect you can throws exception to caller
+E - correct you can create new exception for particular program (Advantage 3)
+
