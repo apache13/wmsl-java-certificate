@@ -1,5 +1,9 @@
 package com.wealth.certificate.dumps_1z0_808.question001;
 
+class MyRuntimeException extends RuntimeException{
+	
+}
+
 public class MyException {
 
 	public static void main(String[] args) {
@@ -21,6 +25,9 @@ public class MyException {
 		}catch(IOException ioe) { // error
 			
 		}*/		
+		
+		//throw new MyRuntimeException();
+		
 	}
 
 }
