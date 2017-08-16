@@ -24,7 +24,7 @@ package com.wealth.certificate.dumps_1z0_808.question045;
 }*/
 
 //B
-/*abstract Z extends X implements Y{
+/*abstract class Z extends X implements Y{
 	public void methodZ() {}
 }*/
 
