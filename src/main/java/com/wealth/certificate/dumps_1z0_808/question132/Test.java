@@ -5,12 +5,16 @@ public class Test {
 		System.out.println("Test.. ");
 	}
 
+	// Static initialization block:
+    	// Runs once (when the class is initialized)
 	static{
-		System.out.println("static block.. ");
+		System.out.println("static initialization block.. ");
 	}
 	
+	// Instance initialization block:
+    	// Runs each time you instantiate an object
 	{
-		System.out.println("initial block.. ");
+		System.out.println("instance initialization blocks.. ");
 	}*/
 
 	public static void main(String[] args) {
