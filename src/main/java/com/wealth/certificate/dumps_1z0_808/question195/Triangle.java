@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions195;
+package com.wealth.certificate.dumps_1z0_808.question195;
 
 public class Triangle {
 

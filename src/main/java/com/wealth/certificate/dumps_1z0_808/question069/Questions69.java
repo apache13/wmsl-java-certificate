@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions69;
+package com.wealth.certificate.dumps_1z0_808.question069;
 
 class A { }
 class B { }
