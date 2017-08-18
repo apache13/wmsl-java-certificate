@@ -1,6 +1,6 @@
-package com.wealth.certificate.dumps_1z0_808.Questions41.p2;
+package com.wealth.certificate.dumps_1z0_808.question041.p2;
 
-import com.wealth.certificate.dumps_1z0_808.Questions41.p1.Acc;
+import com.wealth.certificate.dumps_1z0_808.question041.p1.Acc;
 
 public class Test extends Acc {
 	public static void main(String[] args) {

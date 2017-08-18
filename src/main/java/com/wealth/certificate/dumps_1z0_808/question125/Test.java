@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions125;
+package com.wealth.certificate.dumps_1z0_808.question125;
 
 public class Test {
 
