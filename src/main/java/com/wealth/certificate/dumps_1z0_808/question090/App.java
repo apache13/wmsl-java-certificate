@@ -8,7 +8,7 @@ public class App {
 				// keyword1 ;
 				continue;
 			}
-			System.out.print(i); // ที่โจทย์เขียนเป็น println นะคะ อาจจะต้องสังเกตกันเพิ่มนิดนึง
+			System.out.print(i); // ที่โจทย์เขียนเป็น println นะคะ
 			if (i == 3) {
 				// keyword2 ;
 				continue;
@@ -16,3 +16,15 @@ public class App {
 		}
 	}
 }
+/*
+What should keyword1 and keyword2 be respectively, in order to produce output 2345?
+
+A. continue, break
+B. break, break
+C. break, continue
+D. continue, continue
+
+
+----------------------------------
+Answer: D
+----------------------------------*/

@@ -8,7 +8,7 @@ public class Test
 	{
 	// A : Error now0?
 		// System.out.print(new LocalTime()-now0);
-	// B : Error Argument of LocalTime interface is immutable (not new) and thread-safe.
+	// B : Error Argument of LocalTime class is immutable (not new) and thread-safe.
 		// System.out.print(new LocalTime());
 	// C : Error if not changed ouLprint to out.print
 		// System.ouLprint(LocalTime.now());

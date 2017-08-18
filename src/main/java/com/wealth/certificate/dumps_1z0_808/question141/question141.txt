@@ -23,7 +23,7 @@ A. Hello Java SE 8
 B. Hello java.lang.StringBuilder@<<hashcode1>>
    Hello p1.MyString@<<hashcode2>>	
    
-C. Hello java.lang.StringBuilder@<<hashcode1>>
+C. Hello Java SE 8
    Hello p1.MyString@<<hashcode2>>
    
 D. Compilationfails at the Test class.

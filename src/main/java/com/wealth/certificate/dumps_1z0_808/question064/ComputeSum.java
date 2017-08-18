@@ -10,5 +10,12 @@ public class ComputeSum {
 	}
 	private void setX(int nx) { x = nx; updateSum();} //private
 	private void setY(int ny) { x = ny; updateSum();} //private
-	void updateSum() { sum = x + y;}
+	private void updateSum() { sum = x + y;} //private
 }
+
+
+//class testCallFieldSum{
+//	public static void main(String[] args) {
+//		ComputeSum test = new ComputeSum(1,2);
+//	} 
+//}
