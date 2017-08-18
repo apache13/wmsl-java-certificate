@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions41.p1;
+package com.wealth.certificate.dumps_1z0_808.question041.p1;
 
 public class Acc {
 	int p;
