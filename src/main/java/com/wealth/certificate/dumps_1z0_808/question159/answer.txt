@@ -1,4 +1,20 @@
 [Question]
+
+public class Test {
+
+	public static void main(String[] args) {
+		String[] strs = new String[2];
+		int idx = 0;
+		for (String str : strs) {
+			strs[idx].concat(" element " + idx);
+		}
+		for (idx = 0; idx < strs.length; idx++) {
+			System.out.println(strs[idx]);
+		}
+	}
+
+}
+
 What is the result?
 
 A. 
@@ -17,7 +33,7 @@ D.
 	A NullPointerException is thrown at runtime. 
 
 [Answer]
-
+D.
 
 [Console log]
 Exception in thread "main" java.lang.NullPointerException

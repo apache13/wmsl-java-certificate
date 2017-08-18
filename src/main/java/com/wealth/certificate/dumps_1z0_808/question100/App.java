@@ -9,7 +9,7 @@ public class App {
 //	C. 
 //	sum(int first, int second) { return first + second; }
 //	D. 
-//	int sum(int first, int second) { return first + second; }
+	int sum(int first, int second) { return first + second; }
 //	E. 
 //	void sum (int first, int second) { return first + second; }
 }

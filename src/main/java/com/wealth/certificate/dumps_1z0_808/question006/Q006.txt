@@ -5,6 +5,10 @@ B. The length of each dimension must be the same.
 C. At the declaration time, the number of elements of the array in each dimension must be specified.
 D. All methods of the class object may be invoked on the two-dimensional array.
 
+----------------------------------------------
 Answer: C,D
-Explanation: http://stackoverflow.com/questions/12806739/is-an-array-a-primitive-type-oran-
-object-or-something-else-entirely
+----------------------------------------------
+
+Explanation: https://docs.oracle.com/javase/specs/jls/se8/html/jls-10.html
+
+//test test

@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions153;
+package com.wealth.certificate.dumps_1z0_808.question153;
 
 public class App {
 	

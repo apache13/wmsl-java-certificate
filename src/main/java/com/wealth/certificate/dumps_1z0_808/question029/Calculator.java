@@ -4,7 +4,8 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		int num = 5;
-		int sum;		
+		//int sum; // from question		
+		int sum = 0;
 		do {
 			sum += num;
 		} while ( (num--) > 1);

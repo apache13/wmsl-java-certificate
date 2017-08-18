@@ -9,7 +9,7 @@ public class App {
 //		String str3 = str2;
 //		if (str1 == str3)
 //		B.	
-//		if(str1.equalsIgnoreCase(str2))
+		if(str1.equalsIgnoreCase(str2))
 //			
 //		C.	
 //		String str3 = str2;
