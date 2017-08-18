@@ -42,13 +42,13 @@ public class Test
 		    System.out.print(array[i] + " ");
 		}
 		System.out.println();
-	// The alternating of entry = shuffle = 3. cannot
+	// The alternating of entry = Jumping loop
 		System.out.print("The alternating of Standard for-loop is ");
 		for (int i = 0; i < array.length; i+=2) {
 		   System.out.print(array[i] + " ");
 		}
 		System.out.println();
 		
-		/** Answered : D,E is correct **/
+		/** Answered : B,D is correct **/
 	}
 }

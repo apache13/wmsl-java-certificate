@@ -8,7 +8,7 @@ public class ElectricAccount {
 	
 	//line1
 //	A)  
-//	public void addKWh(double kWh){	// If not check kWh in case 0 (Zero) throw ArithmeticException
+//	public void addKWh(double kWh){	
 //		this.kWh += kWh;
 //		this.bill = this.kWh*this.rate;
 //	}
@@ -33,7 +33,7 @@ public class ElectricAccount {
 //	public void addKWh(double kWh){
 //		if(kWh > 0){
 //			this.kWh += kWh;
-//			setBill(this.kWh);		// Error because cannot call method setBill directly.
+//			setBill(this.kWh);		// Error because cannot call method with parameter
 //		}
 //	}
 //	
