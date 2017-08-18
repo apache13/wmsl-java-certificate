@@ -7,10 +7,11 @@ public class Test {
 		for(;row>0;) {
 			int col = row;
 			while(col >= 0) {
-				System.out.println(col + " ");
+				System.out.print(col + " ");
 				col -= 2;
 			}
 			row = row / col;
+			System.out.print(row);
 		}		
 	}
 }

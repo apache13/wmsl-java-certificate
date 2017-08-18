@@ -12,7 +12,7 @@ public class App {
 		numbers[2] = 30;
 		numbers[3] = 40;
 		for (int x : numbers) {
-			System.out.println(" " + x);
+			System.out.print(" " + x);
 		}
 	}
 
