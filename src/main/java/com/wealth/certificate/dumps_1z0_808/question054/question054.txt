@@ -1,5 +1,5 @@
 Given:
-abstract class Vehicle {
+class Vehicle {
 	int x;
 
 	Vehicle() {
