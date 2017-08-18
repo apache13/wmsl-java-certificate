@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions83;
+package com.wealth.certificate.dumps_1z0_808.question083;
 
 interface Readable {
 	public void readBook();
