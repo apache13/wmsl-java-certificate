@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions181;
+package com.wealth.certificate.dumps_1z0_808.question181;
 
 public class SumTest {
 	
