@@ -33,13 +33,13 @@ public class Question150 {
 //		}
 		
 		//D
-		while (index < 5){
-			if (key == myarray[index]) {
-				isFound = true;
-				break;
-			}
-			index++;
-		}
+//		while (index < 5){
+//			if (key == myarray[index]) {
+//				isFound = true;
+//				break;
+//			}
+//			index++;
+//		}
 			
 		
 		System.out.println(isFound);
