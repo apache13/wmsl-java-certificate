@@ -6,6 +6,7 @@ class Caller{
 	}
 	
 	public void start() {
+		init();
 		System.out.println("Started");
 	}
 }

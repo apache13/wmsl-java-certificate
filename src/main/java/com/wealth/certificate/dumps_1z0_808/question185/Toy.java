@@ -13,7 +13,7 @@ public abstract class Toy {
 	//public int calculatePrice(Toy t);
 	//public final void printToy(Toy t) {	/* code goes here */	}
 	
-	//D
-	//public abstract int calculatePrice(Toy t) {	/* code goes here */	}
-	//public abstract void printToy(Toy t) {	/* code goes here */	}
+	//D		Error 
+	/*public abstract int calculatePrice(Toy t) {	 code goes here 	}
+	public abstract void printToy(Toy t) {	 code goes here 	}*/
 }

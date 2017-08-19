@@ -9,4 +9,7 @@ D. Compilation fails Total Due to AT AN error Line 3
 D.
 
 [Explain]
-line n3 entity of the DoClass category of object entities, but due to the DoClass the constructor does not use the public modified word declaration, so it can only be on the same suite (within Package). If materialized Do in different packages CLASS objects, compile-time error will occur.
+line n3 entity of the DoClass category of object entities
+, but due to the DoClass the constructor does not use the public modified word declaration
+, so it can only be on the same suite (within Package).
+ If materialized Do in different packages CLASS objects, compile-time error will occur.
