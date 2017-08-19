@@ -10,8 +10,10 @@ public class Question164 {
 
 	public static void main(String[] args) {
 		Question164 obj1 = new Question164();
+		Question164 obj4 = new Question164();
+
 		Question164 obj2 = obj1;
-		Question164 obj1 = null;
+		Question164 obj3 = null;
 		obj2.num = 60;
 		graceMarks(obj2);
 	}
