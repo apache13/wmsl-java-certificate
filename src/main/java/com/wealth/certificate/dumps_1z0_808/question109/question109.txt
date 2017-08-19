@@ -1,4 +1,5 @@
-Question: 
+Question No: 109
+ 
 The protected modifier on a Field declaration within a public class means that the field
 
 A. Cannot be modified
@@ -6,13 +7,15 @@ B. Can be read but not written from outside the class
 C. Can be read and written from this class and its subclasses only within the same package
 D. Can be read and written from this class and its subclasses defined in any package
 
-Answer: D
+-------------
+Answer: D 
+-------------
+
 Reference:
 http://beginnersbook.com/2013/05/java-access-modifiers/
 
 -------------------------------------------
 
- - สามารถแทนค่าได้ จาก class อื่นที่ไม่ใช่ class ตัวเอง
+ - สามารถแทนค่าได้ ใช้งานได้ (อ่าน, เขียน) จาก class อื่นที่ไม่ใช่ class ตัวเอง
  - แม้ไม่ใช่ใน package เดียวกัน
- - แต่ต้องทำผ่าน setter (เป็นชื่อ method อะไรก็ได้) 
- - ไม่สามารถเรียกตัวแปลที่เป็น  protected ได้โดยตรง
+ - แต่จะต้อง new instance ด้วย SubClass ของตัวเอง (SuperClass new SubClass ไม่ได้, SuperClass new SuperClass ไม่ได้)

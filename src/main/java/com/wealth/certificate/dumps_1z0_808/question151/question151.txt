@@ -1,4 +1,4 @@
-Question: 151
+Question No: 151
 
 class Base {
 // insert code here
@@ -35,10 +35,13 @@ E. 	protected int num; private int getNum() { return num; } public void setNum(i
 	this.num = num;}
 
 -------------------
-
 Answer: A, D
-
 -------------------
+
+Desc.
+
+B. >> only one of public / protected / private
+C, E. >> if private then cannot access this method from another class
 
 
 

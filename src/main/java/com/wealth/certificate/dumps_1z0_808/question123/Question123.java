@@ -8,10 +8,6 @@ class X {
 }
 
 class Y extends X {
-	public void mX(int x) {
-		System.out.println("Xm2 int");
-	}
-	
 	// this is an Override method from X
 	public void mX() { 
 		System.out.println("Xm2");

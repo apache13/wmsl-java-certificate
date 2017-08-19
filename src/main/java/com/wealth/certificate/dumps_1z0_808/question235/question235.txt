@@ -21,4 +21,7 @@ D. 7 10
 Answer: A
 --------------
 
-Desc: increasing value;
+Desc: 
+
+ - i from obj.i and StaticField.i is the same each other 
+ - static field can access with <ClassName>.<static_field_name>

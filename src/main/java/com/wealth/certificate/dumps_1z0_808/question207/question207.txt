@@ -1,4 +1,4 @@
-Question: 207
+Question No: 207
 
 Given:
 
@@ -45,13 +45,15 @@ E. 	for (int i:arra.length) {
 	}	
 	
 --------------
-Answer: C
+Answer: No answer
 --------------
 
 Desc:
 
-A >> initial str1 into str2 (str2 now is same address as str1 > str2 ref. by str1)
-B >> new String(str1) >> in case new always be new address
-C >> str1.toString() >> same as new String();
-D >> str2 now is in the String-pool >> all of string in String-pool is not equals (=) Object String 
-
+A >> incorrect -> index 3 has not initial yet. and cannot access, NullPointerException
+B >> incorrect -> ArrayIndexOutOfBoundsException: 
+ 		- inner loop ref index that out of bound arra[0] 
+ 		- เพราะแต่ละ array ของมิติที่ 1 ไม่ได้มี Size เท่ากัน
+C >> incorrect -> mismatch syntax >> for (element : collections)
+D >> incorrect -> mismatch syntax 
+E >> incorrect -> mismatch syntax

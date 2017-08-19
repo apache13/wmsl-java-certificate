@@ -1,4 +1,4 @@
-Question No : 25
+Question No: 25
 
 Given the following two classes:
 
@@ -64,5 +64,6 @@ B. Option B
 C. Option C
 D. Option D
 
-
+-------------
 Answer: B
+-------------
