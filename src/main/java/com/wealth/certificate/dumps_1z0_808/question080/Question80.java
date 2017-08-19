@@ -25,5 +25,14 @@ public class Question80 {
 
 		}
 
+//		int marks = Integer.parseInt(args[2]);
+//		try {
+//			new Question80().verify(marks);
+//		} catch (Exception e) {
+//			System.out.print(e.getClass());
+//
+//		}
+		double result = 30 - 12 / (2*5)+1;
+		System.out.print("Result = " + result);
 	}
 }
