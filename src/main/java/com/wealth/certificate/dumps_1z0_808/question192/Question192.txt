@@ -39,7 +39,7 @@ E. Option E
 
 
 ------------------------------------------
-Answer: E
-Explanation: Look at the right side of the declaration ArrayLIst() rather than ArrayList
+Answer: D
+Cat is superclass of Tiger
 
 

@@ -21,6 +21,8 @@ Which two statements correctly describe checked exception?
 Answer: A,E
 
 
+For B,D is unchecked Exception
+
 Explanation: Checked exceptions:
 * (B) represent invalid conditions in areas outside the immediate control of the program
 (invalid user input, database problems, network outages, absent files)

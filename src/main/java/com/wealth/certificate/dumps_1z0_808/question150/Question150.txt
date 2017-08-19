@@ -42,14 +42,11 @@ public static void main(String[] args) {
 		System.out.println(isFound);
 	}
 
-Which two are valid array declaration?
-A. Object array[];
-B. Boolean array[3];
-C. int[] array;
-D. Float[2] array;
+Which code fragment, when inserted at line 7, enables the code print true?
+
 
 -------------------
 
-Answer: A,C
+Answer: D
 
 -------------------

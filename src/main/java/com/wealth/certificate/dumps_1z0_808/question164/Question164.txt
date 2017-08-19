@@ -1,9 +1,6 @@
 Question 164
 
 
-
-
-
 int num;
 
 public static void graceMarks(Question164 obj4) {
