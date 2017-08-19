@@ -4,6 +4,8 @@ class Vehicle {
 	String type = "4W";
 	int maxSpeed = 100;
 
+//	Vehicle() {} // edited; Line n1
+	
 	Vehicle(String type, int maxSpeed) {
 		this.type = type;
 		this.maxSpeed = maxSpeed;
@@ -14,13 +16,12 @@ public class Test236 extends Vehicle{
 	String trans;
 
 	Test236(String trans){ // line n1
-		super("T4", 140); // add ++
 		this.trans = trans;
 	}
 	
 	Test236(String type, int maxSpeed, String trans){
 		super(type,maxSpeed);
-//		this(trans); // line n2 // comment ++
+		this(trans); // line n2 //  this() may only be called as the first line of a constructor.
 	}
 	public static void main(String[] args) {
 		Test236 c1 = new Test236("Auto");

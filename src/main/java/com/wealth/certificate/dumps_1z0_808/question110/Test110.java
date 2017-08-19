@@ -9,4 +9,4 @@ public class Test110 {
 	}
 }
 
-//Answer : B. 1.0f, 1.
+//Answer : A. 1.0, 1
