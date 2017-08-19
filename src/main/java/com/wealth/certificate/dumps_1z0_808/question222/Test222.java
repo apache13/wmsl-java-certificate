@@ -8,11 +8,10 @@ public class Test222 {
 		} catch (NumberFormatException ex) {
 
 		}
-		// System.out.println(number); //line 8
+		 System.out.println(number); //line 8  out of scope, number is a local variable in try block
 	}
 
 }
 
 
 //Answer : E. Compilation tails due to error at line 8.
-// local variable
