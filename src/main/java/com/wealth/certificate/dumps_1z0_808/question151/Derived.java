@@ -9,7 +9,7 @@ class Base {
 	
 //	B. 	
 //	public int num; 
-//	protected public int getNum() { return num; }				// one of public / protected / private
+//	protected public int getNum() { return num; }		// only one of public / protected / private
 //	protected public void setNum(int num) { this.num = num; }		
 	
 //	C. 	

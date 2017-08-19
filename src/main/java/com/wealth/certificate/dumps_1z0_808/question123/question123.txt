@@ -1,3 +1,5 @@
+Question No: 123
+
 Given: 
 
 class X {
@@ -32,9 +34,7 @@ C. 	Compilation fails
 D. 	A ClassCastException is thrown at runtime
 
 --------------
-
-Answer: B >> เฉลยผิด
->> A
+Answer: A
 --------------
 
 Desc: คุณสมบัติการถ่ายทอด  Inheritance
