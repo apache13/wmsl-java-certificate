@@ -9,7 +9,11 @@ D. A public class must have a main method.
 E. The methods are mandatory components of a class.
 F. The fields need not be initialized before use.
 
-Answer: B,C
+Answer: A, B,C
+
+
+
+
 
 Explanation: 
 
