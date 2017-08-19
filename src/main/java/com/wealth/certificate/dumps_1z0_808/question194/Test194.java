@@ -20,4 +20,4 @@ public class Test194 {
 
 
 //Answer : A. 1 
-// 1 instances are created in memory at runtime -> new Test
+// 1 instances are created in memory at runtime -> Point:: The new Keyword

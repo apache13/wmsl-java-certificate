@@ -32,7 +32,7 @@ C. Option C
 D. Option D
 E. Option E
 
-Answer: B,C
+Answer: B,D
 
 Explanation: When an abstract class is subclassed, the subclass usually provides
 implementations for all of the abstract methods in its parent class (C). However, if it does

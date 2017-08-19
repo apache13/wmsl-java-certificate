@@ -13,14 +13,10 @@ public class Test40 {
 				case 'e':
 				case 'o':
 					String uc = Character.toString(message.charAt(pos)).toUpperCase();
-					// System.out.println("uc: " + uc);
 
 					message.replace(pos, pos + 1, uc);
-					// System.out.println("msg: " + msg);
 
 				}
-
-				// System.out.println("++pos:" + pos);
 			}
 		} catch (Exception e) { // StingIndexOutOfBoundException
 			System.out.println("out of limit");
@@ -30,6 +26,5 @@ public class Test40 {
 
 }
 
-//Answer : C. but 
-//	C. Out of limits 
-//     hEllOjAvA!
+//Answer : C. Out of limits 
+//            hEllOjAvA!
