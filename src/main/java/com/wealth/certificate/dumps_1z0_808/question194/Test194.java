@@ -1,4 +1,4 @@
-package question194;
+package com.wealth.certificate.dumps_1z0_808.question194;
 
 public class Test194 {
 	int num;
@@ -17,3 +17,7 @@ public class Test194 {
 	}
 
 }
+
+
+//Answer : A. 1 
+// 1 instances are created in memory at runtime -> Point:: The new Keyword

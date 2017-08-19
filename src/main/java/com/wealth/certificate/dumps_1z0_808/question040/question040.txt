@@ -12,14 +12,9 @@ public class TestTry {
 				case 'e':
 				case 'o':
 					String uc = Character.toString(message.charAt(pos)).toUpperCase();
-					// System.out.println("uc: " + uc);
-
 					message.replace(pos, pos + 1, uc);
-					// System.out.println("msg: " + msg);
 
 				}
-
-				// System.out.println("++pos:" + pos);
 			}
 		} catch (Exception e) {
 			System.out.println("out of limit");
@@ -30,7 +25,9 @@ public class TestTry {
 
 }
 
-What is the result?A. hEllOjAvA! 
+What is the result?
+A. hEllOjAvA! 
 B. Hello java! 
 C. Out of limits 
-   hEllOjAvA!D. Out of limits
+   hEllOjAvA!
+D. Out of limits

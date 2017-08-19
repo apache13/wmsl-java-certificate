@@ -1,5 +1,5 @@
 Given:
-abstract class Vehicle {
+class Vehicle {
 	int x;
 
 	Vehicle() {
@@ -16,7 +16,7 @@ class Car extends Vehicle {
 
 	Car() {
 		super();
-		// this(20); //line n2
+	 	this(20); //line n2
 	}
 
 	Car(int y) {

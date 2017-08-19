@@ -11,6 +11,8 @@ public class Question031 implements IQuestion031 {
 	
 	public static void main(String[] args) {
 		new Question031();
+		Question031 q = new Question031();
+		System.out.println(q.cake());
 	}
 	
 	int cake() {
@@ -18,13 +20,26 @@ public class Question031 implements IQuestion031 {
 		return (1);
 	}
 	
-	public static void iq3(int a) {
+	public static void overload1() {	
 		
+	}
+	public static void overload1(int a) {	
+		
+	}
+	public static void iq3(int a) {
+		Question031 q = new Question031();
+		System.out.println(q.cake());
 	}
 }
 
 interface IQuestion031 {
-	public static void iq3() {
+	public static void overload1() {
+		
+	}
+	public static void overload1(int a) {
+		
+	}
+	public default   void iq3r4(int a) {
 		
 	}
 }

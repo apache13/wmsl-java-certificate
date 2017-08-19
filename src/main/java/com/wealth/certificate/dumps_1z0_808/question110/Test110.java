@@ -1,4 +1,4 @@
-package question110;
+package com.wealth.certificate.dumps_1z0_808.question110;
 
 public class Test110 {
 
@@ -8,3 +8,5 @@ public class Test110 {
 		System.out.print(x + ", " + y);
 	}
 }
+
+//Answer : A. 1.0, 1

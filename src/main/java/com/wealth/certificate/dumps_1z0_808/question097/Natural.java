@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions97;
+package com.wealth.certificate.dumps_1z0_808.question097;
 
 public class Natural {
 

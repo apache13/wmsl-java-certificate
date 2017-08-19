@@ -1,4 +1,4 @@
-package question026;
+package com.wealth.certificate.dumps_1z0_808.question026;
 
 public class Test26 {
 	private char var;
@@ -18,3 +18,5 @@ public class Test26 {
 	}
 
 }
+//Answer : B. a, e 
+//			  o, o

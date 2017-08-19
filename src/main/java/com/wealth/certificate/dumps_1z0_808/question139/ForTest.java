@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions139;
+package com.wealth.certificate.dumps_1z0_808.question139;
 
 public class ForTest {
 	public static void main(String[] args) {
