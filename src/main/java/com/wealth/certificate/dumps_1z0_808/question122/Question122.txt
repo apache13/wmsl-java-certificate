@@ -1,5 +1,9 @@
 What is the result?
 
+public static void main(String[] args) {
+	int result = 30 -12 / (2*5)+1;
+	System.out.print("Result = " + result);
+}
 
 A. Result = 2
 B. Result = 3

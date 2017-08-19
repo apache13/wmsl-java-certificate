@@ -1,4 +1,4 @@
-Question No : 95
+Question No: 95
 
 List colors = new ArrayList();
 colors.add("green");
@@ -15,8 +15,9 @@ B. [green, blue, yellow, cyan]
 C. [green, red, cyan, yellow]
 D. Am IndexOutOfBoundsException is thrown at runtime
 
-
+-------------
 Answer: A
+-------------
 
 Explanation: 
 1. First the list >> [green, red, blue, yellow] is build.
