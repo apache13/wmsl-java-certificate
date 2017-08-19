@@ -17,7 +17,7 @@ class Car extends Vehicle {
 
 	Car() {
 		super();
-//		this(20); // line n2
+		this(20); // line n2  // this() may only be called as the first line of a constructor.
 	}
 
 	Car(int y) {
@@ -39,4 +39,3 @@ public class Test54 {
 }
 
 //Answer : D. Compilation fails at line n2
-// this() may only be called as the first line of a constructor.

@@ -24,4 +24,4 @@ C. Changing the string literals in each case label to integer
 D. Changing the type of the variable day to String
 E. Arranging the case labels in ascending order
 
-Answer: A,C
+Answer: C,D

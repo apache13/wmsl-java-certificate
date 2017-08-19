@@ -1,4 +1,4 @@
-package com.wealth.certificate.dumps_1z0_808.Questions167;
+package com.wealth.certificate.dumps_1z0_808.question167;
 
 import java.util.ArrayList;
 import java.util.List;

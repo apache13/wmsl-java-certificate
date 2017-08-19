@@ -17,3 +17,7 @@ Answer: A
 Explanation:
 	encapsulation คือการปกปิดหรือควบคุมการเข้าถึงข้อมูล (Information Hiding/Data Hiding) 
 	ของออบเจ็คจากภายนอก ซึ่งวิธีการที่ใช้ในการควบคุมคือการทำงานผ่านเมธอดเพื่อดำเนินการกับข้อมูลนั้น
+	
+	B. เกี่ยวกับ Inheritance
+	C. เกี่ยวกับ Abstract
+	D. เกี่ยวกับ Polymorphism
