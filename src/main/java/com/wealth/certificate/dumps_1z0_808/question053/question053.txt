@@ -1,4 +1,4 @@
-Question No : 53
+Question No: 53
 
 Given:
 
@@ -20,7 +20,9 @@ C. name = null, pass = false
 D. name = null pass = true
 E. Compile error.
 
+-------------
 Answer: C
+-------------
 
 Explanation:
 

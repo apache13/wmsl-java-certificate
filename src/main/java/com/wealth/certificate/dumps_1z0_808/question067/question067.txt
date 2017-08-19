@@ -1,4 +1,4 @@
-Question No : 67
+Question No: 67
 
 Given:
 
@@ -21,4 +21,8 @@ B. A NullPointerException is thrown at runtime
 C. A NumberFormatException is thrown at runtime
 D. AnArrayIndexOutOfBoundException is thrown at runtime.
 
-Answer: D >> index start at 0, param send to Test contain array size 1 (only index 0)
+-------------
+Answer: D 
+-------------
+
+>> index start at 0, param send to Test contain array size 1 (only index 0)

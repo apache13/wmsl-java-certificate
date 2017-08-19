@@ -1,4 +1,4 @@
-Question No : 11
+Question No: 11
 
 Consider following method
 
@@ -13,7 +13,9 @@ C. This method can return anything.
 D. This method can be used only in an interface or an abstract class.
 E. None of above.
 
+-------------
 Answer: B
+-------------
 
 Explanation:
 
