@@ -9,7 +9,7 @@ class Test2 {
 		//insert code here to write field variables
 		
 //		A
-//		t.fvar = 200;
+		t.fvar = 200;
 		
 //		B
 		cvar = 400;
@@ -23,8 +23,8 @@ class Test2 {
 //		this.cvar = 400;
 		
 //		E
-//		t.fvar = 200;
-//		Test2.cvar = 400;
+		t.fvar = 200;
+		Test2.cvar = 400;
 		
 //		F
 //		this.fvar = 200;
@@ -34,7 +34,7 @@ class Test2 {
 
 /*
 Which code fragments, inserted independently, enable the code compile?
-A. 	t.fvar = 200;		//depend on t
+A. 	t.fvar = 200;		//can access via object
 
 B. 	cvar = 400;			//can access static variable
 
@@ -44,7 +44,7 @@ C. 	fvar = 200;			//cannot access non-static variable
 D. 	this.fvar = 200;	//cannot use this in static method
 	this.cvar = 400;
 	
-E. 	t.fvar = 200;		//depend on t
+E. 	t.fvar = 200;		//can access via object
 	Test2.cvar = 400;	//can access static variable
 	
 F. 	this.fvar = 200;	//cannot use this in static method
@@ -52,4 +52,4 @@ F. 	this.fvar = 200;	//cannot use this in static method
 	
 */
 
-//Answer: B
+//Answer: A,B,E
