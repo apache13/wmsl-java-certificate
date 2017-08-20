@@ -1,5 +1,11 @@
 Question 94
 
+public static void main(String[] args) {
+	System.out.println("5+2="+3+4);
+	System.out.println("5+2="+(3+4));
+}
+
+
 What is the result?
 
 A. Option A
@@ -11,4 +17,4 @@ D. Option D
 Answer: D
 -------------------
 Result : 	5+2=34
-			5+2=7
+		5+2=7

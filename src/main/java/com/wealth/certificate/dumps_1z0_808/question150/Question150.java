@@ -10,11 +10,11 @@ public class Question150 {
 		float key = 30.40f;
 		
 		//A
-		while (key == myarray[index++]){
-			isFound = true;
-		}
+//		while (key == myarray[index++]){
+//			isFound = true;
+//		}
 //		
-//		//B
+		//B
 //		while (index <= 4) {
 //			if (key == myarray[index]) {
 //				isFound = true;
@@ -27,19 +27,17 @@ public class Question150 {
 //		while (index++ < 5){
 //			if (key == myarray[index]) {
 //				isFound = true;
-//				break;
 //			}
-//			index++;
 //		}
 		
 		//D
-//		while (index < 5){
-//			if (key == myarray[index]) {
-//				isFound = true;
-//				break;
-//			}
-//			index++;
-//		}
+		while (index < 5){
+			if (key == myarray[index]) {
+				isFound = true;
+				break;
+			}
+			index++;
+		}
 			
 		
 		System.out.println(isFound);
