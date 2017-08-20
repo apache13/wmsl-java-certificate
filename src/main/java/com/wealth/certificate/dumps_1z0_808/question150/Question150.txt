@@ -25,9 +25,7 @@ public static void main(String[] args) {
 		while (index++ < 5){
 			if (key == myarray[index]) {
 				isFound = true;
-				break;
 			}
-			index++;
 		}
 		
 		//D
