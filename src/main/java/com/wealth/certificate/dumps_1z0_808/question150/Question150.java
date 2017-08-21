@@ -15,13 +15,13 @@ public class Question150 {
 //		}
 //		
 		//B
-//		while (index <= 4) {
-//			if (key == myarray[index]) {
-//				isFound = true;
-//				index++;
-//				break;
-//			}
-//		}
+		while (index <= 4) {
+			if (key == myarray[index]) {
+				isFound = true;
+				index++;
+				break;
+			}
+		}
 //		
 //		//C
 //		while (index++ < 5){
@@ -31,13 +31,13 @@ public class Question150 {
 //		}
 		
 		//D
-		while (index < 5){
-			if (key == myarray[index]) {
-				isFound = true;
-				break;
-			}
-			index++;
-		}
+//		while (index < 5){
+//			if (key == myarray[index]) {
+//				isFound = true;
+//				break;
+//			}
+//			index++;
+//		}
 			
 		
 		System.out.println(isFound);
