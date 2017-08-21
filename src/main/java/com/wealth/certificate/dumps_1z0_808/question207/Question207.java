@@ -8,10 +8,12 @@ public class Question207 {
 		String[][] arra = new String[3][];
 		arra[0] = new String[]{"rose", "lily"};
 		arra[1] = new String[]{"apple", "berry","cherry","grapes"};
-		arra[0] = new String[]{"beans", "carrot","potato"};
+//		arra[0] = new String[]{"beans", "carrot","potato"};	// option 1
+		arra[2] = new String[]{"beans", "carrot","potato"};	// option 2
 		// insert code fragment here
 		
-//		A. 	// incorrect >> index 3 has not initial yet. and cannot access, NullPointerException
+//		A. 	//option 1:  incorrect >> index 3 has not initial yet. and cannot access, NullPointerException
+			//option 2:  correct answer
 //		for (int i = 0; i < arra.length; i++) {
 //			for (int j = 0; j < arra[i].length; j++) {
 //				arra[i][j] = arra[i][j].toUpperCase();
