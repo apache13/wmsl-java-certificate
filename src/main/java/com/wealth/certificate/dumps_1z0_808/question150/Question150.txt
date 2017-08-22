@@ -11,6 +11,7 @@ public static void main(String[] args) {
 		while (key == myarray[index++]){
 			isFound = true;
 		}
+		A : false
 		
 		//B
 		while (index <= 4) {
@@ -20,13 +21,15 @@ public static void main(String[] args) {
 				break;
 			}
 		}
-		
+		 B : Infinity loop because i is not update
 		//C
 		while (index++ < 5){
 			if (key == myarray[index]) {
 				isFound = true;
 			}
 		}
+		
+		C: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 		
 		//D
 		while (index < 5){
@@ -36,7 +39,7 @@ public static void main(String[] args) {
 			}
 			index++;
 		}	
-		
+		D : true
 		System.out.println(isFound);
 	}
 
