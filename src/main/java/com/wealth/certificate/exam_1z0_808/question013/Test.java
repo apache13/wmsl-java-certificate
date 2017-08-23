@@ -15,15 +15,14 @@ class Animal {
 }
 
 class WildAnimal extends Animal {
-	String bound = "Long";
+	String bound;
 	
 	public WildAnimal(String bound) {
 		// n1
 	}
 	
 	public WildAnimal(String type,int maxSpeed, String bound) {
-		super(type,maxSpeed);
-		this.bound = bound;
+		//n2
 	}
 	
 	public void print() {
@@ -38,10 +37,24 @@ public class Test {
 		WildAnimal obj1 = new WildAnimal("Long");
 		obj1.print();
 		
-		WildAnimal obj2 = new WildAnimal("F....",80,"X....");
+		WildAnimal obj2 = new WildAnimal("Fedine",80,"Short");
 		obj2.print();
 		
 
 	}
 
 }
+/*
+Make Result
+Canine,60,Short
+Fedine,80,Long
+
+Answer. 
+at n1
+super();
+this.bound = bound;
+
+at n2
+super(type,maxSpeed);
+this.bound = bound;
+*/
