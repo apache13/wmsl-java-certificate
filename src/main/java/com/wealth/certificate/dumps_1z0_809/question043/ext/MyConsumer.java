@@ -18,6 +18,12 @@ public class MyConsumer {
 		};
 		list.stream().forEach(consumer);
 		list.stream().forEach(t->System.out.println(t));
+				
+		Consumer<String> println = System.out::println;
+		println.accept("Hello");
+		
+		list.stream().forEach(System.out::println);
+		
 	}
 
 }
