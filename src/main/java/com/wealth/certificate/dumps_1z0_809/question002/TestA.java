@@ -11,7 +11,7 @@ public class TestA extends Root {
 class Root {
 	private static final int MAX = 20000;
 
-	protected int method1() {
+	private int method1() {
 		int a = 100 + MAX; // line n3
 		return a;
 	}

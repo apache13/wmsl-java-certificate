@@ -1,5 +1,7 @@
 package com.wealth.certificate.dumps_1z0_809.question030;
-
+/*
+ * Duplicate 1z0-808 Question 112
+ */
 public class ScopeTest 
 {
 	/** Answered : A, B is correct **/
