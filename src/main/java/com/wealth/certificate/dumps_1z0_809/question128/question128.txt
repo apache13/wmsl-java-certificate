@@ -1,3 +1,5 @@
+Duplicate 1z0-808 Question 184
+
 Which three statements are benefits of encapsulation?
 A. Allows a class implementation to change without changing the clients
 B. Protects confidential data from leaking out of the objects
