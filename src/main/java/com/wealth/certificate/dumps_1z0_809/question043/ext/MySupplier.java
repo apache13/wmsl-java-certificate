@@ -17,7 +17,7 @@ public class MySupplier {
 
 	public static void main(String[] args) {
 
-		List<Integer> list = Arrays.asList(1,2,-3,4,5);
+		List<Integer> list = Arrays.asList(1,2,3,4,5);
 		
 		Supplier<MyList> supplier = new Supplier<MyList>() {			
 			@Override
@@ -40,7 +40,12 @@ public class MySupplier {
 			}
 		};
 		
+		// function ref
 		list.stream().collect(supplier, accumulator, combiner).print();
+		
+		// lambda
+		list.stream().collect(()->{return new MyList();}, (MyList m,Integer e) -> m.add(e) , (MyList m1,MyList m2)-> m1.addAll(m2)).print();
+		
 		
 		list.stream().collect(Collectors.toList()).forEach(p->System.out.println(p));
 	
