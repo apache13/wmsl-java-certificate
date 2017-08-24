@@ -24,3 +24,4 @@ Answer: C
 
 Method Reference
 https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx
