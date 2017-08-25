@@ -9,7 +9,7 @@ public class Test {
 		System.out.println (
 				// line n1
 				//A
-//				listVal.stream().filter(x -> x.length()>3).count()
+				listVal.stream().filter(x -> x.length()>3).count()
 				//B
 //				listVal.stream().map(x -> x.length()>3).count()
 				//C Error
