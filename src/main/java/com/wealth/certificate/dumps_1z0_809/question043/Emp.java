@@ -3,12 +3,6 @@ package com.wealth.certificate.dumps_1z0_809.question043;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
-import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Emp {
@@ -36,8 +30,8 @@ public class Emp {
 	
 	public static void main(String[] args) {
 		
-		//List<Emp> emp = Arrays.asList (new Emp ("John", "Smith"), new Emp ("Peter", "Sam"), new Emp ("Thomas", "Wale"));		
-		List<Emp> emp = Arrays.asList (new Emp ("111", "333"), new Emp ("222", "222"), new Emp ("222", "111"));
+		List<Emp> emp = Arrays.asList (new Emp ("John", "Smith"), new Emp ("Peter", "Sam"), new Emp ("Thomas", "Wale"));		
+		//List<Emp> emp = Arrays.asList (new Emp ("111", "333"), new Emp ("222", "222"), new Emp ("222", "111"));
 		emp.stream().forEach(p->System.out.println(p));
 		System.out.println("--------------");
 
@@ -46,7 +40,7 @@ public class Emp {
 		
 		//line n1
 		// A
-		//.sorted(Comparator.comparing(Emp::getfName).reversed().thenComparing(Emp::getlName))		
+		.sorted(Comparator.comparing(Emp::getfName).reversed().thenComparing(Emp::getlName))		
 			
 		// B
 		//.sorted(Comparator.comparing(Emp::getfName).thenComparing(Emp::getlName))

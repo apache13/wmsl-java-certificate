@@ -10,6 +10,9 @@ public class Question232 {
 		int x = indexVal.applyAsInt("Java");//line n2
 		System.out.println(x);
 
+		/*Ex.2
+		ToIntFunction<String> i  = (e) -> Integer.parseInt(e);
+		System.out.println(i.applyAsInt("2"));*/
 	}
 
 }
