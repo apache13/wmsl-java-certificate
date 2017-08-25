@@ -1,13 +1,20 @@
 package com.wealth.certificate.dumps_1z0_809.question082;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.io.IOException;
 
-final class Folder {// line n1
+class Folder implements AutoCloseable { // line n1 // A
+//class Folder extends Closeable { // line n1 // B
+//class Folder extends Exception { // line n1 //C
+	
 	// line n2
+//	final void close () { // D
+//		System.out.print("Close");
+//	} 
+	
+	// line n2
+	public void close () throws IOException {  // E
+		System.out.print("Close");
+	}
 	public void open() {
 		System.out.print("Open");
 	}

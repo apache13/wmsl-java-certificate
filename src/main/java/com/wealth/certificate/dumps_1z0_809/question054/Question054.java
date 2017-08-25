@@ -24,8 +24,7 @@ public class Question054 {
 	}
 
 	public static void main(String[] args) {
-		List<Question054> li = Arrays.asList(new Question054("Sam", 20), new Question054("John", 60),
-				new Question054("Jim", 51));
+		List<Question054> li = Arrays.asList(new Question054("Sam", 20), new Question054("John", 60),new Question054("Jim", 51));
 		Predicate<Question054> agVal = s -> s.getEAge() > 50;// line n1
 		li = li.stream().filter(agVal).collect(Collectors.toList());
 		Stream<String> names = li.stream().map(Question054::getEName);// line n2 
