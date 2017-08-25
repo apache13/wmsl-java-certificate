@@ -12,7 +12,7 @@ class A {
 		return "A";
 	}
 	
-	static String getStaticName() {
+	static String getSName() {
 		return "Static Name A";
 	}
 }
@@ -52,9 +52,7 @@ public class MyMethodRef {
 
 		// Method Reference
 		System.out.println("1. Reference to a static method");
-		testSupplier(A::getStaticName);
-		testSupplier(B::getStaticName);
-		testSupplier(C::getStaticName);
+		Supplier<String> sp1 = A::getSName;
 		
 		System.out.println("2. Reference to an instance method of a particular object");
 		Supplier<String> fa = new A()::getName;
@@ -73,7 +71,7 @@ public class MyMethodRef {
 
 		//list.stream().map(A::getName).forEach(System.out::println);
 				
-		Supplier<String> s = new A()::getName; 	// lambda  ( ) -> {return this.getName();}
+		Supplier<String> s = new A()::getName; 	// lambda  ( ) -> {return this.getName();}		
 		Function<A, String> f = A::getName;		// lambda  (a) -> {return a.getName();}		
 				
 		
