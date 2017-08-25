@@ -10,6 +10,6 @@ public class Question088 {
 		List<Double> loanValues = Arrays.asList(1000.0, 2000.0); 
         System.out.println(uo1.apply(1));
 		loanValues.stream().filter(lv -> lv >= 1500).map(lv -> uo1.apply(lv.intValue())).forEach(s -> System.out.print(s + " "));
-		
+		//loanValues.stream().parallel().filter(lv -> lv >= 1500).map(lv -> new Double(1.0)).forEach(s -> System.out.print(s + " "));
 	}
 }
