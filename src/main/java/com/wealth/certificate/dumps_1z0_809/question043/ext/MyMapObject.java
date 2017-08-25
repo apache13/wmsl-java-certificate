@@ -25,7 +25,7 @@ public class MyMapObject {
 		return lName;
 	}	
 			
-	public static <T> void main(String[] args) {
+	public static void main(String[] args) {
 		
 		List<MyMapObject> emp = Arrays.asList (new MyMapObject ("111", "333"), new MyMapObject ("222", "222"), new MyMapObject ("222", "111"));		
 		emp.stream().forEach(p -> System.out.println(p.getfName()+" "+p.getlName()) );
