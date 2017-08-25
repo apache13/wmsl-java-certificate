@@ -12,3 +12,8 @@ C. A compilation error occurs at line n1.
 D. A compilation error occurs at line n2.
 
 Answer: A
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html
+
+Ex.
+ToIntFunction<String> i  = (x)-> Integer.parseInt(x);
+System.out.println(i.applyAsInt("2"));

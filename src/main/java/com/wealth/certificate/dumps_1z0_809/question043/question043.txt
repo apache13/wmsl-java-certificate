@@ -36,3 +36,5 @@ D. .map(Emp::getfName).sorted(Comparator.reverseOrder().map(Emp::getlName).reser
 
 
 Answer: A
+
+Read MySortObject,MyMapObject and MyCollectObject

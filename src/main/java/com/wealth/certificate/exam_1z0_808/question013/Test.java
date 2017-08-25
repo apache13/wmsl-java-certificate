@@ -15,7 +15,9 @@ class Animal {
 }
 
 class WildAnimal extends Animal {
-	String bound;
+
+	String bound = "Long";
+
 	
 	public WildAnimal(String bound) {
 		// n1
@@ -36,14 +38,16 @@ public class Test {
 		
 		WildAnimal obj1 = new WildAnimal("Long");
 		obj1.print();
-		
+
 		WildAnimal obj2 = new WildAnimal("Fedine",80,"Short");
+
 		obj2.print();
 		
 
 	}
 
 }
+
 /*
 Make Result
 Canine,60,Short
@@ -58,3 +62,4 @@ at n2
 super(type,maxSpeed);
 this.bound = bound;
 */
+

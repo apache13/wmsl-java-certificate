@@ -26,7 +26,7 @@ public class MyCollectObject {
 
 		List<MyCollectObject> emp = Arrays.asList(new MyCollectObject("111", "333"), new MyCollectObject("222", "222"),new MyCollectObject("222", "111"));
 		
-		emp.stream().collect(Collectors.toList()).stream().forEach(p->System.out.println(p.fName));		
+		emp.stream().collect(Collectors.toList()).forEach(p->System.out.println(p.fName));		
 
 	}
 

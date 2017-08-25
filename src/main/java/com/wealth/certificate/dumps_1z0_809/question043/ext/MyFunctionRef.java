@@ -1,6 +1,5 @@
 package com.wealth.certificate.dumps_1z0_809.question043.ext;
 
-import java.io.PrintStream;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
@@ -8,164 +7,134 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 class MyClass {
-	private void function1() {
-		System.out.println("function1");
+
+	public void noArgumentAndNoReturn() {
+		System.out.println("MyClass noArgumentAndNoReturn");
 	}
 
-	void function2() {
-		System.out.println("function2");
-	}
-
-	protected void function3() {
-	}
-
-	public void function4() {
-	}
-
-	private static void sfunction1() {
-	}
-
-	static void sfunction2() {
-	}
-
-	static protected void sfunction3() {
-	}
-
-	static public void sfunction4() {
-		System.out.println("Hello sfunction4");
-	}
-
-	final public void ffunction5() {
+	public void OneArgumentAndNoReturn(String msg) {
+		System.out.println("MyClass OneArgumentAndNoReturn "+msg);
+	}	
+	
+	public void TwoArgumentAndNoReturn(String a, String b) {
+		System.out.println("MyClass TwoArgumentAndNoReturn "+a+","+b);
 	}
 	
-	public void functionConsumer() {
-		System.out.println("functionConsumer "+this);
-	}
-
-	public void functionBiConsumer(String msg) {
-		System.out.println("functionBiConsumer " + msg);
+	public String noArgumentAndReturn() {
+		System.out.println("MyClass noArgumentAndReturn");
+		return "MyClass noArgumentAndReturn";
 	}
 	
-	public String functionFunction() {
-		System.out.println("Function");
-		return null;
-	}
-	
-	public String functionBiFunction(String msg) {
-		System.out.println("BiFunction "+msg);
-		return null;
+	public String oneArgumentAndReturn(String msg) {
+		System.out.println("MyClass oneArgumentAndReturn "+msg);
+		return "MyClass oneArgumentAndReturn "+msg;
 	}
 	
 }
 
 public class MyFunctionRef {
 
-	public static void testSupplier(Supplier<MyClass> supplier) {
-		MyClass myClass = supplier.get();
-		System.out.println(myClass);
+	public void testSupplier(Supplier<String> supplier) {
+		String result = supplier.get();
+		System.out.println(result);
 	}
 	
-	public static void testConsumer(Consumer<MyClass> consumer) {
-		consumer.accept(new MyClass());
+	public void testConsumer(Consumer<String> consumer) {
+		consumer.accept("OneArgumentAndNoReturn");
 	}
 	
-	public static void testBiConsumer(BiConsumer<MyClass,String> consumer) {
-		consumer.accept(new MyClass(),"BiConsumer");
+	public void testBiConsumer(BiConsumer<String,String> consumer) {
+		consumer.accept("a","b");
 	}
 	
-	public static void testFunction(Function<MyClass,String> function) {
-		function.apply(new MyClass());
+	public void testFunction(Function<String,String> function) {
+		function.apply("a");
 	}
+	
+	public void testBiFunction(BiFunction<String,String,String> function) {
+		function.apply("a","b");
+	}
+	
+	public void testRunnable(Runnable runnable) {
+		Thread t = new Thread(runnable);
+		t.start();
+	}
+
 	
 	public static void main(String[] args) {
 
-		// 0 arg and 1 return -- get
-		Supplier<MyClass> supplier = new Supplier<MyClass>() {
+		MyFunctionRef myFunctionRef = new MyFunctionRef();
+		MyClass obj = new MyClass();
+		
+		System.out.println("Supplier (0 arg and 1 return) --> get method");
+		Supplier<String> supplier = new Supplier<String>() {
 			@Override
-			public MyClass get() {
-				return new MyClass();
+			public String get() {
+				return "noArgumentAndReturn";
 			}
-		};		
-		Supplier<MyClass> supplierRef = MyClass::new;
-		//testSupplier(supplier);
-		//testSupplier(supplierRef);					
-		//testSupplier(MyClass::new); 				// method expression
-		//testSupplier(()->new MyClass());		 	// lambda expression
+		};
+		Supplier<String> supplierRef = obj::noArgumentAndReturn;
+		
+		myFunctionRef.testSupplier(supplier);								
+		myFunctionRef.testSupplier(supplierRef);					
+		myFunctionRef.testSupplier(obj::noArgumentAndReturn); 						// method reference	
+		myFunctionRef.testSupplier(()->"Lambda noArgumentAndReturn");				// lambda expression
 
 	
-		// 1 arg and 0 result --> accept
-		Consumer<MyClass> consumer = new Consumer<MyClass>() {
+		System.out.println("Consumer (1 arg and 0 return) --> accept method");
+		Consumer<String> consumer = new Consumer<String>() {
 			@Override
-			public void accept(MyClass t) {
-				System.out.println("Consumer "+t);
+			public void accept(String t) {
+				System.out.println(t);
 			}
 		};
-		Consumer<MyClass> consumerRef = MyClass::functionConsumer;
+		Consumer<String> consumerRef = obj::OneArgumentAndNoReturn;
 		
-		//testConsumer(consumer);
-		//testConsumer(consumerRef);
-		//testConsumer(MyClass::functionConsumer);
-		//testConsumer((MyClass m)->System.out.println("Lambda Consumer "+m));			
-		//Consumer<PrintStream> print = System.out::println;
+		myFunctionRef.testConsumer(consumer);
+		myFunctionRef.testConsumer(consumerRef);
+		myFunctionRef.testConsumer(obj::OneArgumentAndNoReturn);
+		myFunctionRef.testConsumer(s->System.out.println("Lambda OneArgumentAndNoReturn"));			
 		
 		
-		// 2 args and 0 return --> accept
-		BiConsumer<MyClass, String> biConsumer = new BiConsumer<MyClass, String>() {
+		
+		System.out.println("BiConsumer (2 arg and 0 return) --> accept method");
+		BiConsumer<String, String> biConsumer = new BiConsumer<String, String>() {
 			@Override
-			public void accept(MyClass t, String u) {
-				System.out.println("BiConsumer");
+			public void accept(String a, String b) {
+				System.out.println("BiConsumer "+a+","+b);
 			}
 		};
-		BiConsumer<MyClass, String> biConsumerRef = MyClass::functionBiConsumer;
+		BiConsumer<String, String> biConsumerRef = obj::TwoArgumentAndNoReturn;
 		
-		testBiConsumer(biConsumer);
-		testBiConsumer(biConsumerRef);
-		testBiConsumer(MyClass::functionBiConsumer);
-		testBiConsumer((MyClass m,String s)->{});
+		myFunctionRef.testBiConsumer(biConsumer);
+		myFunctionRef.testBiConsumer(biConsumerRef);
+		myFunctionRef.testBiConsumer(obj::TwoArgumentAndNoReturn);
+		myFunctionRef.testBiConsumer((String a,String b)->{System.out.println("Lambda TwoArgumentAndNoReturn "+a+","+b);});
 
 		
-		
-		// 1 arg and 1 return --> apply
-		Function<MyClass, String> function = new Function<MyClass, String>() {
+		System.out.println("Function (1 arg and 1 return) --> apply method");
+		Function<String, String> function = new Function<String, String>() {
 			@Override
-			public String apply(MyClass t) {
-				return "Function";
+			public String apply(String msg) {
+				return "oneArgumentAndReturn "+msg;
 			}
 		};
-		Function<MyClass, String> functionRef = MyClass::functionFunction;
-		functionRef.apply(new MyClass());
+		Function<String, String> functionRef = obj::oneArgumentAndReturn;
 		
-		// 2 args and 1 return --> apply
-		BiFunction<MyClass, MyClass, String> biFunction = new BiFunction<MyClass, MyClass, String>() {
-			@Override
-			public String apply(MyClass t, MyClass u) {
-				return "BiFunction";
-			}
-		};
-		BiFunction<MyClass, String, String> biFunctionRef = MyClass::functionBiFunction;
-		biFunctionRef.apply(new MyClass(), "Hello");
+		myFunctionRef.testFunction(function);
+		myFunctionRef.testFunction(functionRef);
+		myFunctionRef.testFunction(obj::oneArgumentAndReturn);
+		myFunctionRef.testFunction((String msg)->{return "Lambda oneArgumentAndReturn "+msg;});
 		
-		
+		System.out.println("BiFunction (2 arg and 1 return) --> apply method");
+		// Your turn
 		
 
+		System.out.println("Runnable (0 arg and 0 return) -- start method");
+		myFunctionRef.testRunnable(obj::noArgumentAndNoReturn);
+		myFunctionRef.testRunnable(()->{System.out.println("Lambda noArgumentAndNoReturn");});
 		
-		// 0 arg and 0 return
-		Runnable runnable = new Runnable() {
-			public void run() {
-				System.out.println("Runnable");
-			}
-		};
-		Thread thread = new Thread(runnable);
-		thread.start();
 		
-		// Method expression
-		runnable = MyClass::sfunction4;
-		thread = new Thread(runnable);
-		thread.start();
-		
-		// lambda expression
-		thread = new Thread(()->System.out.println("Runnable")) ;
-		thread.start();
 	}
 
 }
