@@ -1,16 +1,17 @@
 package com.wealth.certificate.dumps_1z0_809.question010;
 
-public class Foo<K, V> {
+public class Foo<K , V> {
 
 	private K key;
 	private V value;
-
+	
 	public Foo (K key, V value){
 		this.key = key;
 		this.value = value;
 	} 
-
-	public static <T> Foo<T, T> twice (T value){
+ 
+	public static  <T> Foo<T, T> twice (T value){//Method generic type 
+		
 		return new Foo<T, T> (value, value); 
 	}
 
@@ -26,6 +27,7 @@ public class Foo<K, V> {
 		//A
 		Foo<String, Integer> mark = new Foo<String, Integer> ("Steve", 100);
 		System.out.println("A "+ mark.key+" "+mark.value);
+		
 		//B
 		Foo<String, String> pair = Foo.<String>twice ("Hello World!");
 		System.out.println("B "+ pair.key+" "+pair.value);
@@ -34,7 +36,7 @@ public class Foo<K, V> {
 //		System.out.println("BB "+ pair2.key+" "+pair2.value);
 
 		//C
-		Foo<?, ?> percentage = new Foo <> (97, 32);
+		Foo<?,?> percentage = new Foo <> (97, "cc");//Wildcards
 		System.out.println("C "+ percentage.key+" "+percentage.value);
 
 		//D
