@@ -77,7 +77,7 @@ public class MyFunctionRef {
 		
 		myFunctionRef.testSupplier(supplier);								
 		myFunctionRef.testSupplier(supplierRef);					
-		myFunctionRef.testSupplier(obj::noArgumentAndReturn); 						// method reference	
+		myFunctionRef.testSupplier(obj::noArgumentAndReturn); 						// method reference covert to lambda ()->{...}	
 		myFunctionRef.testSupplier(()->"Lambda noArgumentAndReturn");				// lambda expression
 
 	
@@ -92,7 +92,7 @@ public class MyFunctionRef {
 		
 		myFunctionRef.testConsumer(consumer);
 		myFunctionRef.testConsumer(consumerRef);
-		myFunctionRef.testConsumer(obj::OneArgumentAndNoReturn);
+		myFunctionRef.testConsumer(obj::OneArgumentAndNoReturn);					// lambda (a)->{}
 		myFunctionRef.testConsumer(s->System.out.println("Lambda OneArgumentAndNoReturn"));			
 		
 		
@@ -108,7 +108,7 @@ public class MyFunctionRef {
 		
 		myFunctionRef.testBiConsumer(biConsumer);
 		myFunctionRef.testBiConsumer(biConsumerRef);
-		myFunctionRef.testBiConsumer(obj::TwoArgumentAndNoReturn);
+		myFunctionRef.testBiConsumer(obj::TwoArgumentAndNoReturn); 					// lambda (a,b)->{}
 		myFunctionRef.testBiConsumer((String a,String b)->{System.out.println("Lambda TwoArgumentAndNoReturn "+a+","+b);});
 
 		
@@ -123,7 +123,7 @@ public class MyFunctionRef {
 		
 		myFunctionRef.testFunction(function);
 		myFunctionRef.testFunction(functionRef);
-		myFunctionRef.testFunction(obj::oneArgumentAndReturn);
+		myFunctionRef.testFunction(obj::oneArgumentAndReturn);					// lambda (a)->{...}
 		myFunctionRef.testFunction((String msg)->{return "Lambda oneArgumentAndReturn "+msg;});
 		
 		System.out.println("BiFunction (2 arg and 1 return) --> apply method");
