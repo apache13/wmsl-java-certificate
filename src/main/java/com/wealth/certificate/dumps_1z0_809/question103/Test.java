@@ -7,10 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Test {
-
+	
 	public static void main(String[] args) throws SQLException {
 		
-		String dbURL = "", userName = "", passWord = "";
+		DBInitializer.init();
+		String dbURL = DBInitializer.URL, userName = null, passWord = null;
 		
 /* 9:*/	Connection conn = DriverManager.getConnection(dbURL, userName, passWord);
 /*10*/	String query = "SELECT id from Employee";
@@ -24,5 +25,6 @@ public class Test {
 /*18*/	} catch( Exception e ) {
 /*19*/		System.out.println("Error");
 /*20*/	}
+
 	}
 }
