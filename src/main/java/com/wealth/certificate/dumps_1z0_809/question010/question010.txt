@@ -1,0 +1,34 @@
+
+public class Foo<K, V> {
+	private K key;
+	private V value;
+	public Foo (K key, V value) (this.key = key; this value = value;)
+	public static <T> Foo<T, T> twice (T value) (return new Foo<T, T> (value, value); )
+	public K getKey () (return key;)
+	public V getValue () (return value;)
+}
+
+
+Which option fails?
+
+A. Foo<String, Integer> mark = new Foo<String, Integer> (“Steve”, 100);
+B. Foo<String, String> pair = Foo.<String>twice (“Hello World!”);
+C. Foo<?, ?> percentage = new Foo <> (97, 32);
+D. Foo<String, String> grade = new Foo <> (“John”, “A”);
+
+========================
+Answer: 
+
+
+A Steve 100
+B Hello World! Hello World!
+C 97 32
+D John A
+
+
+
+=========================
+A เป็นการกำหนด่ว่า ในการ New Instance ของ Foo จะรับเฉพาะ String กับ Interger เท่านั้น
+B เป็นการเรียก Method Static ซึ่งมีการทำ Method Generic ไว้เป็นการบังคับว่า จะรับเฉพาะ Type อะไร ซึ่่งถ้าไม่ใส่ Generic type ตอนเรียกจะทำการดูตาม parameter ที่ส่งเข้าไป
+C เป็นการสร้าง Object มารับค่า ซึ่ง Object มี Generic Type เป็น Wildcard คือ Object อะไรก็ได้ ซึ่งไม่จำเป็นต้องเหมือนกันก็ได้
+D เป็นการกำหนด Generic ของ  Class ว่าจะต้องรับเป็น <String,String> เท่านั้นส่่วนหลังจาก new จะใส่ <> (mirror) จะมองว่าเป็น Type เหมือข้างหน้า 
