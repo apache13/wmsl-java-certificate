@@ -8,19 +8,5 @@ public class Car {
 	
 	public Car (String name) {
 		this.name = name;
-		//A
-		//Car auto = Car (“MyCar”): : new;
-		
-		//B
-		//Car auto = Car : : new;
-		//Car vehicle = auto : : getCar(“MyCar”);
-		
-		//C
-		Rideable rider = Car : : new;
-		Car vehicle = rider.getCar(“MyCar”);
-		
-		//D
-		//Car vehicle = Rideable : : new : : getCar(“MyCar”);
 	}
-
 }
