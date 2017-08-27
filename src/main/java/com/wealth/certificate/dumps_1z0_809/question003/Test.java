@@ -9,13 +9,16 @@ public class Test {
 		System.out.println (
 				// line n1
 				//A
-				listVal.stream().filter(x -> x.length()>3).count()
+				//listVal.stream().filter(x -> x.length()>3).count()
 				//B
 //				listVal.stream().map(x -> x.length()>3).count()
 				//C Error
-//				listVal.stream().peek(x -> x.length()>3).count().get()
+				
+				//listVal.stream().peek(x -> x.length()>3).count().get()
+				//listVal.stream().peek(x -> {}).count().get()
 				//D	Error
-//				listVal.stream().filter(x -> x.length()>3).mapToInt(x -> x).count()
+				listVal.stream().filter(x -> x.length()>3).mapToInt(x -> x).count()
+				//listVal.stream().filter(x -> x.length()>3).mapToInt(x -> Integer.parseInt(x)).count()
 				
 		);
 	}
