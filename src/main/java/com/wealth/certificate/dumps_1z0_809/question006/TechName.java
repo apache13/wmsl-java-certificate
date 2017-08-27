@@ -33,3 +33,6 @@ D. stre.forEachOrdered(System.out::print);
 */
 
 //Answer. B
+
+// forEach() method performs an action for each element of this stream. For parallel stream, this operation does not guarantee to maintain order of the stream.
+// forEachOrdered() method performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order.
