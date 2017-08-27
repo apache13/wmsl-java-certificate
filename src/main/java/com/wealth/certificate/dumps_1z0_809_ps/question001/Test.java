@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.attribute.FileAttribute;
 
 public class Test {
 
@@ -12,7 +11,7 @@ public class Test {
 		
 		//System.out.println("initialResourceFile ...");
 		
-		Path source = PathsUtils.getPathFromClass(Test.class, "/green.txt");
+		Path source = PathsUtils.getPathFromClass(Test.class, "green.txt");
 		Path target = PathsUtils.getPathFromClass(Test.class, "colors/yellow.txt");
 		try {
 			Files.deleteIfExists(source);
@@ -46,7 +45,7 @@ public class Test {
 		initialResourceFile();
 		
 		// Path source = Paths.get("/green.txt");
-		Path source = PathsUtils.getPathFromClass(Test.class, "/green.txt");
+		Path source = PathsUtils.getPathFromClass(Test.class, "green.txt");
 
 		// Path target = Paths.get("/colors/yellow.txt");
 		Path target = PathsUtils.getPathFromClass(Test.class, "colors/yellow.txt");
