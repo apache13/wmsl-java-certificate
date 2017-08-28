@@ -8,11 +8,16 @@ public class Test {
 
 	public static void main(String[] args) {
 		List<Integer> nums = Arrays.asList(10,20,8);
+		//Comparator<Integer> comp = (p1, p2) -> Integer.compare(p1, p2);
 		System.out.println(
+				
 				/*A*/
 				nums.stream().max(Comparator.comparing(a -> a)).get()
+				//or
+				//nums.stream().max(comp).get()
 				
-				/*B*///nums.stream().max(Integer::max).get() // reference : https://www.programcreek.com/2014/01/why-stream-maxintegermax-compile/
+				
+				/*B*///nums.stream().max(Integer::max).get() //Integer::max not a Comparator reference : https://www.programcreek.com/2014/01/why-stream-maxintegermax-compile/
 				
 				/*C*///nums.stream().max()  
 				
@@ -23,6 +28,5 @@ public class Test {
 	}
 
 }
-//"::" is called Method Reference
-// B Integer::max not a Comparator
+
 // C And D not correct because The method max(Comparator<? super Integer>) in the type Stream<Integer> is not applicable for the arguments ()

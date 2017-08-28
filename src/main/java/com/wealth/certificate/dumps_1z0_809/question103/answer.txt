@@ -1,5 +1,8 @@
 [Answer]
-D (from dump) (haven't checked yet)
+C
 
-[Explanation]
-... to be continue ...
+[Caught Exception]
+java.sql.SQLException: ResultSet not open. Operation 'next' not permitted. Verify that autocommit is off. (explain later)
+
+[Console]
+Error

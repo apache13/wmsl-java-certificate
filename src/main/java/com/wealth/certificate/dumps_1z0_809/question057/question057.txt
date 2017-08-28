@@ -42,17 +42,21 @@ D. The program prints several values whose sum exceeds 55.
 
 Answer: A
 
-
-
 Basic Use
 
 The first step for using the fork/join framework is to write code that performs a segment of the work. Your code should look similar to the following pseudocode:
 
 if (my portion of the work is small enough)
-  do the work directly
+  	do the work directly
 else
-  split my work into two pieces
-  invoke the two pieces and wait for the results
+	split problem into independent parts
+	fork new subtasks to solve each part
+	join all subtasks		
+	compose result from subresults
+	
+see MyRecursiveAction and MyRecursiveTask	
+	
+
   
   
 

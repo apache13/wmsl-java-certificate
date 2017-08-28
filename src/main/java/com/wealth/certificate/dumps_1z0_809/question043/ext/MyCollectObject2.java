@@ -38,9 +38,19 @@ public class MyCollectObject2 {
 		list.stream().collect(supplier, accumulator, combiner).forEach((e)->System.out.println(e));
 		
 		System.out.println("Collect with lambda");		
-		list.stream().collect( () -> {return new ArrayList<Integer>();}
-		, (List<Integer> m, Integer e) -> m.add(e)
-		, (List<Integer> m1, List<Integer> m2) -> m1.addAll(m2)).forEach((e)->System.out.println(e));
+		list.stream().collect( 
+			() -> {return new ArrayList<Integer>();}
+			, (List<Integer> m, Integer e) -> m.add(e)
+			, (List<Integer> m1, List<Integer> m2) -> m1.addAll(m2)
+		).forEach((e)->System.out.println(e));
+		
+		System.out.println("Collect with lambda + method ref");		
+		list.stream().collect( 
+			ArrayList::new
+			, (a,b) -> a.add(b) 
+			, (a,b) -> a.addAll(b)
+		).forEach((e)->System.out.println(e));
+		
 		
 		System.out.println("Collect with Collectors");
 		list.stream().collect(Collectors.toList()).forEach(e -> System.out.println(e));

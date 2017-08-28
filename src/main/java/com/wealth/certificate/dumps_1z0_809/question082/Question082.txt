@@ -33,4 +33,9 @@ E. 	At line n2, insert:
 	}
 
 
-Answer: 
+Answer: A. 	Replace line n1 with:
+			class Folder implements AutoCloseable { 
+		E. 	At line n2, insert:
+			public void close () throws IOException { 
+				System.out.print(“Close”);
+			}
