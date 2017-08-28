@@ -44,3 +44,15 @@ Answer: A is almost right.
 The correct answer is [A Guide to Java Tour:3.0, Beginning with Java:2.0] 
 
 */
+
+/*
+1.Comparator
+All elements in the list must be mutually comparable using the specified comparator 
+Collections.sort(List<T> list, Comparator<? super T> c)
+
+2.Comparable
+All elements in the list must implement the Comparable interface. 
+
+Collections.sort(List<T> list)
+ */
+

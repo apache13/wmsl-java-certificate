@@ -37,6 +37,21 @@ class C extends B {
 	}
 }
 
+class D extends C {
+	String getName() {
+		return "D";
+	}
+	
+	static String getStaticName() {
+		return "Static Name D";
+	}
+	
+	public D(String key) {
+		
+	}
+	
+}
+
 public class MyMethodRef {
 
 	public static void testSupplier(Supplier<String> sp) {
@@ -85,6 +100,21 @@ public class MyMethodRef {
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
+		
+		Function<String,D> dd = D::new;
+		D d = dd.apply("D");
+		System.out.println(d);
+		
+		
+		/*
+		instance::staticMethod
+		class::staticMethod		
+		
+		instance::instanceMethod		
+		class::instanceMethod --> auto pass this
+				
+		class::new
+		*/
 	}
 
 }
