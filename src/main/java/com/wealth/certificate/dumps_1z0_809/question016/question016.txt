@@ -8,3 +8,18 @@ C. Streams are intended to modify the source data.
 D. A parallel stream is always faster than an equivalent sequential stream.
 
 Answer: B
+
+A. is false
+ - ข้อ A เมื่อเรา consume Stream แล้ว เราไม่สามารถ re-use ได้อีก เช่นในเมธอด forEach() จบแล้วจบเลย
+   แต่มี method .peek() ที่  return stream จึงสามารถเรียก method อื่นๆได้
+
+B. is true
+ - ข้อ B น่าจะสื่อว่า เราสามารถเรียกเมธอดต่อเป็นทอดๆได้ครับ เช่น เรียก filter() แล้วก็เรียก forEach() ต่อได้
+
+C. is false
+ - ข้อ C Stream ไม่ได้แก้ไข  Source data
+ 
+D. is false
+ - ข้อ D เสปคบอกไว้ว่า parallel ไม่การันตีว่าจะเร็วกว่าเสมอไป อาจช้ากว่าก็ได้เพราะ Overhead
+   http://ocpj8.javastudyguide.com/ch18.html
+   
