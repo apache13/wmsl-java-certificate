@@ -2,6 +2,7 @@ package com.wealth.certificate.dumps_1z0_809.question035;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Test {
@@ -18,6 +19,14 @@ public class Test {
 		
 		// round 1 -> 0:, false
 		// round 2 -> 0:0:, true
+		
+		/*Consumer<String> consumer = new Consumer<String>() {
+			@Override
+			public void accept(String t) {
+				System.out.println(t);
+			}
+		};
+		str.stream().filter(test).findFirst().ifPresent(consumer);*/
 		
 		str.stream().filter(test).findFirst().ifPresent(System.out ::print);
 		//str.stream().filter(s -> s.contains("y")).forEach(s -> System.out.println(s));  -> //str.stream().filter(s -> s.contains("y")).forEach(System.out ::print);

@@ -16,10 +16,10 @@ public class TechName {
 		List<TechName> tech = Arrays.asList(new TechName("Java-"), new TechName("Oracle DB-"), new TechName("J2EE-"));
 
 		Stream<TechName> stre = tech.stream();
-		// stre.forEach(System.out::print); // A
-		stre.map(a -> a.techName).forEach(System.out::print); // B
-		// stre.map(a -> a).forEachOrdered(System.out::print); // C
-		// stre.forEachOrdered(System.out::print); // D
+		// stre.forEach(System.out::print); // A print for each object
+		stre.map(a -> a.techName).forEach(System.out::print); // B print Java-Oracle DB-J2EE-  == stre.map(a -> a.techName).forEachOrdered(System.out::print);
+		// stre.map(a -> a).forEachOrdered(System.out::print); // C print for each object
+		// stre.forEachOrdered(System.out::print); // D print for each object
 	}
 
 }
@@ -33,3 +33,6 @@ D. stre.forEachOrdered(System.out::print);
 */
 
 //Answer. B
+
+// forEach() method performs an action for each element of this stream. For parallel stream, this operation does not guarantee to maintain order of the stream.
+// forEachOrdered() method performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order.

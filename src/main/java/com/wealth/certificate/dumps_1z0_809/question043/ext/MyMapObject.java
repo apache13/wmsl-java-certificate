@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class MyMapObject {
 
@@ -35,9 +36,14 @@ public class MyMapObject {
 			public String apply(MyMapObject t) {
 				return t.getfName();
 			}
-		};				
+		};		
+		// function ref
 		emp.stream().map(getFieldToMap).sorted(Comparator.reverseOrder()).forEach(p -> System.out.println(p) );
 		
+		// lambda
+		emp.stream().map( (e)->e.getfName() ).sorted(Comparator.reverseOrder()).forEach(p -> System.out.println(p) );
+				
+		// method ref
 		emp.stream().map(MyMapObject::getfName).sorted(Comparator.reverseOrder()).forEach(p -> System.out.println(p) );
 		
 		
