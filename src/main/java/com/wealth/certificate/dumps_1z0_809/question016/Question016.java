@@ -4,19 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Question016 {
-	
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+
 	public static void main(String[] args) {
-		List  names = new ArrayList(); 
-        names.add("David");
-        names.add("Sam");
-        names.add("Ben");
- 
-        names.stream()
-        	.forEach((x) -> printNames((String) x));
+		List<String> names = new ArrayList<>();
+		names.add("David");
+		names.add("Sam");
+		names.add("Ben");
+
+		names.stream().forEach((x) -> printNames(x));
+		System.out.println("");
+		
+		long count = names.stream().peek((x) -> printNames(x)).filter((x) -> x.length() > 3).count();
+		System.out.println("Count : " + count);
 	}
 
-	@SuppressWarnings("rawtypes")
 	static void printNames(String str) {
 		System.out.println(str);
 	}
