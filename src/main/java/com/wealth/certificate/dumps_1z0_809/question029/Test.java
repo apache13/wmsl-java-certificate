@@ -3,7 +3,7 @@ package com.wealth.certificate.dumps_1z0_809.question029;
 class FuelNotAvailException extends Exception { }
 
 class Vehicle {
-	public void ride() throws FuelNotAvailException { 	//line n1
+	void ride() throws FuelNotAvailException { 	//line n1
 		System.out.println("Happy Journey!");
 	}
 }
