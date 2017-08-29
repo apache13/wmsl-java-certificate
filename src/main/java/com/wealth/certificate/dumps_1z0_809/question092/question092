@@ -12,5 +12,5 @@ C. 	menu1, File Menu, menu2, View Menu
 D. 	menu1 = File Menu
 	menu2 = View Menu
 
-Answer: B
-https://docs.oracle.com/javase/tutorial/essential/environment/properties.html
+Answer: d
+https://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html
