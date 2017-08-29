@@ -16,7 +16,7 @@ public class Vehicle {
 	}
 	
 	public static void main(String[] args) {
-		Set<Vehicle> vehicles = new TreeSet <> ();
+		Set<Vehicle> vehicles = new TreeSet <>();
 		vehicles.add(new Vehicle(10123, "Ford"));
 		vehicles.add(new Vehicle(10124, "BMW"));
 		System.out.println(vehicles);

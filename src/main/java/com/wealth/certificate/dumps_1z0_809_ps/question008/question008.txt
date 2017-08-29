@@ -22,3 +22,5 @@ B. stre.map(a-> a.techName).forEach(System.out::print);
 C. stre.map(a-> a).forEachOrdered(System.out::print);
 D. stre.forEachOrdered(System.out::print);
 Answer: B
+
+duplicate of P'Well 1Z0-809,6
