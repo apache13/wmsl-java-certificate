@@ -12,11 +12,11 @@ public class Question022 {
 		System.out.print ("Enter GDP: ");
 		//line 1
 		
-		//A. incorrect
-		//int GDP = Integer.parseInt(br.readline()); // br.readLine();
+		//A. correct
+		//int GDP = Integer.parseInt(br.readLine()); 
 		
-		//B. correct
-		//int GDP = br.read();  
+		//B. incorrect
+		//int GDP = br.read(); //output ASCII 
 		
 		//C. incorrect
 		//int GDP = br.nextInt();  // Scanner sc = new Scanner(System.in); int sc1 = sc.nextInt(); 
