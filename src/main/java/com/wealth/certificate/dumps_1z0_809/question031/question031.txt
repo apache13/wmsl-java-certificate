@@ -31,3 +31,5 @@ C. A SQLException is thrown as runtime.
 D. A NullPointerException is thrown as runtime.
 
 Answer: C
+
+Exception in thread "main" java.sql.SQLNonTransientConnectionException: No current connection.
