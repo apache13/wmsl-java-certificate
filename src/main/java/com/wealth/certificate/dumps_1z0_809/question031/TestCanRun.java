@@ -2,42 +2,22 @@ package com.wealth.certificate.dumps_1z0_809.question031;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-public class Test {
+public class TestCanRun {
 	static Connection newConnection =null;
 	public static Connection getDBConnection () throws SQLException {
-		Statement sta = null;
-		try {//(Connection con = DriverManager.getConnection(URL)) {
-			Connection con = DriverManager.getConnection(URL);
+		try (Connection con = DriverManager.getConnection(URL)) {
 			newConnection = con;
-		}catch(SQLException e) {
-			e.printStackTrace();
 		}
 		return newConnection;
 	}
 	
 	public static void main (String [] args) throws SQLException {
-		Statement sta = null;
-		try {
-			//initialDatabase(newConnection);
-			System.out.println("begin");
-			Connection con = getDBConnection();
-			sta = con.createStatement();
-			System.out.println(sta.executeUpdate("CREATE TABLE Student(ID INT PRIMARY KEY,NAME VARCHAR(8))"));
-			//initialDatabase(con);
-			sta = con.createStatement();
-			System.out.println(sta.executeUpdate("INSERT INTO Student VALUES (102, 'Kelvin')"));
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			/*try {
-				st.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}*/
-		}
+		initialDatabase(DriverManager.getConnection(URL));
+		getDBConnection();
+		Statement st = newConnection.createStatement();
+		st.executeUpdate("INSERT INTO student VALUES (102, 'Kelvin')");
 	}
 	
 	public static final String URL = "jdbc:derby:memory:question031;create=true";
