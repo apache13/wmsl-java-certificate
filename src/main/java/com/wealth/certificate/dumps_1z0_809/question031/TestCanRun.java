@@ -9,33 +9,17 @@ public class TestCanRun {
 	public static Connection getDBConnection () throws SQLException {
 		try (Connection con = DriverManager.getConnection(URL)) {
 			newConnection = con;
+			Statement st = newConnection.createStatement();
+			System.out.println(st.executeUpdate("CREATE TABLE Student(ID INT PRIMARY KEY,NAME VARCHAR(8))"));
+			System.out.println(st.executeUpdate("INSERT INTO student VALUES (102, 'Kelvin'), (103, 'Kelvins')"));
 		}
 		return newConnection;
 	}
 	
 	public static void main (String [] args) throws SQLException {
-		initialDatabase(DriverManager.getConnection(URL));
 		getDBConnection();
-		Statement st = newConnection.createStatement();
-		st.executeUpdate("INSERT INTO student VALUES (102, 'Kelvin')");
 	}
 	
 	public static final String URL = "jdbc:derby:memory:question031;create=true";
-
-	public static void initialDatabase(Connection conn) {
-		Statement st = null;
-		try {
-			st = conn.createStatement();
-			st.executeUpdate("CREATE TABLE Student(ID INT PRIMARY KEY,NAME VARCHAR(8))");
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				st.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
-	}
 }
 
