@@ -7,9 +7,11 @@ import java.sql.Statement;
 public class TestCanRun {
 	static Connection newConnection =null;
 	public static Connection getDBConnection () throws SQLException {
-		try (Connection con = DriverManager.getConnection(URL)) {
+		try (	
+				Connection con = DriverManager.getConnection(URL);
+				Statement st = con.createStatement();
+			) {
 			newConnection = con;
-			Statement st = newConnection.createStatement();
 			System.out.println(st.executeUpdate("CREATE TABLE Student(ID INT PRIMARY KEY,NAME VARCHAR(8))"));
 			System.out.println(st.executeUpdate("INSERT INTO student VALUES (102, 'Kelvin'), (103, 'Kelvins')"));
 		}
