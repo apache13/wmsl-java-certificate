@@ -10,18 +10,13 @@ public class Test {
 
 	public static final String URL = "jdbc:derby:memory:question043;create=true";
 	
-	public static void initialDatabase() {
-		
-		try(Connection con=DriverManager.getConnection(URL)){
-			try(Statement st = con.createStatement()){
-				st.executeUpdate("CREATE TABLE ITEM(ID INT PRIMARY KEY,DESCRIP VARCHAR(100),PRICE REAL,QUANTITY INT)");
-				st.executeUpdate("INSERT INTO ITEM VALUES (110,'A',100.00,1), (111,'B',100.50,1), (112,'C',101.00,1)");
-			}
+	public static void initialDatabase() {		
+		try(Connection con=DriverManager.getConnection(URL);Statement st = con.createStatement()){			
+			st.executeUpdate("CREATE TABLE ITEM(ID INT PRIMARY KEY,DESCRIP VARCHAR(100),PRICE REAL,QUANTITY INT)");
+			st.executeUpdate("INSERT INTO ITEM VALUES (110,'A',100.00,1), (111,'B',100.50,1), (112,'C',101.00,1)");			
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		
-		
+		}			
 	}
 	
 	public static void main(String[] args) {
