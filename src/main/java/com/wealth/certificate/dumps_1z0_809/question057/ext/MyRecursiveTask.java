@@ -3,8 +3,11 @@ package com.wealth.certificate.dumps_1z0_809.question057.ext;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.TimeUnit;
 
 public class MyRecursiveTask extends RecursiveTask<Integer> {
 
@@ -59,9 +62,25 @@ public class MyRecursiveTask extends RecursiveTask<Integer> {
 		
 		MyRecursiveTask myRecusiveTask = new MyRecursiveTask(input);
 		
+		// execute --> Arrange async execution
+		forkJoinPool.execute(myRecusiveTask);		
+		
+		// invoke --> Await and obtain result
 		int sum = forkJoinPool.invoke(myRecusiveTask);
 		System.out.println("Sum : "+sum);
 		
+		// submit --> Arrange exec and obtain Future
+		Future f = forkJoinPool.submit(myRecusiveTask);
+		try {
+			System.out.println(f.get()); //block
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("shutdown pool.");
+		forkJoinPool.shutdown();
 		
 	}
 
