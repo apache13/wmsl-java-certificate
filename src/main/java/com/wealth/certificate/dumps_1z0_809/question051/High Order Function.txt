@@ -4,7 +4,11 @@
 1. เป็น Function ที่รับ Function เข้ามาเป็น Parameter
 2. เป็น Function ที่ Return Function
 
+Function<T, R>
+- Argument Type: T
+- Return Type: R
+
 ตัวอย่าง
 Function<Integer, Function<Integer,Integer>> makeAdder = x -> y -> x + y;
 
-เราจะมีฟังก์ชัน makeAdder ที่รับ integer x และสร้างฟังก์ชันใหม่ที่รับ integer y และเมื่อหลังจากเรียกใช้จะได้ค้า x + 
+เราจะมีฟังก์ชัน makeAdder ที่รับ Integer x และ return เป็นฟังก์ชันที่รับ integer y และหลังจากที่ถูกเรียกใช้งานจะ return x + y
