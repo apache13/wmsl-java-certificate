@@ -51,3 +51,5 @@ S คือตัวกำหนดวินาที ซึ่งตามหลังค่าสำหรับจำนวนวินาที
 Answer: C
 Reference: http://tutorials.jenkov.com/java-date-time/duration.html#accessing-the-time-ofa-
 duration
+
+https://stackoverflow.com/questions/32437550/java-8-whats-the-difference-between-instant-and-localdatetime
