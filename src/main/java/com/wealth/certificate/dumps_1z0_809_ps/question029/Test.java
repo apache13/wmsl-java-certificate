@@ -10,28 +10,23 @@ public class Test {
 
 	public static final String URL = "jdbc:derby:memory:question029;create=true";
 
-	public static void initialDatabase(Connection conn) {
-		Statement st = null;
-		try {
-			st = conn.createStatement();
-			st.executeUpdate("CREATE TABLE EMPLOYEE(EID INT PRIMARY KEY,ENAME VARCHAR(8))");
-			st.executeUpdate("INSERT INTO EMPLOYEE VALUES (111,'Tom'), (112,'Jerry'), (113,'Donald')");
+	public static void initialDatabase() {		
+		try(Connection con = DriverManager.getConnection(URL)){
+			try(Statement st=con.createStatement()){
+				st.executeUpdate("CREATE TABLE EMPLOYEE(EID INT PRIMARY KEY,ENAME VARCHAR(8))");
+				st.executeUpdate("INSERT INTO EMPLOYEE VALUES (111,'Tom'), (112,'Jerry'), (113,'Donald')");
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				st.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
+		}				
 	}
 
 	public static void main(String[] args) {
+		
+		initialDatabase();
+		
 		try {
 			Connection conn = DriverManager.getConnection(URL);
-			initialDatabase(conn);
-			
 			Statement st = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			st.execute("SELECT * FROM Employee");
 			ResultSet rs = st.getResultSet();
