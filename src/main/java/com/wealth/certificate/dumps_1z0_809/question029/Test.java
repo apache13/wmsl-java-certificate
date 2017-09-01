@@ -1,16 +1,14 @@
 package com.wealth.certificate.dumps_1z0_809.question029;
 
-import java.io.IOException;
-
 class FuelNotAvailException extends Exception { }
 
 class Vehicle {
 	void ride() throws FuelNotAvailException { 	//line n1
 		System.out.println("Happy Journey!");
-	}	
+	}
 }
 
-class SolarVehicle extends Vehicle {	
+class SolarVehicle extends Vehicle {
 	public void ride() throws Exception{	//line n2
 		super.ride();
 	}

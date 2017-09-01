@@ -35,4 +35,4 @@ B. 10124 BMW
 C. A compilation error occurs.
 D. A ClassCastException is thrown at run time.
 
-Answer: E
+Answer: D
