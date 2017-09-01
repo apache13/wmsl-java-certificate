@@ -14,4 +14,4 @@ Question 122.
 	D. An exception is thrown at line n1.
 	
 	
-	Answer: D
+	Answer: A
