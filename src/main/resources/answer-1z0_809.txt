@@ -41,7 +41,7 @@
 41. C (Duplicate 1z0-808 Question 132)
 42
 43. A
-44. A 
+44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
 45
 46 C (Duplicate question from Question No : 40[1Z0-808])
 47
@@ -55,7 +55,7 @@
 55. C
 56
 57. A
-58
+58. B
 59
 60 C (Duplicate question from Question No : 40[1Z0-808])
 61
@@ -69,7 +69,7 @@
 69. A,D (Duplicate 1z0-808 Question 227) 
 70
 71. E (Duplicate 1z0-808 Question 223)
-72
+72. B,E
 73
 74 E (Duplicate question from Question No : 42[1Z0-808])
 75
@@ -97,7 +97,7 @@
 97. B
 98
 99. D
-100
+100. C
 101
 102 C
 103
@@ -111,8 +111,8 @@
 111. C (Duplicate 1z0-808 Question 9)
 112
 113. E (Duplicate 1z0-808 Question 29)
-114
-115. B (Duplicate 1z0-808 Question 213)
+114. B (Duplicate 1z0-808 Question 213)
+115
 116 A
 117
 118
