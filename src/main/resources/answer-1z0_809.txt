@@ -5,12 +5,12 @@
 5
 6
 7. D
-8
+8. A
 9
 10. C (All Corrects)
 11
 12. A
-13
+13. A (Duplicate 1z0-808 Question 121)   
 14
 15. A,E (Duplicate 1z0-808 Question 69)
 16. B
@@ -19,12 +19,12 @@
 19
 20
 21. D (Duplicate 1z0-808 Question 152)
-22
+22. A
 23
 24. C
 25
 26. B
-27
+27. A,B (Duplicate 1z0-808 Question 129)
 28
 29. B
 30. A,B (Duplicate 1z0-808 Question 112)
@@ -33,12 +33,12 @@
 33
 34
 35. A
-36
+36. D (Duplicate 1Z0-808 from Question No : 109)
 37
 38. D 
 39
 40. A
-41
+41. C (Duplicate 1z0-808 Question 132)
 42
 43. A
 44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
@@ -47,12 +47,12 @@
 47
 48
 49. A
-50
+50. A
 51
 52. B,E (Duplicate 1z0-808 Question 154)
 53
 54
-55
+55. C
 56
 57. A
 58. B
@@ -61,12 +61,12 @@
 61
 62
 63. B (Duplicate 1z0-808 Question 216)
-64
+64. D
 65
 66. D (Duplicate 1z0-808 Question 44)
 67
 68. A
-69
+69. A,D (Duplicate 1z0-808 Question 227) 
 70
 71. E (Duplicate 1z0-808 Question 223)
 72. B,E
@@ -75,12 +75,12 @@
 75
 76
 77. A
-78
+78. C
 79
 80. A,B,C (Duplicate 1z0-808 Question 139)
 81
 82. A,E
-83
+83. B,D
 84
 85. C
 86. C
@@ -89,12 +89,12 @@
 89
 90
 91. A
-92
+92. D
 93
 94. C
 95
 96. D
-97
+97. B
 98
 99. D
 100. C
@@ -103,12 +103,12 @@
 103
 104
 105. A (Duplicate 1z0-808 Question 180)
-106
+106. D
 107
 108. B (Duplicate 1z0-808 Question 48)
 109
 110. B,D
-111
+111. C (Duplicate 1z0-808 Question 9)
 112
 113. E (Duplicate 1z0-808 Question 29)
 114. B (Duplicate 1z0-808 Question 213)
@@ -117,12 +117,12 @@
 117
 118
 119. A
-120
+120. C
 121
 122. A
 123
 124. D
-125
+125. A (Duplicate 1z0-808 Question 234)
 126
 127. A (Duplicate 1z0-808 Question 130)
 128. A,B,D (Duplicate 1z0-808 Question 184)
