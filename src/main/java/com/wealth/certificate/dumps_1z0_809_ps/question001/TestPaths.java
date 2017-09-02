@@ -9,7 +9,7 @@ public class TestPaths {
 	public static void main(String[] args) {
 
 		System.out.println("Path function");
-		Path path = PathsUtils.getPathFromClass(TestPaths.class, "/a.txt");
+		Path path = PathsUtils.getPathFromClass(TestPaths.class, "a.txt");
 		System.out.println("exists: " + Files.exists(path));
 		System.out.println("isDirectory: " + Files.isDirectory(path));		
 		System.out.println("isRegularFile: " + Files.isRegularFile(path));
@@ -28,7 +28,7 @@ public class TestPaths {
 		
 				
 		System.out.println("Relative Path");
-		Path a = PathsUtils.getPathFromClass(TestPaths.class, "/a.txt");
+		Path a = PathsUtils.getPathFromClass(TestPaths.class, "a.txt");
 		Path aa = PathsUtils.getPathFromClass(TestPaths.class, "../question001/a.txt");
 				
 		System.out.println("a toString(): " + a.toString());
@@ -41,7 +41,7 @@ public class TestPaths {
 		
 				
 		System.out.println("Symbolic Link");
-		Path b = PathsUtils.getPathFromClass(TestPaths.class, "/b.txt"); // require permission
+		Path b = PathsUtils.getPathFromClass(TestPaths.class, "b.txt"); // require permission
 		try {
 			Files.createSymbolicLink(b, a);
 		} catch (IOException e1) {
