@@ -11,7 +11,7 @@ public class Test76 {
 		Path source = Paths.get(
 				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/question076/green.txt");
 		Path target = Paths.get(
-				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/colors/yellow.txt");
+				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/question076/colors/yellow.txt");
 		Files.move(source, target, StandardCopyOption.ATOMIC_MOVE); // content in yellow.txt replace with content in
 																	// green.txt and file green.txt is deleted
 		Files.delete(source); // throw java.nio.file.NoSuchFileException
