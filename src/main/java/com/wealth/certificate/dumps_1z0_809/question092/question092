@@ -12,19 +12,5 @@ C. 	menu1, File Menu, menu2, View Menu
 D. 	menu1 = File Menu
 	menu2 = View Menu
 
-Answer: D
+Answer: d
 https://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html
-
-A resource bundle contains the local specific objects to be used by a program. It is like a
-map with keys and values. The resource bundle can be in a property file or in a Java class.
-A property file is a file in a specific format with key/value pairs.
-
-This allows you to write programs that can:
-- be easily localized, or translated, into different languages
-- handle multiple locales at once
-- be easily modified later to support even more locales
-
-นี้ช่วยให้คุณสามารถเขียนโปรแกรม:
-- สามารถแปลถาษาหรือแปลเป็นภาษาต่างๆได้อย่างง่ายดาย
-- จัดการหลายภาษาพร้อมกัน
-- สามารถแก้ไขได้อย่างง่ายดายในภายหลังเพื่อสนับสนุน locales มากยิ่งขึ้น
