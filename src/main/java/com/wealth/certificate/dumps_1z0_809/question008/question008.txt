@@ -20,7 +20,7 @@ D. 100, Robin, HR
 200, Mary, AdminServices
 101, Peter, HR
 
-Answer: C
+Answer: A
 
 Method Reference
 https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html

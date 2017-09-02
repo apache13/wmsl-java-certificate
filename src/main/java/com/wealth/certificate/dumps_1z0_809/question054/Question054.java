@@ -28,6 +28,6 @@ public class Question054 {
 		Predicate<Question054> agVal = s -> s.getEAge() > 50;// line n1
 		li = li.stream().filter(agVal).collect(Collectors.toList());
 		Stream<String> names = li.stream().map(Question054::getEName);// line n2 
-		names.forEach(n -> System.out.print(n + ""));
+		names.forEach(n -> System.out.print(n + " "));
 	}
 }

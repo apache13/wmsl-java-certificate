@@ -8,10 +8,17 @@ import java.nio.file.StandardCopyOption;
 
 public class Test76 {
 	public static void main(String[] args) throws IOException {
-		Path source = Paths.get("C:\\Users\\Welly\\git\\wmsl-java-certificate\\src\\main\\java\\com\\wealth\\certificate\\dumps_1z0_809\\question076\\green.txt");
-		Path target = Paths.get("C:\\Users\\Welly\\git\\wmsl-java-certificate\\src\\main\\java\\com\\wealth\\certificate\\dumps_1z0_809\\question076\\colors\\yellow.txt");
-		Files.move(source, target, StandardCopyOption.ATOMIC_MOVE); //content in yellow.txt replace with content in green.txt and file green.txt is deleted 
-		Files.delete(source); //throw java.nio.file.NoSuchFileException 
+		Path source = Paths.get(
+				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/question076/green.txt");
+		Path target = Paths.get(
+				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/colors/yellow.txt");
+		Files.move(source, target, StandardCopyOption.ATOMIC_MOVE); // content in yellow.txt replace with content in
+																	// green.txt and file green.txt is deleted
+		Files.delete(source); // throw java.nio.file.NoSuchFileException
+	}
+
+	private static String getCurrentPath() {
+		return System.getProperty("user.dir");
 	}
 }
 

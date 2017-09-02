@@ -2,7 +2,7 @@ package com.wealth.certificate.dumps_1z0_809.question050;
 
 import java.util.function.ToIntFunction;
 
-public class Question232 {
+public class Question050 {
 
 	public static void main(String[] args) {
 		String str = "Java is a programming language";
