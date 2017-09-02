@@ -15,8 +15,9 @@ D. 	menu1 = File Menu
 Answer: D
 https://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html
 
-ResourceBundle is Resource bundles contain locale-specific objects. When your program needs a locale-specific resource,
-คือ การจัดกลุ่มของ Object locale-specific เมื่อโปรแกรมของคุณต้องการ locale-specific resource
+A resource bundle contains the local specific objects to be used by a program. It is like a
+map with keys and values. The resource bundle can be in a property file or in a Java class.
+A property file is a file in a specific format with key/value pairs.
 
 This allows you to write programs that can:
 - be easily localized, or translated, into different languages
