@@ -28,5 +28,5 @@ C. A compilation error occurs. To rectify it, replace line n1 with: Test<Integer
 D. A compilation error occurs. To rectify it, replace line n2 with: type1.set (Integer(100));
 
 --------------
-Answer: C
+Answer: A
 --------------

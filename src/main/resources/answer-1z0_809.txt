@@ -8,7 +8,7 @@
 8. A
 9
 10. C (All Corrects)
-11
+11. No answer (UnsupportedOperationException at line 18)
 12. A
 13. A (Duplicate 1z0-808 Question 121)   
 14
@@ -22,7 +22,7 @@
 22. A
 23
 24. C
-25
+25. A
 26. B
 27. A,B (Duplicate 1z0-808 Question 129)
 28
@@ -36,7 +36,7 @@
 36. D (Duplicate 1Z0-808 from Question No : 109)
 37
 38. D 
-39
+39. D
 40. A
 41. C (Duplicate 1z0-808 Question 132)
 42
@@ -50,7 +50,7 @@
 50. A
 51
 52. B,E (Duplicate 1z0-808 Question 154)
-53
+53. D
 54
 55. C
 56
@@ -64,7 +64,7 @@
 64. D
 65
 66. D (Duplicate 1z0-808 Question 44)
-67
+67. A
 68. A
 69. A,D (Duplicate 1z0-808 Question 227) 
 70
@@ -78,7 +78,7 @@
 78. C
 79
 80. A,B,C (Duplicate 1z0-808 Question 139)
-81
+81. B
 82. A,E
 83. B,D
 84
@@ -92,7 +92,7 @@
 92. D
 93
 94. C
-95
+95. A
 96. D
 97. B
 98
@@ -106,7 +106,7 @@
 106. D
 107
 108. B (Duplicate 1z0-808 Question 48)
-109
+109. C*
 110. B,D
 111. C (Duplicate 1z0-808 Question 9)
 112
@@ -120,7 +120,7 @@
 120. C
 121
 122. A
-123
+123. A (Duplicate 1z0-808 Question 47)
 124. D
 125. A (Duplicate 1z0-808 Question 234)
 126
