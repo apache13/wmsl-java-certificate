@@ -1,9 +1,128 @@
-3.	A
+1. C,D (Duplicate 1z0-808 Question 66)
+2. A
+3. A
+4 D , F
+5
+6. B
+7. D
+8. A
+9
+10. C (All Corrects)
+11
+12. A
+13. A (Duplicate 1z0-808 Question 121)   
+14
+15. A,E (Duplicate 1z0-808 Question 69)
+16. B
 17.	C
+18 A 
+19
+20. A Velocity with new speed1kmph
+21. D (Duplicate 1z0-808 Question 152)
+22. A
+23
+24. C
+25
+26. B
+27. A,B (Duplicate 1z0-808 Question 129)
+28
+29. B
+30. A,B (Duplicate 1z0-808 Question 112)
 31.	C
+32 B (Duplicate question from Question No : 101[1Z0-808]) 
+33
+34. A,B
+35. A
+36. D (Duplicate 1Z0-808 from Question No : 109)
+37
+38. D 
+39
+40. A
+41. C (Duplicate 1z0-808 Question 132)
+42
+43. A
+44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
 45.	B
+46 C (Duplicate question from Question No : 40[1Z0-808])
+47
+48. D
+49. A
+50. A
+51
+52. B,E (Duplicate 1z0-808 Question 154)
+53
+54
+55. C
+56
+57. A
+58. B
 59.	A
+60 C (Duplicate question from Question No : 40[1Z0-808])
+61
+62. A
+63. B (Duplicate 1z0-808 Question 216)
+64. D
+65
+66. D (Duplicate 1z0-808 Question 44)
+67
+68. A
+69. A,D (Duplicate 1z0-808 Question 227) 
+70
+71. E (Duplicate 1z0-808 Question 223)
+72. B,E
 73.	B
+74 E (Duplicate question from Question No : 42[1Z0-808])
+75
+76. B
+77. A
+78. C
+79
+80. A,B,C (Duplicate 1z0-808 Question 139)
+81
+82. A,E
+83. B,D
+84
+85. C
+86. C
 87.	C
-101.A
-115.D
+88 D
+89
+90. A,E
+91. A
+92. D
+93
+94. C
+95
+96. D
+97. B
+98
+99. D
+100. C
+101. A
+102 C
+103
+104. D
+105. A (Duplicate 1z0-808 Question 180)
+106. D
+107
+108. B (Duplicate 1z0-808 Question 48)
+109
+110. B,D
+111. C (Duplicate 1z0-808 Question 9)
+112
+113. E (Duplicate 1z0-808 Question 29)
+114. B (Duplicate 1z0-808 Question 213)
+115. D
+116 A
+117
+118. B
+119. A
+120. C
+121
+122. A
+123
+124. D
+125. A (Duplicate 1z0-808 Question 234)
+126
+127. A (Duplicate 1z0-808 Question 130)
+128. A,B,D (Duplicate 1z0-808 Question 184)
