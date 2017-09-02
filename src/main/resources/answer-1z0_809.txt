@@ -1,7 +1,7 @@
 1. C,D (Duplicate 1z0-808 Question 66)
 2. A
 3
-4
+4 D , F
 5
 6
 7
@@ -15,7 +15,7 @@
 15. A,E (Duplicate 1z0-808 Question 69)
 16. B
 17
-18
+18 A 
 19
 20
 21
@@ -29,7 +29,7 @@
 29. B
 30. A,B (Duplicate 1z0-808 Question 112)
 31
-32
+32 B (Duplicate question from Question No : 101[1Z0-808]) 
 33
 34
 35
@@ -43,7 +43,7 @@
 43. A
 44. A 
 45
-46
+46 C (Duplicate question from Question No : 40[1Z0-808])
 47
 48
 49
@@ -57,7 +57,7 @@
 57. A
 58
 59
-60
+60 C (Duplicate question from Question No : 40[1Z0-808])
 61
 62
 63
@@ -71,7 +71,7 @@
 71. E (Duplicate 1z0-808 Question 223)
 72
 73
-74
+74 E (Duplicate question from Question No : 42[1Z0-808])
 75
 76
 77
@@ -85,7 +85,7 @@
 85. C
 86. C
 87
-88
+88 D
 89
 90
 91
@@ -99,7 +99,7 @@
 99. D
 100
 101
-102
+102 C
 103
 104
 105
@@ -113,7 +113,7 @@
 113. E (Duplicate 1z0-808 Question 29)
 114
 115. B (Duplicate 1z0-808 Question 213)
-116
+116 A
 117
 118
 119
