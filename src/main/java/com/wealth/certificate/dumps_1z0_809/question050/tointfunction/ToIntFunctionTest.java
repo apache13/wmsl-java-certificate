@@ -24,29 +24,27 @@ public class ToIntFunctionTest {
 				return str.indexOf(value);
 			}
 		};
+		int toIntFunction1 = testTIFImpl.applyAsInt("God");
+		System.out.println("testTIFImpl : "+toIntFunction1);
 		
 		//2. lampda with ToIntFunction
 		ToIntFunction<String> testTIFLampda = x -> str.indexOf(x);
+		int toIntFunction2 = testTIFLampda.applyAsInt("God");
+		System.out.println("testTIFLampda : "+toIntFunction2);
 		
 		//3. lampda with ToIntFunction Method
 		ToIntFunction<String> testTIFLampdaMethod = x -> testToIntFunction(x);
+		int toIntFunction3 = testTIFLampdaMethod.applyAsInt("God");
+		System.out.println("testTIFLampdaMethod : "+toIntFunction3);
 		
 		//4. method reference with ToIntFunction
 		ToIntFunction<String> testTIFMethodRef = str::indexOf;
+		int toIntFunction4 = testTIFMethodRef.applyAsInt("God");
+		System.out.println("testTIFMethodRef : "+toIntFunction4);
 		
 		//5. method reference with ToIntFunction Method
 		ToIntFunction<String> testTIFMethodRefWithMethod = ToIntFunctionTest::testToIntFunction;
-		
-		int toIntFunction1 = testTIFImpl.applyAsInt("God");
-		int toIntFunction2 = testTIFLampda.applyAsInt("God");
-		int toIntFunction3 = testTIFLampdaMethod.applyAsInt("God");
-		int toIntFunction4 = testTIFMethodRef.applyAsInt("God");
 		int toIntFunction5 = testTIFMethodRefWithMethod.applyAsInt("God");
-		
-		System.out.println("testTIFImpl : "+toIntFunction1);
-		System.out.println("testTIFLampda : "+toIntFunction2);
-		System.out.println("testTIFLampdaMethod : "+toIntFunction3);
-		System.out.println("testTIFMethodRef : "+toIntFunction4);
 		System.out.println("testTIFMethodRefWithMethod : "+toIntFunction5);
 		
 		System.out.println();
@@ -61,24 +59,22 @@ public class ToIntFunctionTest {
 				return a.compareTo(b);
 			}
 		};
+		int toIntBiFunction1 = testTIBFImpl.applyAsInt("Test1","Test1");
+		System.out.println("testTIBFImpl : "+toIntBiFunction1);
 		
 		//2. lampda with ToIntFunction
 		ToIntBiFunction<String,String> testTIBFLampda = (x,y) -> x.compareTo(y);
+		int toIntBiFunction2 = testTIBFLampda.applyAsInt("Test1","Test1");
+		System.out.println("testTIBFLampda : "+toIntBiFunction2);
 		
 		//3. lampda with ToIntFunction Method
 		ToIntBiFunction<String,String> testTIBFLampdaMethod = (x,y) -> testToIntBiFunction(x,y);
+		int toIntBiFunction3 = testTIBFLampdaMethod.applyAsInt("Test1","Test1");
+		System.out.println("testTIBFLampdaMethod : "+toIntBiFunction3);
 		
 		//4. method reference with ToIntFunction Method
 		ToIntBiFunction<String,String> testTIBFMethodRefWithMethod = ToIntFunctionTest::testToIntBiFunction;
-		
-		int toIntBiFunction1 = testTIBFImpl.applyAsInt("Test1","Test1");
-		int toIntBiFunction2 = testTIBFLampda.applyAsInt("Test1","Test1");
-		int toIntBiFunction3 = testTIBFLampdaMethod.applyAsInt("Test1","Test1");
 		int toIntBiFunction4 = testTIBFMethodRefWithMethod.applyAsInt("Test1","Test1");
-		
-		System.out.println("testTIBFImpl : "+toIntBiFunction1);
-		System.out.println("testTIBFLampda : "+toIntBiFunction2);
-		System.out.println("testTIBFLampdaMethod : "+toIntBiFunction3);
 		System.out.println("testTIBFMethodRefWithMethod : "+toIntBiFunction4);
 	}
 
