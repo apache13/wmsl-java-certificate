@@ -1,128 +1,128 @@
-1
+1. C,D (Duplicate 1z0-808 Question 66)
 2. A
 3
-4
+4 D , F
 5
 6
-7
+7. D
 8
 9
-10
+10. C (All Corrects)
 11
-12
+12. A
 13
 14
-15
+15. A,E (Duplicate 1z0-808 Question 69)
 16. B
 17
-18
+18 A 
 19
 20
-21
+21. D (Duplicate 1z0-808 Question 152)
 22
 23
-24
+24. C
 25
-26
+26. B
 27
 28
-29
+29. B
 30. A,B (Duplicate 1z0-808 Question 112)
 31
-32
+32 B (Duplicate question from Question No : 101[1Z0-808]) 
 33
 34
-35
+35. A
 36
 37
-38
+38. D 
 39
-40
+40. A
 41
 42
-43
+43. A
 44. A 
 45
-46
+46 C (Duplicate question from Question No : 40[1Z0-808])
 47
 48
-49
+49. A
 50
 51
-52
+52. B,E (Duplicate 1z0-808 Question 154)
 53
 54
 55
 56
-57
+57. A
 58
 59
-60
+60 C (Duplicate question from Question No : 40[1Z0-808])
 61
 62
-63
+63. B (Duplicate 1z0-808 Question 216)
 64
 65
-66
+66. D (Duplicate 1z0-808 Question 44)
 67
-68
+68. A
 69
 70
-71
+71. E (Duplicate 1z0-808 Question 223)
 72
 73
-74
+74 E (Duplicate question from Question No : 42[1Z0-808])
 75
 76
-77
+77. A
 78
 79
-80
+80. A,B,C (Duplicate 1z0-808 Question 139)
 81
-82
+82. A,E
 83
 84
-85
+85. C
 86. C
 87
-88
+88 D
 89
 90
-91
+91. A
 92
 93
-94
+94. C
 95
-96
+96. D
 97
 98
-99
+99. D
 100
 101
-102
+102 C
 103
 104
-105
+105. A (Duplicate 1z0-808 Question 180)
 106
 107
-108
+108. B (Duplicate 1z0-808 Question 48)
 109
-110
+110. B,D
 111
 112
-113
+113. E (Duplicate 1z0-808 Question 29)
 114
 115. B (Duplicate 1z0-808 Question 213)
-116
+116 A
 117
 118
-119
+119. A
 120
 121
-122
+122. A
 123
-124
+124. D
 125
 126
-127
+127. A (Duplicate 1z0-808 Question 130)
 128. A,B,D (Duplicate 1z0-808 Question 184)
