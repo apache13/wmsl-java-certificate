@@ -5,7 +5,7 @@
 5
 6
 7. D
-8
+8. A
 9
 10. C (All Corrects)
 11
@@ -19,7 +19,7 @@
 19
 20
 21. D (Duplicate 1z0-808 Question 152)
-22
+22. A
 23
 24. C
 25
@@ -33,7 +33,7 @@
 33
 34
 35. A
-36
+36. D (Duplicate 1Z0-808 from Question No : 109)
 37
 38. D 
 39
@@ -47,7 +47,7 @@
 47
 48
 49. A
-50
+50. A
 51
 52. B,E (Duplicate 1z0-808 Question 154)
 53
@@ -61,7 +61,7 @@
 61
 62
 63. B (Duplicate 1z0-808 Question 216)
-64
+64. D
 65
 66. D (Duplicate 1z0-808 Question 44)
 67
@@ -75,7 +75,7 @@
 75
 76
 77. A
-78
+78. C
 79
 80. A,B,C (Duplicate 1z0-808 Question 139)
 81
@@ -89,7 +89,7 @@
 89
 90
 91. A
-92
+92. D
 93
 94. C
 95
@@ -103,7 +103,7 @@
 103
 104
 105. A (Duplicate 1z0-808 Question 180)
-106
+106. D
 107
 108. B (Duplicate 1z0-808 Question 48)
 109
@@ -117,7 +117,7 @@
 117
 118
 119. A
-120
+120. C
 121
 122. A
 123
