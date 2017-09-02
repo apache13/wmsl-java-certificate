@@ -7,7 +7,10 @@ import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.time.zone.ZoneRules;
+import java.util.Locale;
 
 public class Question24 {
 
@@ -46,6 +49,14 @@ public class Question24 {
 		System.out.println(depart);
 		System.out.println(arrive);
 		System.out.println("Travel time is" + hrs + "hours");
+		
+		//Zone Rule
+		Instant now = Instant.now();
+		ZoneId zone = ZoneId.of("UTC+7");
+		ZoneRules rules = zone.getRules();
+
+		System.out.println(rules.isDaylightSavings(now));
+		System.out.println(rules.getDaylightSavings(now));
 	}
 
 }

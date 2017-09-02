@@ -8,6 +8,7 @@ B. It preserves daylight saving time.
 C. It defines time-based values.
 D. It defines date-based values.
 
+Answer : C
 
 =========================================
  Period เป็นระยะเวลานับเป็นวัน สามารถคำนวนหาเป็นเดือน หรือปีได้ด้วย
@@ -51,3 +52,5 @@ S คือตัวกำหนดวินาที ซึ่งตามหลังค่าสำหรับจำนวนวินาที
 Answer: C
 Reference: http://tutorials.jenkov.com/java-date-time/duration.html#accessing-the-time-ofa-
 duration
+
+https://stackoverflow.com/questions/32437550/java-8-whats-the-difference-between-instant-and-localdatetime
