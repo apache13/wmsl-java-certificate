@@ -1,6 +1,6 @@
 1. C,D (Duplicate 1z0-808 Question 66)
 2. A
-3
+3. A
 4 D , F
 5
 6. B
@@ -14,7 +14,7 @@
 14
 15. A,E (Duplicate 1z0-808 Question 69)
 16. B
-17
+17.	C
 18 A 
 19
 20. A Velocity with new speed1kmph
@@ -28,7 +28,7 @@
 28
 29. B
 30. A,B (Duplicate 1z0-808 Question 112)
-31
+31.	C
 32 B (Duplicate question from Question No : 101[1Z0-808]) 
 33
 34. A,B
@@ -42,7 +42,7 @@
 42
 43. A
 44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
-45
+45.	B
 46 C (Duplicate question from Question No : 40[1Z0-808])
 47
 48. D
@@ -56,7 +56,7 @@
 56
 57. A
 58. B
-59
+59.	A
 60 C (Duplicate question from Question No : 40[1Z0-808])
 61
 62. A
@@ -70,7 +70,7 @@
 70
 71. E (Duplicate 1z0-808 Question 223)
 72. B,E
-73
+73.	B
 74 E (Duplicate question from Question No : 42[1Z0-808])
 75
 76. B
@@ -84,7 +84,7 @@
 84
 85. C
 86. C
-87
+87.	C
 88 D
 89
 90. A,E
@@ -98,7 +98,7 @@
 98
 99. D
 100. C
-101
+101. A
 102 C
 103
 104. D
@@ -112,7 +112,7 @@
 112
 113. E (Duplicate 1z0-808 Question 29)
 114. B (Duplicate 1z0-808 Question 213)
-115
+115. D
 116 A
 117
 118. B
