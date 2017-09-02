@@ -22,7 +22,7 @@ public class Emp {
 		Predicate<Emp> agVal = s -> s.getEAge() > 50;// line n1
 		li = li.stream().filter(agVal).collect(Collectors.toList());
 		Stream<String> names = li.stream().map(Emp::getEName);// line n2 
-		names.forEach(n -> System.out.print(n + ""));
+		names.forEach(n -> System.out.print(n + " "));
 	}
 }
 
@@ -30,7 +30,7 @@ public class Emp {
 What is the result?
 
 A. Sam John Jim
-B. John Jim // nearly
+B. John Jim
 C. A compilation error occurs at line n1. D. 
 A compilation error occurs at line n2.
 
