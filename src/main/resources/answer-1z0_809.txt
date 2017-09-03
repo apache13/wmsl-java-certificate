@@ -57,7 +57,7 @@
 57. A
 58. B
 59.	A
-60 C (Duplicate question from Question No : 40[1Z0-808])
+60 C
 61
 62. B
 63. B (Duplicate 1z0-808 Question 216)
