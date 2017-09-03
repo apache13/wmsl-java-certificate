@@ -60,7 +60,7 @@
 60 C
 61
 62. B
-63. B (Duplicate 1z0-808 Question 216)
+63. C (Duplicate 1z0-808 Question 216)
 64. D
 65. C,D,E
 66. D (Duplicate 1z0-808 Question 44)
