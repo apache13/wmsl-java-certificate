@@ -1,52 +1,25 @@
 package com.wealth.certificate.dumps_1z0_809.question048;
 
-import java.util.Optional;
-
-class Address {
-
-	String city = "New York";
-
-	public String getCity() {
-		return city;
-	}
-
-	public String toString() {
-		return city;
-	}
-
-}
-
-class Employee {
-
-	Optional<Address> address;
-
-	public Employee(Optional<Address> address) {
-		this.address = address;
-	}
-
-	public Optional<Address> getAddress() {
-		return address;
-	}
-
-}
-
 public class Test {
-	public static void main(String[] args) {
-		Address address = null;
-		Optional<Address> addrs1 = Optional.ofNullable(address);
-		Employee e1 = new Employee(addrs1);
-		String eAddress = (addrs1.isPresent()) ? addrs1.get().getCity() : "City Not available";
-		System.out.println(eAddress);
-	}
 
+	public static void main(String[] args) {
+		Book b1 = new Book();
+		b1.read("Java Programming"); // cannot access private method
+		Book b2 = new EBook();
+		b2.read("http://ebook.com/ebook"); // cannot access private method
+	}
+	
 }
 
 /*
 What is the result?
-A. New York
-B. City Not available
-C. null
-D. A NoSuchElementException is thrown at run time.
 
-Answer: B
+A. Read Java Programming
+View http:/ ebook.com/ebook
+B. Read Java Programming
+Read http:/ ebook.com/ebook
+C. The EBook.java file fails to compile
+D. The Test.java file fails to compile
+
+Answer: D 
 */

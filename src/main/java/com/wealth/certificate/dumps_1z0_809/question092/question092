@@ -12,5 +12,18 @@ C. 	menu1, File Menu, menu2, View Menu
 D. 	menu1 = File Menu
 	menu2 = View Menu
 
-Answer: d
+Answer: D
 https://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html
+
+ResourceBundle is Resource bundles contain locale-specific objects. When your program needs a locale-specific resource,
+คือ การจัดกลุ่มของ Object locale-specific เมื่อโปรแกรมของคุณต้องการ locale-specific resource
+
+This allows you to write programs that can:
+- be easily localized, or translated, into different languages
+- handle multiple locales at once
+- be easily modified later to support even more locales
+
+นี้ช่วยให้คุณสามารถเขียนโปรแกรม:
+- สามารถแปลถาษาหรือแปลเป็นภาษาต่างๆได้อย่างง่ายดาย
+- จัดการหลายภาษาพร้อมกัน
+- สามารถแก้ไขได้อย่างง่ายดายในภายหลังเพื่อสนับสนุน locales มากยิ่งขึ้น

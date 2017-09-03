@@ -13,7 +13,7 @@ public class DBHandler {
 		//B. 
 		//return DBConfiguration;
 		//C. 
-		//return new DBConfiguration();
+		return new DBConfiguration();
 		//D. 
 		//return 0;
 	} 

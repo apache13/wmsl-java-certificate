@@ -13,9 +13,9 @@ public class Question011 {
 			return new Product(p1.id, p1.price);
 		});
 		
-		System.out.println("P "+p);
+//		System.out.println("P "+p);
 
-//		products.add(p);
+		products.add(p);
 
 		products.stream().parallel().reduce((p1, p2) -> p1.price > p2.price ? p1 : p2).ifPresent(System.out::println);
 	}
