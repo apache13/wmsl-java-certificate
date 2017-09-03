@@ -84,7 +84,7 @@
 84
 85. C
 86. C
-87.	C
+87.	C (Duplicate 1z0-808 Question 187)	
 88 D
 89
 90. A,E
