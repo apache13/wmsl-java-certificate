@@ -70,7 +70,7 @@
 70
 71. E (Duplicate 1z0-808 Question 223)
 72. B,E
-73.	B
+73.	B (Duplicate 1z0-808 Question 34)
 74 E (Duplicate question from Question No : 42[1Z0-808])
 75
 76. B
@@ -98,7 +98,7 @@
 98
 99. D
 100. C
-101. A
+101. A (Duplicate 1z0-808 Question 123)
 102 C
 103
 104. D
