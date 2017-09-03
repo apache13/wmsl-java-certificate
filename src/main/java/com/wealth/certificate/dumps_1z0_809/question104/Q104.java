@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Q104 {
-	public static final String URL = "jdbc:derby:memory:question105;create=true";
+	public static final String URL = "jdbc:derby:memory:question104;create=true";
 
 	public static void initialDatabase(Connection conn) {
 		Statement st = null;
@@ -30,8 +30,9 @@ public class Q104 {
 	
 	public static void main(String[] args) {
 		try {
-			String dbURL = "",username = "", password = "";
-			Connection conn = DriverManager.getConnection(dbURL, username, password);
+			Connection conn = DriverManager.getConnection(URL);
+			initialDatabase(conn);
+			
 			String query = "Select * FROM Item WHERE ID = 110";
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
