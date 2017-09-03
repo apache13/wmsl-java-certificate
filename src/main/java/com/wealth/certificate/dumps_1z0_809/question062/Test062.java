@@ -1,47 +1,54 @@
 package com.wealth.certificate.dumps_1z0_809.question062;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
-public class Test062 {
-	public enum Continent {
-		ASIA, EUROPE
+class Employee {
+	Optional<Address> address;
+
+	Employee(Optional<Address> address) {
+		this.address = address;
 	}
 
-	String name;
-	Continent region;
-
-	public Test062(String na, Continent reg) {
-		name = na;
-		region = reg;
+	public Optional<Address> getAddress() {
+		return address;
 	}
 
-	public String getName() {
-		return name;
+}
+
+class Address {
+	String city = "New York";
+
+	public String getCity() {
+		return city;
 	}
 
-	public Continent getRegion() {
-		return region;
-	}
-
-	public static void main(String[] args) {
-		List<Test062> couList = Arrays.asList(new Test062("Japan", Test062.Continent.ASIA),
-				new Test062("Italy", Test062.Continent.EUROPE), new Test062("Germany", Test062.Continent.EUROPE));
-		Map<Test062.Continent, List<String>> regionNames = couList.stream().collect(
-				Collectors.groupingBy(Test062::getRegion, Collectors.mapping(Test062::getName, Collectors.toList())));
-		System.out.println(regionNames);
+	public String toString() {
+		return city;
 	}
 }
 
+public class Test062 {
+
+	public static void main(String[] args) {
+		Address address = null;
+		Optional<Address> addrs1 = Optional.ofNullable(address);
+
+		Employee e1 = new Employee(addrs1);
+
+		String eAddress = (addrs1.isPresent()) ? addrs1.get().getCity() : "City Not available";
+
+		System.out.println(eAddress);
+
+	}
+
+}
+
 /*
-What is the output?
-A. {EUROPE = [Italy, Germany], ASIA = [Japan]}
-B. {ASIA = [Japan], EUROPE = [Italy, Germany]}
-C. {EUROPE = [Germany, Italy], ASIA = [Japan]}
-D. {EUROPE = [Germany], EUROPE = [Italy], ASIA = [Japan]}
-
-
-Answer: A
-*/
+ * What is the result? 
+ * A. New York 
+ * B. City Not available 
+ * C. null 
+ * D. A NoSuchElementException is thrown at run time.
+ * 
+ * Answer: B
+ */
