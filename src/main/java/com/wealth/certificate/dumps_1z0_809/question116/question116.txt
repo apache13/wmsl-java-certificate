@@ -1,7 +1,7 @@
 Given:
 class CheckClass {
 public static int checkValue (String s1, String s2) {
-return s1 length() – s2.length();
+return s1 length() ï¿½ s2.length();
 }
 }
 and the code fragment:
@@ -18,6 +18,3 @@ C. Arrays.sort(strArray, (CheckClass :: new).checkValue);
 D. Arrays.sort(strArray, CheckClass :: new :: checkValue);
 Answer: A
 
-Predicate is a functional interface that takes a single parameter of any type and returns a boolean . 
-Another functional interface is Consumer , which takes a single parameter of any type and has a void return type. 
-Finally, Supplier doesn’t take any parameters and returns any type. 
