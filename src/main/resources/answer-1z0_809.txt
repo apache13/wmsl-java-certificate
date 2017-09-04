@@ -103,7 +103,7 @@
 103. C
 104. D
 105. A (Duplicate 1z0-808 Question 180)
-106. D
+106. E (Duplicate 1z0-808 Question 71)
 107. A
 108. B (Duplicate 1z0-808 Question 48)
 109. C*

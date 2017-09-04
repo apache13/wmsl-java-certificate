@@ -3,6 +3,7 @@ package com.wealth.certificate.dumps_1z0_809.question078;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class Foo {
@@ -25,5 +26,9 @@ public class Foo {
 		for (Map.Entry<Integer, String> entry : treeMap.entrySet () ) {
 			System.out.print (entry.getValue () + " ");
 		}
+		
+		//Entry<K,V> is (member) inner class in class Interface Map<K,V>
+		//treeMap.entrySet () return Set<Map.Entry<K,V>>
+		//when call Entry<Integer, String> use Map.Entry<Integer, String>
 	}
 }
