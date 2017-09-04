@@ -22,10 +22,10 @@ public class Vehicle {
 		vehicles.add(new Vehicle(10124, "BMW"));
 		System.out.println(vehicles);
 		
-		//TreeSet new Object implements Comparator
-//		Set<Vehicle> vehicles1 = new TreeSet <>(new vehicleCompare());	
+		//Ex1. TreeSet new Object implements Comparator
+//		Set<Vehicle> vehicles1 = new TreeSet <>(new vehicleCompare());
 		
-		 //TreeSet Anonymuse
+		 //Ex1. TreeSet Anonymuse
 //		Set<Vehicle> vehicles1 = new TreeSet <>(new Comparator<Vehicle>() {		
 //			@Override
 //			public int compare(Vehicle o1, Vehicle o2) {

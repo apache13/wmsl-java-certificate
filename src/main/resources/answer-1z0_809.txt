@@ -1,128 +1,128 @@
-1
+1. C,D (Duplicate 1z0-808 Question 66)
 2. A
-3
-4
-5
-6
-7
-8
-9
+3. A
+4 D , F
+5. C (Duplicate 1z0-808 Question 1)
+6. B
+7. D
+8. A
+9. C
 10. C (All Corrects)
-11
-12
-13
+11. No answer (UnsupportedOperationException at line 18)
+12. A
+13. A (Duplicate 1z0-808 Question 121)   
 14
-15
+15. A,E (Duplicate 1z0-808 Question 69)
 16. B
-17
-18
-19
-20
-21
-22
-23
+17.	C
+18 A 
+19. B
+20. A Velocity with new speed1kmph
+21. D (Duplicate 1z0-808 Question 152)
+22. A
+23. B
 24. C
-25
-26
-27
+25. A
+26. B
+27. A,B (Duplicate 1z0-808 Question 129)
 28
-29
+29. B
 30. A,B (Duplicate 1z0-808 Question 112)
-31
-32
-33
-34
-35
-36
-37
+31.	C
+32 B (Duplicate question from Question No : 101[1Z0-808]) 
+33. B
+34. A,B
+35. A
+36. D (Duplicate 1Z0-808 from Question No : 109)
+37. A (Duplicate 1z0-808 Question 65)
 38. D 
-39
-40
-41
+39. D
+40. A
+41. C (Duplicate 1z0-808 Question 132)
 42
-43
-44. A 
-45
-46
-47
-48
-49
-50
-51
+43. A
+44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
+45.	B
+46 C (Duplicate question from Question No : 40[1Z0-808])
+47. C
+48. D
+49. A
+50. A
+51. B
 52. B,E (Duplicate 1z0-808 Question 154)
-53
+53. D
 54
-55
+55. C
 56
-57
-58
-59
-60
-61
-62
-63
-64
-65
+57. A
+58. B
+59.	A
+60 C
+61. D E
+62. B
+63. C (Duplicate 1z0-808 Question 216)
+64. D
+65. C,D,E
 66. D (Duplicate 1z0-808 Question 44)
-67
-68
-69
+67. A
+68. A
+69. A,D (Duplicate 1z0-808 Question 227) 
 70
-71
-72
-73
-74
-75
-76
-77
-78
-79
+71. E (Duplicate 1z0-808 Question 223)
+72. B,E
+73.	B (Duplicate 1z0-808 Question 34)
+74 E (Duplicate question from Question No : 42[1Z0-808])
+75. D
+76. B
+77. A
+78. C
+79. A
 80. A,B,C (Duplicate 1z0-808 Question 139)
-81
-82
-83
+81. B
+82. A,E
+83. B,D
 84
-85
+85. C
 86. C
-87
-88
-89
-90
-91
-92
-93
+87.	C (Duplicate 1z0-808 Question 187)	
+88 D
+89. A B E (Duplicate 1z0-808 Question 2)
+90. A,E
+91. A
+92. D
+93. D*
 94. C
-95
-96
-97
+95. A
+96. D
+97. B
 98
-99
-100
-101
-102
-103
-104
-105
-106
-107
+99. D
+100. C
+101. A (Duplicate 1z0-808 Question 123)
+102 C
+103. C
+104. D
+105. A (Duplicate 1z0-808 Question 180)
+106. D
+107. A
 108. B (Duplicate 1z0-808 Question 48)
-109
-110
-111
+109. C*
+110. B,D
+111. C (Duplicate 1z0-808 Question 9)
 112
-113
-114
-115. B (Duplicate 1z0-808 Question 213)
-116
-117
-118
-119
-120
-121
+113. E (Duplicate 1z0-808 Question 29)
+114. B (Duplicate 1z0-808 Question 213)
+115. D
+116 A
+117. B
+118. B
+119. A
+120. C
+121. E (Duplicate 1z0-808 Question 233)
 122. A
-123
-124
-125
+123. A (Duplicate 1z0-808 Question 47)
+124. D
+125. A (Duplicate 1z0-808 Question 234)
 126
-127
+127. A (Duplicate 1z0-808 Question 130)
 128. A,B,D (Duplicate 1z0-808 Question 184)

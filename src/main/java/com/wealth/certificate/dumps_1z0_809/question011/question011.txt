@@ -36,6 +36,6 @@ D. 	4 : 60
 E. The program prints nothing.
 
 --------------
-Answer: D 
+Answer: No answer (UnsupportedOperationException at line 18) 
 --------------
 

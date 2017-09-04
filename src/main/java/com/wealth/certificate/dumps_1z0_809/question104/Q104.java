@@ -7,10 +7,32 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Q104 {
+	public static final String URL = "jdbc:derby:memory:question104;create=true";
 
+	public static void initialDatabase(Connection conn) {
+		Statement st = null;
+		try {
+			st = conn.createStatement();
+			st.executeUpdate("CREATE TABLE ITEM(ID INT PRIMARY KEY, DESCRIP VARCHAR(100), PRICE REAL, QUANTITY INT)");
+			st.executeUpdate("INSERT INTO ITEM VALUES (110,'Descript', 9, 1)");
+			
+	
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				st.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		try {
-			Connection conn = DriverManager.getConnection(dbURL, username, password);
+			Connection conn = DriverManager.getConnection(URL);
+			initialDatabase(conn);
+			
 			String query = "Select * FROM Item WHERE ID = 110";
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
@@ -53,11 +75,12 @@ public class Q104 {
 	The required database driver is configured in the classpath.
 	The appropriate database is accessible with the dbURL, userName, and passWord exists.
 	The SQL query is valid.
+	
 	What is the result?
 	A. An exception is thrown at runtime.
 	B. Compilation fails.
 	C. The code prints Error.
 	D. The code prints information about Item 110.
 	
-	Answer: C
+	Answer: D
 	*/
