@@ -37,7 +37,7 @@
 37. A (Duplicate 1z0-808 Question 65)
 38. D 
 39. D
-40. A
+40. A (Duplicate 1z0-808 Question 183)
 41. C (Duplicate 1z0-808 Question 132)
 42. A (Duplicate 1z0-808 Question 175)
 43. A
@@ -107,7 +107,7 @@
 107. A
 108. B (Duplicate 1z0-808 Question 48)
 109. C*
-110. B,D
+110. B,D (Duplicate 1z0-808 Question 106)
 111. C (Duplicate 1z0-808 Question 9)
 112. C
 113. E (Duplicate 1z0-808 Question 29)
