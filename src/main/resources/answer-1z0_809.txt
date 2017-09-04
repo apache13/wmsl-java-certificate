@@ -51,7 +51,7 @@
 51. B
 52. B,E (Duplicate 1z0-808 Question 154)
 53. D
-54.
+54. B
 55. C
 56. E
 57. A
