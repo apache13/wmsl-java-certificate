@@ -1,21 +1,21 @@
 1. C,D (Duplicate 1z0-808 Question 66)
 2. A
 3. A
-4 D , F
+4. D,F
 5. C (Duplicate 1z0-808 Question 1)
 6. B
 7. D
 8. A
 9. C
-10. C (All Corrects)
-11. No answer (UnsupportedOperationException at line 18)
+10. - (All Corrects)
+11. - (UnsupportedOperationException at line 18)
 12. A
 13. A (Duplicate 1z0-808 Question 121)   
 14. C
 15. A,E (Duplicate 1z0-808 Question 69)
 16. B
 17.	C
-18 A 
+18. A 
 19. B
 20. A Velocity with new speed1kmph
 21. D (Duplicate 1z0-808 Question 152)
@@ -29,21 +29,21 @@
 29. B
 30. A,B (Duplicate 1z0-808 Question 112)
 31.	C
-32 B (Duplicate question from Question No : 101[1Z0-808]) 
+32. B (Duplicate 1z0-808 Question 101) 
 33. B
 34. A,B
 35. A
-36. D (Duplicate 1Z0-808 from Question No : 109)
+36. D (Duplicate 1z0-808 Question 109)
 37. A (Duplicate 1z0-808 Question 65)
 38. D 
 39. D
-40. A
+40. A (Duplicate 1z0-808 Question 183)
 41. C (Duplicate 1z0-808 Question 132)
 42. A (Duplicate 1z0-808 Question 175)
 43. A
-44. A [A Guide to Java Tour:3.0, Beginning with Java:2.0]
+44. A
 45.	B
-46 C (Duplicate question from Question No : 40[1Z0-808])
+46. C (Duplicate 1z0-808 Question 40)
 47. C
 48. D
 49. A
@@ -51,13 +51,13 @@
 51. B
 52. B,E (Duplicate 1z0-808 Question 154)
 53. D
-54
+54. B
 55. C
 56. E
 57. A
 58. B
 59.	A
-60 C
+60. C
 61. D E
 62. B
 63. C (Duplicate 1z0-808 Question 216)
@@ -71,7 +71,7 @@
 71. E (Duplicate 1z0-808 Question 223)
 72. B,E
 73.	B (Duplicate 1z0-808 Question 34)
-74 E (Duplicate question from Question No : 42[1Z0-808])
+74. E (Duplicate 1z0-808 Question 42)
 75. D
 76. B
 77. A
@@ -85,7 +85,7 @@
 85. C
 86. C
 87.	C (Duplicate 1z0-808 Question 187)	
-88 D
+88. D
 89. A B E (Duplicate 1z0-808 Question 2)
 90. A,E
 91. A
@@ -96,24 +96,24 @@
 96. D
 97. B
 98. B,C
-99. D
+99. D (Duplicate 1z0-808 Question 100)
 100. C
 101. A (Duplicate 1z0-808 Question 123)
-102 C
+102. C
 103. C
 104. D
 105. A (Duplicate 1z0-808 Question 180)
-106. D
+106. E (Duplicate 1z0-808 Question 71)
 107. A
 108. B (Duplicate 1z0-808 Question 48)
 109. C*
-110. B,D
+110. B,D (Duplicate 1z0-808 Question 106)
 111. C (Duplicate 1z0-808 Question 9)
 112. C
 113. E (Duplicate 1z0-808 Question 29)
 114. B (Duplicate 1z0-808 Question 213)
 115. D
-116 A
+116. A
 117. B
 118. B
 119. A
