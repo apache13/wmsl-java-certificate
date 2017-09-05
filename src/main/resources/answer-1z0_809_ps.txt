@@ -1,6 +1,6 @@
 1. B
 2
-3
+3. C (Duplicate 1z0-809 Question 47)
 4
 5
 6. D
