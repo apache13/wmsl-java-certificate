@@ -54,6 +54,21 @@ public class Question088 {
 		   integerStream.forEach(System.out::println);
 		   //integerStream2.forEach(e -> System.out.println(e));
 		   
+		   List<Character> aToD = Arrays.asList('a', 'b', 'c', 'd');
+		   List<Character> eToG = Arrays.asList('e', 'f', 'g');
+		   Stream<List<Character>> stream = Stream.of(aToD, eToG);
+		   
+		   // And we want to convert all the characters to their int representation, we can't use map() anymore:
+		   //stream .map(c -> (int)c);
+		   //Because (as each element of the stream is passed to map) c represents an object of type List<Character>, not Character.
+
+		   //What we need to do is to get the elements of the lists into one stream and then convert each character to an int. Fortunately, the "combining" part is exactly what flatMap() does:
+		   stream
+		    .flatMap(l -> l.stream())
+		    .peek(System.out::print)
+		    .map(c -> (int)c)
+		    .forEach(i -> System.out.format("%d ", i));
+		   
 
 	}
 		
