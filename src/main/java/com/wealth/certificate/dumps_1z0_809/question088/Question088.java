@@ -1,10 +1,13 @@
 package com.wealth.certificate.dumps_1z0_809.question088;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
+
 import static java.util.stream.Collectors.toList;
 public class Question088 {
 	static List<Employee> employeeList =
@@ -25,7 +28,10 @@ public class Question088 {
 		map ::  <R> Stream<R> map(Function<? super T,? extends R> mapper)
 		flatMap :: <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)
 		 */
-		
+		//employeeList.stream().map(e -> e.getName()).forEach(System.out::println);
+		//employeeList.stream().map(e -> e.getName().split("")).forEach(System.out::println);
+		employeeList.stream().map(e -> e.getName().split(""));
+		//employeeList.stream().map(e -> e.getName().split("")).flatMap(array -> Arrays.stream(array)).forEach(System.out::println);;
 		List<String> nameCharList = employeeList.stream()
 		           .map(emp-> emp.getName().split(""))
 		           .flatMap(array->Arrays.stream(array))
@@ -33,6 +39,20 @@ public class Question088 {
 		           .filter(str -> !(str.equals(" ")))
 		           .collect(toList());
 		   nameCharList.forEach(str -> System.out.print(str));
+		   System.out.println(" Size : " + nameCharList.size());
+		   
+		   
+		   Stream<List<Integer>> integerListStream = Stream.of(
+				   Arrays.asList(1, 2), 
+				   Arrays.asList(3, 4), 
+				   Arrays.asList(5)
+				 );
+		   //integerListStream.map(l -> l.get(0)).forEach(System.out::print);
+
+		   Stream<Integer> integerStream = integerListStream.flatMap(Collection::stream);
+		   //Stream<Integer> integerStream2 = integerListStream.flatMap(l -> l.stream());
+		   integerStream.forEach(System.out::println);
+		   //integerStream2.forEach(e -> System.out.println(e));
 		   
 
 	}
