@@ -4,7 +4,7 @@
 4
 5
 6. D
-7. C (Duplicate 809 Question 18)
+7. A (Duplicate 809 Question 18)
 8
 9
 10
@@ -88,7 +88,7 @@
 88
 89
 90. B (Duplicate 1z0-809 q.118)
-91. B (Duplicate 809 Question 19)
+91. A (Duplicate 809 Question 19)
 92
 93
 94

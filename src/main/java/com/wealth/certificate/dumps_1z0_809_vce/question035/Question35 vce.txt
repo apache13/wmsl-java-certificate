@@ -1,4 +1,4 @@
-Question 35 // Duplicate No. 35 in 1Z0-809
+Question 35 // Duplicate 809 Question 49
 
 Given the code fragment:
 List<String> str = Arrays.asList (“my”, “pen”, “is”, “your’, “pen”);
@@ -17,6 +17,6 @@ C. 0 : 0 : 0 : 0 : 0 : pen
 D. 0 : 1 : 2 : 3 : 4 :
 E. A compilation error occurs.
 
-Answer: E
+Answer: E not correct -> A is correct
 
 

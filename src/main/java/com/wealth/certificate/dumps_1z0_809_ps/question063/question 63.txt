@@ -1,0 +1,25 @@
+Question 63 // Duplicate 809 Question 16
+
+Which statement is true about java.util.stream.Stream?
+
+A. A stream cannot be consumed more than once.
+B. The execution mode of streams can be changed during processing.
+C. Streams are intended to modify the source data.
+D. A parallel stream is always faster than an equivalent sequential stream.
+
+Answer: B
+
+A. is false
+ - เธ�เน�เธญ A เน€เธกเธทเน�เธญเน€เธฃเธฒ consume Stream เน�เธฅเน�เธง เน€เธฃเธฒเน�เธกเน�เธชเธฒเธกเธฒเธฃเธ– re-use เน�เธ”เน�เธญเธตเธ� เน€เธ�เน�เธ�เน�เธ�เน€เธกเธ�เธญเธ” forEach() เธ�เธ�เน�เธฅเน�เธงเธ�เธ�เน€เธฅเธข
+   เน�เธ•เน�เธกเธต method .peek() เธ—เธตเน�  return stream เธ�เธถเธ�เธชเธฒเธกเธฒเธฃเธ–เน€เธฃเธตเธขเธ� method เธญเธทเน�เธ�เน�เน�เธ”เน�
+
+B. is true
+ - เธ�เน�เธญ B เธ�เน�เธฒเธ�เธฐเธชเธทเน�เธญเธงเน�เธฒ เน€เธฃเธฒเธชเธฒเธกเธฒเธฃเธ–เน€เธฃเธตเธขเธ�เน€เธกเธ�เธญเธ”เธ•เน�เธญเน€เธ�เน�เธ�เธ—เธญเธ”เน�เน�เธ”เน�เธ�เธฃเธฑเธ� เน€เธ�เน�เธ� เน€เธฃเธตเธขเธ� filter() เน�เธฅเน�เธงเธ�เน�เน€เธฃเธตเธขเธ� forEach() เธ•เน�เธญเน�เธ”เน�
+
+C. is false
+ - เธ�เน�เธญ C Stream เน�เธกเน�เน�เธ”เน�เน�เธ�เน�เน�เธ�  Source data
+ 
+D. is false
+ - เธ�เน�เธญ D เน€เธชเธ�เธ�เธ�เธญเธ�เน�เธงเน�เธงเน�เธฒ parallel เน�เธกเน�เธ�เธฒเธฃเธฑเธ�เธ•เธตเธงเน�เธฒเธ�เธฐเน€เธฃเน�เธงเธ�เธงเน�เธฒเน€เธชเธกเธญเน�เธ� เธญเธฒเธ�เธ�เน�เธฒเธ�เธงเน�เธฒเธ�เน�เน�เธ”เน�เน€เธ�เธฃเธฒเธฐ Overhead
+   http://ocpj8.javastudyguide.com/ch18.html
+   
