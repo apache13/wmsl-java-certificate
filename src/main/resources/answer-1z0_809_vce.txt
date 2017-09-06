@@ -4,7 +4,7 @@
 4
 5
 6. A
-7
+7. C (Duplicate 809 Question 14)
 8
 9
 10
@@ -18,7 +18,7 @@
 18
 19
 20. A
-21
+21. D (Duplicate 809 Question 64)
 22
 23
 24
@@ -32,7 +32,7 @@
 32
 33
 34. A (Duplicate 1z0-809-PS Question 36)
-35
+35. A (Duplicate 809 Question 49)
 36
 37
 38
@@ -46,7 +46,7 @@
 46
 47
 48. A
-49
+49. D,E (Duplicate 809 Question 61)
 50
 51
 52

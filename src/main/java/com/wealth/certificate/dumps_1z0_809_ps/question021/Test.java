@@ -11,8 +11,8 @@ public class Test {
 				Predicate<String> test = s -> {
 				int i = 0;
 				boolean result = s.contains ("pen");
-				System.out.print(i++) + ":");
-				//System.out.print(i++ + ":");
+				//System.out.print(i++) + ":");
+				System.out.print(i++ + ":");
 				return result;
 				};
 				str.stream()
