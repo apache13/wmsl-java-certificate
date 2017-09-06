@@ -1,6 +1,9 @@
-Question No : 56 (Duplicate 1z0-809 Question 78)
+package com.wealth.certificate.dumps_1z0_809_ps.question056;
 
-Given the code fragment:
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Foo {
 	public static void main (String [ ] args) {
@@ -16,15 +19,8 @@ public class Foo {
 					treeMap.putAll (unsortMap);
 					for (Map.Entry<Integer, String> entry : treeMap.entrySet () ) {
 						System.out.print (entry.getValue () + " ");
-					}
-			}
+		}
+
+		/** Answered : C is correct. **/
 	}
-
-What is the result?
-
-A. A compilation error occurs
-B. d b e z j
-C. j z e b d
-D. z b d e j
-
-Answer: C
+}
