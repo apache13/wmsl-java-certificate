@@ -25,7 +25,7 @@ B. Replace line n1 with protected void ride() throws Exception {
 C. Replace line n2 with void ride() throws Exception {
 D. Replace line n2 with private void ride() throws FuelNotAvailException {
 
-Correct Answer: B
+Correct Answer: B (duplicate 1Z0-809 Question no.29)
 Section: (none)
 Explanation
 Explanation/Reference:

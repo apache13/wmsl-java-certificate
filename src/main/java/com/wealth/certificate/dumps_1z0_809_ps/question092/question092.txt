@@ -25,4 +25,4 @@ Exception
 Exception
 C. A compilation error occurs at line n1.
 D. The program prints the content of the three files.
-Answer: D
+Answer: A (duplicate 1Z0-809 Question no.59)
