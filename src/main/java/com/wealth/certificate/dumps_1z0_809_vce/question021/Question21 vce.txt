@@ -1,4 +1,4 @@
-Question 21
+Question 21 // Duplication 809 Question 64
 Given:
 
 Class Vehicle {
@@ -29,6 +29,6 @@ B. 10124 BWM
 C. A compliation error occurs.
 D. A ClassCastException is thrown at run time.
 
-Correct Answer: B x D 
+Answer: B not correct -> D is correct 
 Reference : https://www.programcreek.com/2009/02/implement-comparable-for-a-treeset/
 
