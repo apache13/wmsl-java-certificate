@@ -1,23 +1,21 @@
 package com.wealth.certificate.dumps_1z0_809_ps.question040;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Question040 {
 
-	public static void main(String[] args) { 
-		String names[] = new String[3];
-		names[0] = "Mary Brown";
-		names[1] = "Nancy Red";
-		names[2] = "Jessy Orange";
-		try {
-			for(String n: names) {
-				try {
-					String pwd = n.substring(0, 3)+n.substring(6, 10);
-					System.out.println(pwd);
-				} catch(StringIndexOutOfBoundsException sie) {
-					System.out.println("String out of limits");
-				}
-			}
-		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("Array out of limits");
-		}
+	public static void main(String[] args) {
+		List<Product> products = Arrays.asList(new Product(1, 10), new Product(2, 30), new Product(2, 30));
+
+		Product p = products.stream().reduce(new Product(4, 0), (p1, p2) -> {
+			p1.price += p2.price;
+			return new Product(p1.id, p1.price);
+		});
+
+		products.add(p);
+
+		products.stream().parallel().reduce((p1, p2) -> p1.price > p2.price ? p1 : p2).ifPresent(System.out::println);
 	}
+
 }

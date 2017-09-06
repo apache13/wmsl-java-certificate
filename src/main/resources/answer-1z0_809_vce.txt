@@ -9,7 +9,7 @@
 9
 10
 11
-12
+12. D (Duplicate 1z0-809_ps Question081, 1z0-809 Question053)
 13
 14
 15
@@ -23,7 +23,7 @@
 23
 24
 25
-26
+26. A (Duplicate 1z0-809 Question044)
 27
 28
 29
@@ -37,7 +37,7 @@
 37
 38
 39
-40
+40. A,E (Duplicate 1z0-809_ps Question012, 1z0-809 Question082)
 41
 42
 43
@@ -51,5 +51,5 @@
 51
 52
 53
-54
+54. C (Duplicate 1z0-809_ps Question003, 1z0-809 Question047)
 55
