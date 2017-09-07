@@ -1,4 +1,4 @@
-Question No : 98
+Question No : 98 (Duplicate 1z0-809 Question 33)
 
 Given the code fragment:
 
@@ -14,4 +14,4 @@ B. 2:MyPic.jpeg: MyPic.jpeg
 C. 1:Pics:/Pics/ MyPic.jpeg
 D. 2:Pics: MyPic.jpeg
 
-Answer: C
+Answer: C เฉลยผิด ข้อที่ถูก คือ B
