@@ -25,7 +25,7 @@ public class Test
 		});
 	}
 
-	/*
+	/**
 	 * A. All files and directories under the home directory are listed along with their attributes.
 	 * > Correct : Print All files and directories under the home directory
 	 * B. A compilation error occurs at line n1.
@@ -34,7 +34,7 @@ public class Test
 	 * > Incorrect : Not print only files but print directories too.
 	 * D. A compilation error occurs at line n2.
 	 * > No compile errors at line n2.
-	 */
+	 **/
 	
 	/** 
 	 * BasicFileAttributeView – Provides a view of basic attributes that are required to be supported by all file system implementations.

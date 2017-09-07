@@ -5,7 +5,7 @@ B. it executes SQL statements against the database.
 C. It only queries metadata of the database.
 D. it is written by different vendors for their specific database.
 
-Answer: A
+Answer: A (duplicate 1Z0-809 Question no.95)
 Explanation:
 The DriverManager returns an instance of Doctrine\DBAL\Connection which is a wrapper around
 the underlying driver connection (which is often a PDO instance).
