@@ -10,7 +10,7 @@
 10. A (Duplicate 1z0-808 Question 65)
 11. B (Duplicate 1z0-809 Question58)
 12. A,E (Duplicate 1z0-809 Question 82)
-13
+13. C (Duplicate 1z0-809 Question 55)
 14. A (Duplicate 1z0-809 Question 43 and Duplicate 1z0-809_vce Question 15)
 15. C (Duplicate 1z0-809 Question 17)
 16. D (Duplicate 1z0-809 Question 39 and 809-vce Question 36)
@@ -24,7 +24,7 @@
 24. A (Duplicate 1z0-809 Question 7)
 25. A,B (Duplicate 1z0-809 Question30)
 26. B (Duplicate 1z0-809 Question 26)
-27
+27. C (Duplicate 1z0-809 Question 31)
 28. D (Duplicate 1z0-809 Question 64 and Duplicate 1z0-809_vce Question 21)
 29. C (Duplicate 1z0-809 Question 94)
 30. ? (Duplicate 1z0-809 Question 109)
@@ -38,7 +38,7 @@
 38. C (Duplicate 1z0-809 Question 14)
 39. A (Duplicate 1z0-809 Question68)
 40. - (Duplicate 1z0-809 Question011)
-41
+41. D (Duplicate 1z0-809 Question 48)
 42. A (Duplicate 1z0-809 Question 91)
 43. A,B,D (Duplicate 808 question 184)
 44. A (Duplicate 1z0-809 Question 122)
@@ -52,7 +52,7 @@
 52. C (Duplicate 1z0-809 Question 112)
 53. D (Duplicate 1z0-809 Question124)
 54. C (Duplicate 1z0-809 Question 100)
-55
+55. B (Duplicate 1z0-808 Question 213)
 56. C (Duplicate 1z0-809 Question 78)
 57. B (Duplicate 1z0-809 Question 62)
 58. E (Duplicate 1z0-808 Question 42)
@@ -66,7 +66,7 @@
 66. B,E (Duplicate 1z0-808 Question 154)
 67. B, C (Duplicate 1z0-809 Question98)
 68. A (Duplicate 1z0-809 Question057)
-69
+69. B (Duplicate 1z0-808 Question 187)
 70. B (Duplicate 1z0-809 Question 54)
 71. C (Duplicate 1z0-809 Question 60)
 72. D (Duplicate 1z0-808 Question 152 and 1z0-809 Question 21)
@@ -80,7 +80,7 @@
 80. A (Duplicate 1z0-808 Question 121)
 81. D (Duplicate 1z0-809 Question53)
 82. D (Duplicate 1z0-809 Question036 and 1z0-808 Question109)
-83
+83. E (Duplicate 1z0-808 Question 233)
 84. A (Duplicate 1z0-809 Question 116)
 85. B (Duplicate 1z0-809 Question 81)
 86. A,B,C (Duplicate 1z0-808 Question 139 and 1z0-809 Question 80)
@@ -94,7 +94,7 @@
 94. A (Duplicate 1z0-809 Question 126)
 95. A (Duplicate 1z0-809 Question103)
 96. C (Duplicate 1z0-809 Question085)
-97
+97. D (Duplicate 1z0-808 Question 44)
 98. B (Duplicate 1z0-809 Question 33)
 99. A (Duplicate 1z0-809 Question 8)
 100. B  (Duplicate 1z0-808 Question 34, 1z0-809 Question 73)
