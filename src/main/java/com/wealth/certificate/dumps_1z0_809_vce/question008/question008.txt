@@ -5,7 +5,7 @@ B. Include the JDBC driver class in a jdbc.properties file.
 C. Use the java.lang.Class.forName method to load the driver class.
 D. Use the DriverManager.getDriver method to load the driver class.
 
-Correct Answer: D
+Correct Answer: C* (duplicate 1Z0-809 Question no.109)
 Section: (none)
 Explanation
 Explanation/Reference:
