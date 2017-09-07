@@ -1,5 +1,5 @@
 1
-2
+2. A (Duplicate 1z0-809 Question 25)
 3
 4
 5. B (Duplicate 1z0-809 Question 81)
@@ -13,7 +13,7 @@
 13
 14
 15
-16
+16. B,C (Duplicate 1z0-809 Question 98)
 17
 18
 19. B (Duplicate 1z0-809 Question 62)
@@ -27,7 +27,7 @@
 27
 28
 29
-30
+30. A (Duplicate 1z0-809 Question 35, 1z0-809-ps Question 21)
 31
 32
 33. D (Duplicate 1z0-809 Question 38)
@@ -41,7 +41,7 @@
 41
 42
 43
-44
+44. A (Duplicate 1z0-809 Question 100)
 45
 46
 47. C (Duplicate 1z0-809 Question 85)
