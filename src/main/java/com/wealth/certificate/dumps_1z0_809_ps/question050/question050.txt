@@ -17,4 +17,4 @@ B. A compilation error occurs at line n1.
 C. A compilation error occurs at line n2.
 D. The code prints the content of the employee.txt file and throws an exception at line n3.
 
-Answer: D
+Answer: D (duplicate 1Z0-809 Question no.93)

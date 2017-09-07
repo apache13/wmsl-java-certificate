@@ -41,4 +41,4 @@ B. {ASIA = [Japan], EUROPE = [Italy, Germany]}
 C. {EUROPE = [Germany, Italy], ASIA = [Japan]}
 D. {EUROPE = [Germany], EUROPE = [Italy], ASIA = [Japan]}
 
-Answer: A
+Answer: A,B (Duplicate 1z0-809 q.034)

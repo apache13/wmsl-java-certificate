@@ -1,7 +1,7 @@
 QUESTION 22
 Given that course.txt is accessible and contains:
 
-Course :: Java
+Course::Java
 
 and given the code fragment:
 public static void main (String[ ] args) {
@@ -25,11 +25,11 @@ public static void main (String[ ] args) {
 
 What is the result?
 A. ur :: va
-B. ue Ja
+B. ueJa
 C. The program prints nothing.
 D. A compilation error occurs at line n1.
 
-Correct Answer: B
+Correct Answer: B (duplicate 1Z0-809 Question no.117)
 Section: (none)
 Explanation
 Explanation/Reference:
