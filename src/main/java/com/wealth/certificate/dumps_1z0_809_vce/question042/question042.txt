@@ -1,4 +1,4 @@
-Question No : 42
+Question No : 42 (Duplicate 1z0-809 Question 96)
 
 Given:
 
@@ -31,4 +31,4 @@ C. 3
 D. 4
 E. 5
 
-Answer: A
+Answer: A เฉลยผิด ข้อที่ถูก คือ D
