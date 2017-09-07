@@ -3,7 +3,7 @@
 3
 4
 5. B (Duplicate 1z0-809 Question 81)
-6. A
+6. A (Duplicate 1z0-809 Question 19)
 7
 8. C* (Duplicate 1Z0-809 Question 109)
 9. B (Duplicate 1z0-809 Question 33)
@@ -17,7 +17,7 @@
 17
 18
 19. B (Duplicate 1z0-809 Question 62)
-20. A
+20. A (Duplicate 1z0-809 Question 126 and Duplicate 1z0-809_ps Question 94)
 21
 22. B (Duplicate 1Z0-809 Question 117)
 23. A (Duplicate 1z0-809 Question 67)
@@ -45,7 +45,7 @@
 45
 46
 47. C (Duplicate 1z0-809 Question 85)
-48. A
+48. A (Duplicate 1z0-809 Question 79)
 49
 50. B (Duplicate 1Z0-809 Question 29)
 51. B (Duplicate 1z0-809 Question 54)
