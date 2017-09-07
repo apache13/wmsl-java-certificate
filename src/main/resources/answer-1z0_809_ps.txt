@@ -28,7 +28,7 @@
 28
 29. C
 30
-31
+31. A
 32
 33
 34. C (Duplicate 808 Question 62)
@@ -42,7 +42,7 @@
 42
 43. A,B,D (Duplicate 808 question 184)
 44
-45
+45. A,B (Duplicate 1z0-808 Question 129)
 46
 47
 48. A (Similar to 808)
@@ -56,7 +56,7 @@
 56
 57. B
 58
-59
+59. B (Duplicate 1z0-808 Question 223)
 60
 61
 62. A (Duplicate 1z0-809 q.003 & 1z0-809_vce q.027)
@@ -70,7 +70,7 @@
 70
 71. C
 72
-73
+73. C, D (Duplicate 1z0-808 Question 152)
 74
 75
 76. D (Duplicate 1z0-808 q.152)
@@ -84,7 +84,7 @@
 84
 85. B
 86
-87
+87. A (Duplicate 1z0-809 Question 020)
 88
 89
 90. B (Duplicate 1z0-809 q.118)
@@ -98,7 +98,7 @@
 98
 99. A
 100
-101
+101. B (Duplicate 1z0-809 Question 097)
 102
 103
 104. No Answer (Duplicate 1z0-809 question 10)
