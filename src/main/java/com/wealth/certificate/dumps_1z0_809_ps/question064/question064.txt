@@ -12,4 +12,4 @@ B. 1
 C. A compilation error occurs at line n1
 D. A compilation error occurs at line n2
 
-Answer: A
+Answer: A (duplicate 1Z0-809 Question no.50)
