@@ -1,4 +1,4 @@
-Question No : 42
+Question No : 42 (Duplicate 1z0-809 Question 91)
 
 Given the code fragments:
 
@@ -27,4 +27,4 @@ B. The program prints 1 2 3.
 C. The program prints 1 1 1.
 D. A compilation error occurs.
 
-Answer: B
+Answer: B เฉลยผิด ข้อที่ถูก คือ A
