@@ -96,7 +96,7 @@
 96. C (Duplicate 1z0-809 Question085)
 97
 98
-99. A A (Duplicate 1z0-809 Question 8)
+99. A (Duplicate 1z0-809 Question 8)
 100. B  (Duplicate 1z0-808 Question 34, 1z0-809 Question 73)
 101
 102
