@@ -9,4 +9,4 @@ C. Override equals() and hashCode() methods of the java.lang.Object class.
 D. Use a static reference to point to the single instance.
 E. Implement the Serializable interface.
 
-Answer: A, B
+Answer: B, D
