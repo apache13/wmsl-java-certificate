@@ -14,7 +14,7 @@
 14. A (Duplicate 1z0-809 Question 43 and Duplicate 1z0-809_vce Question 15)
 15. C (Duplicate 1z0-809 Question 17)
 16. D (Duplicate 1z0-809 Question 39 and 809-vce Question 36)
-17
+17. B,D
 18
 19. B (Duplicate 1z0-808 Question 101)
 20. D (Duplicate 1z0-809 Question 88)
@@ -28,7 +28,7 @@
 28. D (Duplicate 1z0-809 Question 64 and Duplicate 1z0-809_vce Question 21)
 29. C (Duplicate 1z0-809 Question 94)
 30. ? (Duplicate 1z0-809 Question 109)
-31
+31. A (Duplicate 1z0-808 Question 166)
 32
 33. C (Duplicate 1z0-809 Question 24)
 34. C (Duplicate 1z0-808 Question 62)
@@ -42,7 +42,7 @@
 42. A (Duplicate 1z0-809 Question 91)
 43. A,B,D (Duplicate 808 question 184)
 44. A (Duplicate 1z0-809 Question 122)
-45
+45. A,B (Duplicate 808 Question 129)
 46
 47. C
 48. A (Duplicate 1z0-808 Question 130)
@@ -56,7 +56,7 @@
 56. C (Duplicate 1z0-809 Question 78)
 57. B (Duplicate 1z0-809 Question 62)
 58. E (Duplicate 1z0-808 Question 42)
-59
+59. B (Duplicate 1z0-808 Question 223)
 60
 61. A (Duplicate 1z0-808 Question 47)
 62. A (Duplicate 1z0-809 Question 3)
@@ -70,7 +70,7 @@
 70. B (Duplicate 1z0-809 Question 54)
 71. C (Duplicate 1z0-809 Question 60)
 72. D (Duplicate 1z0-808 Question 152 and 1z0-809 Question 21)
-73
+73. C,D (Duplicate 1z0-809 Question 6)
 74
 75. A (Duplicate 1z0-808 Question 123)
 76. D (Duplicate 1z0-808 Question 152)
@@ -84,7 +84,7 @@
 84. A (Duplicate 1z0-809 Question 116)
 85. B (Duplicate 1z0-809 Question 81)
 86. A,B,C (Duplicate 1z0-808 Question 139 and 1z0-809 Question 80)
-87
+87. A (Duplicate 1z0-809 Question 20) 
 88
 89. E (Duplicate 1z0-808 Question 71)
 90. B (Duplicate 1z0-809 Question 118)
@@ -98,7 +98,7 @@
 98. B (Duplicate 1z0-809 Question 33)
 99. A (Duplicate 1z0-809 Question 8)
 100. B  (Duplicate 1z0-808 Question 34, 1z0-809 Question 73)
-101
+101. B (Duplicate 1z0-809 Question 97)
 102
 103. A (Duplicate 1z0-808 Question 180)
 104. - (Duplicate 1z0-809 Question 10)
