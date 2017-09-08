@@ -9,7 +9,7 @@ Which code fragment, when inserted at line n1, enables
 the code to print the count of string elements 
 whose length is greater than three ?
 
-Answer: A
+Answer: A (Duplicate 1z0-809 Question 3)
 
 Explanation: 
 

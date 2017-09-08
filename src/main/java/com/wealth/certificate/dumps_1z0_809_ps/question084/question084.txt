@@ -1,4 +1,4 @@
-Question No : 84
+Question No : 84 (Duplicate 1z0-809 Question 116)
 
 Given:
 
@@ -23,4 +23,4 @@ B. Arrays.sort(strArray, (CheckClass : : new) : : checkValue);
 C. Arrays.sort(strArray, (CheckClass : : new).checkValue);
 D. Arrays.sort(strArray, CheckClass : : new : : checkValue);
 
-Answer: D
+Answer: D เฉลยผิด ข้อที่ถูก คือ A
