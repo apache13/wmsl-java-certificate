@@ -84,7 +84,7 @@
 84. A (Duplicate 1z0-809 Question 116)
 85. B (Duplicate 1z0-809 Question 81)
 86. A,B,C (Duplicate 1z0-808 Question 139 and 1z0-809 Question 80)
-87. A (Duplicate 1z0-809 Question 20)
+87. A (Duplicate 1z0-809 Question 20) 
 88
 89. E (Duplicate 1z0-808 Question 71)
 90. B (Duplicate 1z0-809 Question 118)
