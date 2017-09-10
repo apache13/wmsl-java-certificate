@@ -39,7 +39,7 @@ class Student {
 
 }
 
-public class MyStream {
+public class WhatAreStreams {
 
 	public static void main(String[] args) {
 
