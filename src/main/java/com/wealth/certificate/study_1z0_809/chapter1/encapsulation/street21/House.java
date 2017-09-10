@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter1.street21;
+package com.wealth.certificate.study_1z0_809.chapter1.encapsulation.street21;
 
 public class House {
 	protected int number;

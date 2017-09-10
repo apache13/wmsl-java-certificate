@@ -1,6 +1,6 @@
-package com.wealth.certificate.study_1z0_809.chapter1;
+package com.wealth.certificate.study_1z0_809.chapter1.encapsulation;
 
-public class Chapter1_1 {
+public class Chapter1 {
 	public static void main(String[] args) {
 		MyClass myClass = new MyClass();
 		myClass.myField = "James";
