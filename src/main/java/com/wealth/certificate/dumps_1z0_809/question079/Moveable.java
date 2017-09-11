@@ -6,5 +6,6 @@ public interface Moveable<Integer> {
 
 	public void run(Integer distance);
 	
+	//public Integer run(Integer distance);
 }
 

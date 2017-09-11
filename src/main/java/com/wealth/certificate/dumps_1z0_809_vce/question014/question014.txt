@@ -1,4 +1,4 @@
-Question No : 14
+Question No : 14 (Duplicate 1z0-809 Question 118 and Duplicate 1z0-809_ps Question 90)
 
 Given the code fragments:
 
@@ -30,4 +30,4 @@ B. 3
 C. A compilation error occurs at line n1.
 D. A compilation error occurs at line n2.
 
-Answer: A
+Answer: A เฉลยผิด ข้อที่ถูก คือ B
