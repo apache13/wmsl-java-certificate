@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter1.singleton3;
+package com.wealth.certificate.study_1z0_809.chapter01.singleton3;
 
 public class Singleton3 {
 

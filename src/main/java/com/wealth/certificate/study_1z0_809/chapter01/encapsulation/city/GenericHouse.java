@@ -1,6 +1,6 @@
-package com.wealth.certificate.study_1z0_809.chapter1.encapsulation.city;
+package com.wealth.certificate.study_1z0_809.chapter01.encapsulation.city;
 
-import com.wealth.certificate.study_1z0_809.chapter1.encapsulation.street21.House;
+import com.wealth.certificate.study_1z0_809.chapter01.encapsulation.street21.House;
 
 class GenericHouse extends House {
 	public static void main(String args[]) {

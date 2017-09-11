@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter1.encapsulation;
+package com.wealth.certificate.study_1z0_809.chapter01.encapsulation;
 
 public class Chapter1 {
 	public static void main(String[] args) {

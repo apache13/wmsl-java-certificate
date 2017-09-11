@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter1.singleton2;
+package com.wealth.certificate.study_1z0_809.chapter01.singleton2;
 
 public class Singleton2 {
 	public static void main(String[] args) {

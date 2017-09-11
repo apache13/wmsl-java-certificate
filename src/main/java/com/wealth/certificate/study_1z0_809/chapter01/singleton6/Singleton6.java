@@ -1,5 +1,5 @@
 
-package com.wealth.certificate.study_1z0_809.chapter1.singleton6;
+package com.wealth.certificate.study_1z0_809.chapter01.singleton6;
 
 public class Singleton6 {
 
