@@ -4,7 +4,7 @@
 4. A (Duplicate 1Z0-809 Question 12)
 5. A,E
 6. D (Duplicate 1z0-808 Question 100)
-7
+7. A (Duplicate 1z0-809 Question 18)
 8. B (Duplicate 1Z0-809 Question 6)
 9. A,E (Duplicate 1z0-808 Question 69)
 10. A (Duplicate 1z0-808 Question 65)
@@ -18,7 +18,7 @@
 18. D (Duplicate 1Z0-809 Question 92)
 19. B (Duplicate 1z0-808 Question 101)
 20. D (Duplicate 1z0-809 Question 88)
-21
+21.A (Duplicate 1z0-809 Question 35)
 22. A (duplicate 1Z0-809 Question 22)
 23. E (Duplicate 1z0-809 Question 56)
 24. A (Duplicate 1z0-809 Question 7)
@@ -32,7 +32,7 @@
 32. B , D (Duplicate 1Z0-809 Question 110)
 33. C (Duplicate 1z0-809 Question 24)
 34. C (Duplicate 1z0-808 Question 62)
-35
+35. B,E (Duplicate 1z0-809 Question 72)
 36. A (duplicate 1Z0-809 Question 95)
 37. A (Duplicate 1z0-809 Question 70)
 38. C (Duplicate 1z0-809 Question 14)
@@ -46,7 +46,7 @@
 46. A , E (Duplicate 1Z0-809 Question 84)
 47. C
 48. A (Duplicate 1z0-808 Question 130)
-49
+49. D (Duplicate 1z0-809 Question 38)
 50. D (Duplicate 1Z0-809 Question 93)
 51. D,F (Duplicate 1z0-809 Question 4)
 52. C (Duplicate 1z0-809 Question 112)
@@ -60,7 +60,7 @@
 60. A (Duplicate 1Z0-809 Question 25)
 61. A (Duplicate 1z0-808 Question 47)
 62. A (Duplicate 1z0-809 Question 3)
-63
+63. B (Duplicate 1z0-809 Question 16)
 64. A (Duplicate 1Z0-809 Question 50)
 65. D (Duplicate 1z0-809 Question 75)
 66. B,E (Duplicate 1z0-808 Question 154)
@@ -74,7 +74,7 @@
 74. B (Duplicate 1Z0-809 Question 108)
 75. A (Duplicate 1z0-808 Question 123)
 76. D (Duplicate 1z0-808 Question 152)
-77
+77. B (Duplicate 1z0-809 Question 29)
 78. A (Duplicate 1Z0-808 Question 234)
 79. C (Duplicate 1z0-808 Question 132)
 80. A (Duplicate 1z0-808 Question 121)
@@ -88,7 +88,7 @@
 88. D (Duplicate 1Z0-809 Question 9)
 89. E (Duplicate 1z0-808 Question 71)
 90. B (Duplicate 1z0-809 Question 118)
-91
+91. A (Duplicate 1z0-809 Question 19)
 92. A (Duplicate 1Z0-809 Question 59)
 93. D (Duplicate 1z0-809 Question 115)
 94. A (Duplicate 1z0-809 Question 126)
@@ -102,5 +102,5 @@
 102. C (Duplicate 1Z0-809 Question 40)
 103. A (Duplicate 1z0-808 Question 180)
 104. - (Duplicate 1z0-809 Question 10)
-105
+105. D (Duplicate 1z0-809 Question 104)
 106. A,B (Duplicate 1z0-809 Question 034)
