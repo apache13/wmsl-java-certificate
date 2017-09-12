@@ -7,7 +7,7 @@ class ImageScanner implements AutoCloseable {
 	}
 
 	public void scanImage() throws Exception {
-		System.out.print("Scan. ");
+		System.out.print("Scan.");
 		throw new Exception("Unable to scan.");
 	}
 

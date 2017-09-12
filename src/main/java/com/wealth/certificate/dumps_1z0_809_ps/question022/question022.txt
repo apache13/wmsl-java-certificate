@@ -8,8 +8,8 @@ public static void main (String [ ] args) throws IOException {
 }
 
 Which code fragment, when inserted at line 1, enables the code to read the GDP from the user?
-A. int GDP = Integer.parseInt (br.readline());
+A. int GDP = Integer.parseInt (br.readLine());
 B. int GDP = br.read();
 C. int GDP = br.nextInt();
 D. int GDP = Integer.parseInt (br.next());
-Answer: B
+Answer: A (duplicate 1Z0-809 Question no.22)
