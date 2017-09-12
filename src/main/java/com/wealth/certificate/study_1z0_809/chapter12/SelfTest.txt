@@ -1,5 +1,4 @@
 1. Given:
-
 public class Question_12_1 {
     public static void main(String[] args) {
         IntStream.range(1, 10)
@@ -25,14 +24,15 @@ C. 11041106
 D. 1101104
 E. An exception is thrown
 
+------------------------------------------------------------------------------
+
 2. Which of the following are intermediate operations?
 A. limit
 B. peek
 C. anyMatch
 D. skip
 
-
-
+------------------------------------------------------------------------------
 
 3. Which of the following are terminal operations?
 A. sorted
@@ -40,8 +40,7 @@ B. flatMap
 C. max
 D. distinct
 
-
-
+------------------------------------------------------------------------------
 
 4. Which of the following are short-circuit operations?
 A. reduce
@@ -49,8 +48,7 @@ B. parallel
 C. findNone
 D. findFirst
 
-
-
+------------------------------------------------------------------------------
 
 5. Given:
 
@@ -66,3 +64,5 @@ B. 4
 C. 1
 D. Compilation error
 E. An exception is thrown
+
+------------------------------------------------------------------------------
