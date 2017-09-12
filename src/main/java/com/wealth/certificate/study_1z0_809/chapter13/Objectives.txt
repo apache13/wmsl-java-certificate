@@ -1,3 +1,4 @@
-Collections Streams and Filters.
-Iterate using forEach methods of Streams and List.
-Filter a collection by using lambda expressions.
+Exam Objectives
+- Collections Streams and Filters.
+- Iterate using forEach methods of Streams and List.
+- Filter a collection by using lambda expressions.
