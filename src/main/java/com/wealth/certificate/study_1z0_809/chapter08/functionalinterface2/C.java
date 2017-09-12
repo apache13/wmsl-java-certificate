@@ -10,5 +10,5 @@ package com.wealth.certificate.study_1z0_809.chapter08.functionalinterface2;
 	A. This code compiles successfully
 	xB. If we remove the annotation, this code will compile
 	xC. If we remove one method, this code will compile
-	xD. The @FunctionalInterface annotation makes this interface functional
+	D. The @FunctionalInterface annotation makes this interface functional
 */
