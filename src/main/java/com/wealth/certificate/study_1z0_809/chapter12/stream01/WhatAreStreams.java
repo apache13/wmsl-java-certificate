@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class Student {
 	double score;
@@ -76,18 +77,43 @@ public class WhatAreStreams {
 		First, streams are NOT collections.		
 		A simple definition is that streams are WRAPPERS for collections and arrays, 
 		They wrap an EXISTING collection (or another data source) to support operations expressed with LAMBDAS
-				
-		- Streams work perfectly with lambdas.
-		- Streams don't store its elements.
-		- Streams are immutable.
-		- Streams don't mutate their underlying source of elements. 		
-		- Streams are not reusable.
-		- Streams can be traversed only once.
-		- Streams don't support indexed access to their elements.		
-		- Streams are easily parallelizable.		
-		- Stream operations are lazy when possible.
-
 		*/
+		
+		// ## Streams work perfectly with lambdas.
+			Stream.of(1,2,3).filter(e-> e>2).forEach(System.out::println); //print 3
+
+		/* ## Streams don't store its elements.
+		* The elements are stored in a collection or generated on the fly. They are only carried from the source through a pipeline of operations.
+		*/
+			
+		/* ## Streams are immutable.
+		* Streams don't mutate their underlying source of elements. 
+		*/	
+			
+		/* ## Streams are not reusable.
+		 * Streams can be traversed only once.
+		 * A stream should be operated on (invoking an intermediate or terminal stream operation) only once.
+		 * A stream implementation may throw IllegalStateException if it detects that the stream is being reused.
+		 */
+			Stream<String> stream = Stream.of("A","A","I","O","O");
+			Stream<String> distict = stream.distinct();
+		//long count = stream.count();
+		
+		
+		/* ## Streams don't support indexed access to their elements.	
+		* streams are not collections or arrays. The most you can do is get their first element.
+		*/
+		
+		// Streams are easily parallelizable.	
+		
+			Integer[] st = Stream.of(1,3,5,7,9).parallel().filter(i -> i%2 == 1).toArray(Integer[]::new);
+			System.out.println(Arrays.toString(st));
+			
+		/* ## Stream operations are lazy when possible.
+		*An important feature of intermediate operations is that they don't process the elements until a terminal operation 
+		is invoked, in other words, they're lazy.
+		*/	
+			System.out.println(Stream.of(1,2,3).filter(e -> e>1).count()); // print 2 because 2 and 3 greater than 1
 
 	}
 
