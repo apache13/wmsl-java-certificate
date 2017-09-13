@@ -1,14 +1,15 @@
 package com.wealth.certificate.study_1z0_809.chapter12.stream04;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.StringJoiner;
 import java.util.function.Predicate;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TerminalOperations {
 
@@ -91,7 +92,10 @@ public class TerminalOperations {
 			        .collect(Collectors.toList());
 		System.out.println("collect to List: " + filtered);
 			
-		Map<Object, List<String>> listToMap = strCollectList.stream().collect(Collectors.groupingBy(p -> p));
+		Map<Object, List<String>> listToMap = 
+				strCollectList.stream()
+					.collect(Collectors.groupingBy(p -> p));
+		
 		listToMap.forEach((key, value) -> System.out.format("key %s: %s\n", key, value));
 		System.out.println("collect to Map: " + listToMap);
 		
@@ -99,7 +103,7 @@ public class TerminalOperations {
 									        new Person("Max", 18),
 									        new Person("Peter", 23),
 									        new Person("Pamela", 23),
-									        new Person("Ed", 23),
+//									        new Person("Ed", 23),
 									        new Person("David", 12)
 									        );
 		
@@ -115,6 +119,15 @@ public class TerminalOperations {
 		// age 18: [Max]
 		// age 23: [Peter, Pamela]
 		// age 12: [David]
+		
+		Map<Integer, String> map = persons
+				    .stream()
+				    .collect(Collectors.toMap(
+				        p -> p.age,
+				        p -> p.name,
+				        (name1, name2) -> name1 + ", " + name2));
+		System.out.println("list to Map: " + map);		// {18=Max, 23=Peter;Pamela, 12=David}
+		
 
 		Double averageAge = persons
 				    .stream()
@@ -135,26 +148,6 @@ public class TerminalOperations {
 //				    	.collect(Collectors.joining(" and "));	// delimiter
 		System.out.println(phrase); 	// In Germany Max and Peter and Pamela are of legal age.
 
-		Map<Integer, String> map = persons
-				    .stream()
-				    .collect(Collectors.toMap(
-				        p -> p.age,
-				        p -> p.name,
-				        (name1, name2) -> name1 + ", " + name2));
-		System.out.println("list to Map: " + map);		// {18=Max, 23=Peter;Pamela, 12=David}
-		
-		Collector<Person, StringJoiner, String> personNameCollector =
-			    Collector.of(
-			        () -> new StringJoiner(" | "),          // supplier
-			        (j, p) -> j.add(p.name.toUpperCase()),  // accumulator
-			        (j1, j2) -> j1.merge(j2),               // combiner
-			        StringJoiner::toString);                // finisher
-
-		String names = persons
-					.stream()
-					.collect(personNameCollector);
-		System.out.println("collect with collectors: " + names);  // MAX | PETER | PAMELA | DAVID
-		
 		
 		// ======== long count() ========================================
 		/* Returns the count of elements in this stream.*/
@@ -174,23 +167,111 @@ public class TerminalOperations {
 		System.out.println();
 		
 		
-		/*void forEachOrdered(Consumer<? super T> action)	
-		Performs an action for each element of this stream, in the encounter order of the stream if the stream has a defined encounter order.*/
+		// ======== void forEachOrdered(Consumer<? super T> action) =====
+		/*Performs an action for each element of this stream, in the encounter order of the stream if the stream has a defined encounter order.*/
+		Stream<String> streamOfString = Stream.of("three", "four", "five", "one", "two"); 
 		
-		/*Optional<T> max(Comparator<? super T> comparator)	
-		Returns the maximum element of this stream according to the provided Comparator.*/
+		ArrayList<String> myList = new ArrayList<>(); 
+		streamOfString.parallel().forEachOrdered(myList::add); 
+		System.out.println("for each ordered : " + myList);
 		
-		/*Optional<T> min(Comparator<? super T> comparator)	
-		Returns the maximum element of this stream according to the provided Comparator.*/
 		
-		/*T reduce(T identity, BinaryOperator<T> accumulator)	
-		Performs a reduction on the elements of this stream, using the provided identity value and an associative accumulation function, and returns the reduced value.*/
+		// ======== Optional<T> max(Comparator<? super T> comparator) ===	
+		/*Returns the maximum element of this stream according to the provided Comparator.*/
+//		System.out.println(streamOfString.max(comparator));
 		
-		/*Object[] toArray()	
-		Returns an array containing the elements of this stream.*/
+		List<Person> persons2 = Arrays.asList(
+									        new Person("Max", 18),
+									        new Person("Peter", 23),
+									        new Person("Pamela", 23),
+									        new Person("Ed", 24),
+									        new Person("David", 12)
+									        );
 		
-		/*<A> A[] toArray(IntFunction<A[]> generator)	
-		Returns an array containing the elements of this stream, using the provided generator function to allocate the returned array.*/
+		Comparator<Person> compMax = (p1, p2) -> Integer.compare(p1.age, p2.age);
+		System.out.println("max age is " + persons2.stream().max(compMax).get());
+	    
+		
+		// ======== Optional<T> min(Comparator<? super T> comparator) ===	
+		/*Returns the maximum element of this stream according to the provided Comparator.*/
+		Comparator<Person> compMin = (p1, p2) -> Integer.compare(p1.age, p2.age);
+		System.out.println("min age is " + persons2.stream().min(compMin).get());
+		
+		
+		// ======== T reduce(T identity, BinaryOperator<T> accumulator)	
+		/*Performs a reduction on the elements of this stream, using the provided identity value and an associative accumulation function, and returns the reduced value.*/
+		persons2
+		    .stream()
+		    .reduce((p1, p2) -> p1.age > p2.age ? p1 : p2)
+		    .ifPresent(System.out::println);    // Ed
+		
+		Person result = persons2
+		        .stream()
+		        .reduce(new Person("", 0), (p1, p2) -> {
+		            p1.age += p2.age;
+		            p1.name = p2.name;
+		            return p1;
+		        });
+
+		System.out.format("name=%s; age=%s", result.name, result.age); 	// name=David; age=100
+		System.out.println();
+		
+		Integer ageSum = persons2
+			    .stream()
+			    .reduce(0, (sum, p) -> sum += p.age, (sum1, sum2) -> sum1 + sum2);
+
+		System.out.println(ageSum); // 100
+		
+		Integer ageSum2 = persons2
+			    .stream()
+			    .reduce(0,
+			        (sum, p) -> {
+			            System.out.format("accumulator: sum=%s; person=%s\n", sum, p);
+			            return sum += p.age;
+			        },
+			        (sum1, sum2) -> {
+			            System.out.format("combiner: sum1=%s; sum2=%s\n", sum1, sum2);
+			            return sum1 + sum2;
+			        });
+		System.out.println("sum of age is " + ageSum2);
+		// accumulator: sum=0; person=Max
+		// accumulator: sum=18; person=Peter
+		// accumulator: sum=41; person=Pamela
+		// accumulator: sum=64; person=Ed
+		// accumulator: sum=88; person=David
+		
+			
+		// ======== Object[] toArray() ====================================
+		/*Returns an array containing the elements of this stream.*/
+		
+		Stream<Integer> powerOfTen = Stream.of(1, 10, 100, 1000, 10000); 
+		Object[] arrayObj = powerOfTen.toArray();
+		System.out.println(Arrays.toString(arrayObj));
+		
+		Object[] person = persons2.stream().toArray();
+		System.out.println(Arrays.toString(person));
+
+		
+		// ======== <A> A[] toArray(IntFunction<A[]> generator)	===========
+		/*Returns an array containing the elements of this stream, using the provided generator function to allocate the returned array.*/
+		Stream<Integer> powerOfTen2 = Stream.of(1, 10, 100, 1000, 10000); 
+		Integer[] array = powerOfTen2.toArray(size -> new Integer[size]); 
+		System.out.println(Arrays.toString(array));
+		
+		Stream<String> loans = Stream.of("Car Loan", "Home Loan", "Personal Loan");
+		Object[] objectArray = loans.toArray();
+		System.out.println(Arrays.toString(objectArray));	
+		
+		Stream<String> num = Stream.of("1", "2", "3", "4", "5");
+		int[] ints = num.mapToInt(Integer::parseInt).toArray();
+		System.out.println(Arrays.toString(ints));	
+
+		Stream<Integer> numSt = Stream.of(11, 22, 33, 44, 55);
+		ArrayList<Integer> list = numSt.collect(Collectors.toCollection(ArrayList::new));
+		Integer[] iArray = list.toArray(new Integer[list.size()]);
+		System.out.println(Arrays.toString(iArray));
+		
+		
 		
 		/*Iterator<T> iterator()	
 		Returns an iterator for the elements of the stream.*/
