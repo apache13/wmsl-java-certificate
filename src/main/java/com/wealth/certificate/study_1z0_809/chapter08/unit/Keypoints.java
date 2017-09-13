@@ -17,6 +17,9 @@ import java.util.List;
  */
 
 /** [Conclusion] -------------------------------------------------------------------------------------- **/
+
+
+
 @FunctionalInterface
 interface Functional {
 	default void description() {
@@ -64,8 +67,24 @@ interface LambdaFunction {
 }
 
 class BasisLambda {
+	public static void workWithAnonymous(LambdaFunction lambdaFunction){
+		lambdaFunction.call();
+	}
+	
 	public static void main(String[] args) {
+	// Anonymous Inner Class : JDK 1.1+
+		workWithAnonymous(new LambdaFunction(){
+			@Override
+			public void call()
+			{
+				System.out.println("I am Anonymous Inner Class Function");
+			}
+		});
+		
+	// Lambda Expression : JDK 8+
 		LambdaFunction lambdaFunction = () -> System.out.println("I am Lambda Function");
 		lambdaFunction.call();
 	}
 }
+
+
