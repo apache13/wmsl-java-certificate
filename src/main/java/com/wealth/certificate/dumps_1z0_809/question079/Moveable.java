@@ -8,4 +8,3 @@ public interface Moveable<Integer> {
 	
 	//public Integer run(Integer distance);
 }
-
