@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Spliterator;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -127,7 +129,6 @@ public class TerminalOperations {
 				        p -> p.name,
 				        (name1, name2) -> name1 + ", " + name2));
 		System.out.println("list to Map: " + map);		// {18=Max, 23=Peter;Pamela, 12=David}
-		
 
 		Double averageAge = persons
 				    .stream()
@@ -148,6 +149,20 @@ public class TerminalOperations {
 //				    	.collect(Collectors.joining(" and "));	// delimiter
 		System.out.println(phrase); 	// In Germany Max and Peter and Pamela are of legal age.
 
+		// Stream.collect() using Supplier, Accumulator and Combiner
+		List<String> list = Arrays.asList("Mukesh", "Vishal", "Amar");
+	    String resultStr = list
+//	    				.stream()
+	    				.parallelStream()
+			    		.collect(
+			    				StringBuilder::new,	// Supplier
+			    				(response, element) -> response.append(" ").append(element),		// Accumulator
+			    				(response1, response2) -> response1.append(", ").append(response2.toString())		// Combiner
+			    				)
+			    		.toString();
+	    System.err.println("Result: " + resultStr);
+	    // If use list.stream() then the output will be different because it is not parallel processing and so nothing to combine.
+	    
 		
 		// ======== long count() ========================================
 		/* Returns the count of elements in this stream.*/
@@ -157,7 +172,6 @@ public class TerminalOperations {
 		
 		// ======== void forEach(Consumer<? super T> action) ============
 		/*Performs an action for each element of this stream.*/
-		
 		List<String> myListString = Arrays.asList("a1", "a2", "b1", "c2", "c1");
 		myListString.stream().forEach(s -> System.out.print(s+" "));
 		System.out.println();
@@ -202,27 +216,37 @@ public class TerminalOperations {
 		/*Performs a reduction on the elements of this stream, using the provided identity value and an associative accumulation function, and returns the reduced value.*/
 		persons2
 		    .stream()
-		    .reduce((p1, p2) -> p1.age > p2.age ? p1 : p2)
+		    .reduce(
+		    			(p1, p2) -> p1.age > p2.age ? p1 : p2
+		    			)
 		    .ifPresent(System.out::println);    // Ed
 		
 		Person result = persons2
 		        .stream()
-		        .reduce(new Person("", 0), (p1, p2) -> {
-		            p1.age += p2.age;
-		            p1.name = p2.name;
-		            return p1;
-		        });
+		        .reduce(
+		        		new Person("", 0), 
+		        		(p1, p2) -> {
+						            p1.age += p2.age;
+						            p1.name = p1.name + " " + p2.name;
+						            return p1;
+						            }
+		        		);
 
-		System.out.format("name=%s; age=%s", result.name, result.age); 	// name=David; age=100
+		System.out.format("name=%s; sum of age=%s", result.name, result.age); 	// name=Max Peter Pamela Ed David; age=100
 		System.out.println();
 		
 		Integer ageSum = persons2
 			    .stream()
-			    .reduce(0, (sum, p) -> sum += p.age, (sum1, sum2) -> sum1 + sum2);
+			    .reduce(
+			    		0, 
+			    		(sum, p) -> sum += p.age, 
+			    		(sum1, sum2) -> sum1 + sum2
+			    		);
 
 		System.out.println(ageSum); // 100
 		
 		Integer ageSum2 = persons2
+//			    .parallelStream()
 			    .stream()
 			    .reduce(0,
 			        (sum, p) -> {
@@ -266,19 +290,80 @@ public class TerminalOperations {
 		int[] ints = num.mapToInt(Integer::parseInt).toArray();
 		System.out.println(Arrays.toString(ints));	
 
-		Stream<Integer> numSt = Stream.of(11, 22, 33, 44, 55);
-		ArrayList<Integer> list = numSt.collect(Collectors.toCollection(ArrayList::new));
-		Integer[] iArray = list.toArray(new Integer[list.size()]);
+		Stream<Integer> numSt = Stream.of(1, 22, 333, 4444, 55555);
+		ArrayList<Integer> newList = numSt.collect(Collectors.toCollection(ArrayList::new));
+		Integer[] iArray = newList.toArray(new Integer[newList.size()]);
 		System.out.println(Arrays.toString(iArray));
 		
 		
-		
-		/*Iterator<T> iterator()	
-		Returns an iterator for the elements of the stream.*/
-		
-		/*Spliterator<T> spliterator()
-		Returns a spliterator for the elements of the stream.*/
+		// ======== Iterator<T> iterator() =================================
+		/*Returns an iterator for the elements of the stream.*/
+		List<String> nameList = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		Iterator<String> itr = nameList.stream().iterator();
+		while (itr.hasNext()) {
+			System.out.println("name iterator - " + itr.next());
+		}
 
+		
+		// ======== Spliterator<T> spliterator() ===========================
+		/*Returns a spliterator for the elements of the stream.*/
+		
+		List<String> nameList2 = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		Spliterator<String> splitStr = nameList2.stream().spliterator();
+		while (splitStr.tryAdvance((n) -> System.out.println("name spliterator - " + n)))
+			;
+		
+		List<Person> persons3 = Arrays.asList(
+		        new Person("Max", 18),
+		        new Person("Peter", 23),
+		        new Person("Pamela", 23),
+		        new Person("Ed", 24),
+		        new Person("David", 12)
+		        );
+		Spliterator<Person> peopleSpliterator = persons3.spliterator();
+
+//		System.out.println("characteristics: " + peopleSpliterator.characteristics());        
+//		System.out.println("estimateSize: " + peopleSpliterator.estimateSize()); 
+//		System.out.println("estimateSize: " + peopleSpliterator.trySplit().getExactSizeIfKnown()); 
+//		peopleSpliterator.forEachRemaining((s) -> System.out.println("P: "+s));
+		while (peopleSpliterator.tryAdvance((s) -> System.out.println("Person name: "+s)));
+		
+		List<String> name_List = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+//		List<String> nameList3 = Arrays.asList("Ram");
+		Spliterator<String> splitName_1 = name_List.stream().spliterator();
+		System.out.println(splitName_1+ ", Size: " + splitName_1.estimateSize());
+		
+		Spliterator<String> splitName_2 = splitName_1.trySplit();
+		System.out.println(splitName_2+ ", Size: " + splitName_2.estimateSize());
+
+		Spliterator<String> splitName_3 = splitName_2.trySplit();
+		System.out.println(splitName_3+ ", Size: " + splitName_3.estimateSize());
+		
+		Spliterator<String> splitName_4 = splitName_3.trySplit();
+		System.out.println(splitName_4+ ", Size: " + splitName_4.estimateSize());
+
+//		Spliterator<String> splitName_5 = splitName_1.trySplit();
+//		System.out.println(splitName_5+ ", Size: " + splitName_4.estimateSize());
+		
+		System.out.println("Spliterator_1");
+		while (splitName_1.tryAdvance((n) -> System.out.println("name_1 - " + n)))
+			;
+
+		System.out.println("Spliterator_2");
+		while (splitName_2.tryAdvance((n) -> System.out.println("name_2 - " + n)))
+			;
+
+		System.out.println("Spliterator_3");
+		while (splitName_3.tryAdvance((n) -> System.out.println("name_3 - " + n)))
+			;
+
+		System.out.println("Spliterator_4");
+		while (splitName_4.tryAdvance((n) -> System.out.println("name_4 - " + n)))
+			;
+
+//		System.out.println("Spliterator_5");
+//		while (splitName_5.tryAdvance((n) -> System.out.println("name_5 - " + n)))
+//			;
 	}
 
 }
