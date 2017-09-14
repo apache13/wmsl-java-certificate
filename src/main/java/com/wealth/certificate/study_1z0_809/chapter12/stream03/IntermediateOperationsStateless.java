@@ -20,12 +20,20 @@ public class IntermediateOperationsStateless {
 		
 		
 		/*2. <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)	Stateless	Returns a stream with the content produced by applying the provided mapping function to each element. There are versions for int, long and double also.*/
-		System.out.println("2. <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)	Stateless");
-		List<String> flatMapList = Arrays.asList("1.0", "1", "2.0", "3", "4");
-		long flatMapListSize = flatMapList.stream()
+		
+		/*
+		Stream<String[]>		-> flatMap ->	Stream<String>
+		Stream<Set<String>>		-> flatMap ->	Stream<String>
+		Stream<List<String>>	-> flatMap ->	Stream<String>
+		Stream<List<Object>>	-> flatMap ->	Stream<Object>
+		*/
+		
+		System.out.println("2. <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)	Stateless");		
+		Stream<List<String>> flatMapStream = Stream.of(Arrays.asList("a","b","c"),Arrays.asList("x","y","z"));			
+		long flatMapListSize = flatMapStream
 				.peek(p->System.out.println("bf "+p))
-				.flatMap(n -> Stream.of(n))
-				.peek(p->System.out.println("bf "+p))
+				.flatMap( n -> n.stream() )
+				.peek(p->System.out.println("af "+p))
 				.count();
 		System.out.println("flatMapListSize : "+flatMapListSize);
 	    
