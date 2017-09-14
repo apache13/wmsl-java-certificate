@@ -1,15 +1,15 @@
 package com.wealth.certificate.study_1z0_809.chapter08.functionalinterface1;
 
 interface A {
-     default int m1() {
-         return 0;
-     }
+	default int m1() {
+		return 0;
+    }
 }
 @FunctionalInterface
 public interface B extends A {
-     static String m() {
-         return "static";
-     }
+    static String m() {
+        return "static";
+    }
 }
 
 /*
