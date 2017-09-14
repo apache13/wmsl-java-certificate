@@ -26,7 +26,7 @@ public class IntermediateOperations {
 		/*
 		 * Example: Stream<T> distinct() 
 		 * Type: Stateful 
-		 * Description: Return Stream ที่มี Element ที่ต่างกัน ( Object.equals.(Object) )
+		 * Description: Return Stream ที่ประกอบด้วย Element ที่แตกต่างกัน ( Object.equals.(Object) )
 		 */
 		System.out.println("# Example: Stream<T> distinct()");
 		System.out.print("List<String>: ");
@@ -42,7 +42,7 @@ public class IntermediateOperations {
 		/*
 		 * Example: Stream<T> limit(long maxSize) 
 		 * Type: Stateful 
-		 * Description: Return Stream ยาวไม่เกินตามที่กำหนดใน maxSize
+		 * Description: Return Stream ที่มี Element ที่ยาวไม่เกินตามที่กำหนดใน maxSize ส่วน Element ที่เกินจะถูกตัดออก
 		 */
 		System.out.println("# Example: Stream<T> distinct()");
 		System.out.print("List<String>: ");
@@ -58,7 +58,7 @@ public class IntermediateOperations {
 		/*
 		 * Example: Stream<T> skip(long n) 
 		 * Type: Stateful 
-		 * Description: Return Stream ค่าที่เหลืออยู่จากการข้ามไป n ตัว โดยนับตั้งแต่ตัวแรก
+		 * Description: Return Stream ค่าที่เหลืออยู่จากการข้ามไปจำนวน n ตัว โดยเริ่มนับตั้งแต่ตัวแรก
 		 */
 		System.out.println("# Example: Stream<T> skip(long n)");
 		System.out.print("List<String>: ");
@@ -74,7 +74,7 @@ public class IntermediateOperations {
 		/*
 		 * Example: Stream<T> sorted() 
 		 * Type: Stateful 
-		 * Description: Return Stream ยาวไม่เกินตามที่กำหนดใน maxSize
+		 * Description: Return Stream ที่ถูกจัดเรียงตาม Natural order
 		 */
 		System.out.println("# Example: Stream<T> sorted()");
 		System.out.print("List<String>: ");
@@ -90,7 +90,7 @@ public class IntermediateOperations {
 		/*
 		 * Example: Stream<T> sorted(Comparator<? super T> comparator)
 		 * Type: Stateful 
-		 * Description: Return Stream ยาวไม่เกินตามที่กำหนดใน maxSize
+		 * Description: Return Stream ที่ถูกจัดเรียงตาม Comparator
 		 */
 		System.out.println("# Example: Stream<T> sorted(Comparator<? super T> comparator)");
 		System.out.print("List<String>: ");
