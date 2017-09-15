@@ -17,9 +17,6 @@ import java.util.List;
  */
 
 /** [Conclusion] -------------------------------------------------------------------------------------- **/
-
-
-
 @FunctionalInterface
 interface Functional {
 	default void description() {
@@ -86,5 +83,3 @@ class BasisLambda {
 		lambdaFunction.call();
 	}
 }
-
-

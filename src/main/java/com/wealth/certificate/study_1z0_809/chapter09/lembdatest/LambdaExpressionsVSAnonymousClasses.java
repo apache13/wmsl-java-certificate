@@ -23,7 +23,7 @@ public class LambdaExpressionsVSAnonymousClasses implements AnInterface {
     	/////////////---They have some similarities:
     	/////// Local variables (variables or parameters defined in a method) can only be used if they are declared final or are effectively final.
 	    //Anonymous classes
-		/*boolean test = false;
+		boolean test = false;
 		Searchable search = new Searchable() {
 			@Override
 			public boolean test(Car car) {
@@ -35,7 +35,7 @@ public class LambdaExpressionsVSAnonymousClasses implements AnInterface {
 		//Lambda expressions
 		boolean test1 = false;
 		Searchable search1 = c -> {return test1;}; //compilation Error
-		test1 = true;*/
+		test1 = true;
 		
 		/////// You can access instance or static variables of the enclosing class.
 		//Anonymous classes
@@ -96,7 +96,7 @@ public class LambdaExpressionsVSAnonymousClasses implements AnInterface {
 
 		//Default methods of a functional interface cannot be accessed from within lambda expressions. Anonymous classes can.
 		//Anonymous classes
-		AnInterface aa = new AnInterface() {
+		/*AnInterface aa = new AnInterface() {
 			@Override
 			public int anotherMethod() {
 				return 1;
@@ -109,7 +109,7 @@ public class LambdaExpressionsVSAnonymousClasses implements AnInterface {
 		
 		//Lambda expressions
 		AnInterface a1 = () -> aMethod(); //Lambda not access default aMethod() in Function Interface
-        System.out.println(a1.anotherMethod());
+        System.out.println(a1.anotherMethod());*/
 
 	}
 	
