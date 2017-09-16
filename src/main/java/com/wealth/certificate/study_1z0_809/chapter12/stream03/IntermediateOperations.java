@@ -10,6 +10,14 @@ import java.util.stream.IntStream;
 
 public class IntermediateOperations {
 
+	public static void printPeek(Integer i) {
+		System.out.println("@"+Thread.currentThread().getId()+"-peek : "+i);
+	}
+	
+	public static void printForEach(Integer i) {
+		System.out.println("@"+Thread.currentThread().getId()+"-forEach : "+i+"*");
+	}
+	
 	public static void main(String[] args) {
 
 		/*1. Stream<T> parallel()   Type: N/A   Returns an equivalent stream that is parallel.*/ 
@@ -29,7 +37,7 @@ public class IntermediateOperations {
 		
 		
 		/*2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.*/ 
-		System.out.println("2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.");
+		/*System.out.println("2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.");
 		start = LocalTime.now();
 		IntStream.rangeClosed(1, 20)
 				.sequential()
@@ -41,7 +49,7 @@ public class IntermediateOperations {
 					}
 				} );
 		finish = LocalTime.now();
-		System.out.println("Sequential using time: "+Duration.between(start, finish).toMillis()+" ms\n");
+		System.out.println("Sequential using time: "+Duration.between(start, finish).toMillis()+" ms\n");*/
 		
 		/*
 		3. Stream<T> unordered()   Type: N/A   Returns an equivalent stream that is unordered. 
@@ -100,35 +108,119 @@ public class IntermediateOperations {
 		
 		{ // Unordered
 			HashMap<Integer,Integer> hashMap = new HashMap<>();
-			hashMap.put(5000, 1);
-			hashMap.put(4000, 2);
-			hashMap.put(3000, 3);
-			hashMap.put(2000, 4);
-			hashMap.put(1000, 5);
-			hashMap.keySet().stream().forEach(System.out::println);
-			System.out.println("-----");
+			hashMap.put(1111, 1);
+			hashMap.put(2222, 2);
+			hashMap.put(3333, 3);
+			hashMap.put(4444, 4);
+			hashMap.put(5555, 5);
+
+			System.out.println("----- Unordered + forEach -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 1. Unordered + Parallel + forEach -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 2. Unordered + Parallel + forEach -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 3. Unordered + Parallel + forEach -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 1. Unordered + Parallel + forEachOrdered -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 2. Unordered + Parallel + forEachOrdered -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 3. Unordered + Parallel + forEachOrdered -----");
+			hashMap.keySet().stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+						
 		}
+		
+		
 		
 		{ // Ordered
 			List<Integer> integerList = new ArrayList<>();
-			integerList.add(5000);
-			integerList.add(4000);
-			integerList.add(3000);
-			integerList.add(2000);
-			integerList.add(1000);
-			integerList.stream().forEach(System.out::println);
-			System.out.println("-----");
+			integerList.add(1);
+			integerList.add(2);
+			integerList.add(3);
+			integerList.add(4);
+			integerList.add(5);
+
+			System.out.println("----- Ordered + forEach -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.forEach(IntermediateOperations::printForEach);
+						
+			System.out.println("----- 1. Ordered + Parallel + forEach -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()			
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 2. Ordered + Parallel + forEach -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()			
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 3. Ordered + Parallel + forEach -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()			
+			.forEach(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 1. Ordered + Parallel + forEachOrdered -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 2. Ordered + Parallel + forEachOrdered -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+			
+			System.out.println("----- 3. Ordered + Parallel + forEachOrdered -----");
+			integerList.stream()
+			.peek(IntermediateOperations::printPeek)
+			.parallel()
+			.forEachOrdered(IntermediateOperations::printForEach);
+			
 		}
 		
-		{
+		
+		
+		{ // Unordered vs Ordered Performance
 			IntStream intOrderedStream = IntStream.rangeClosed(1, 1_000_000);
 			start = LocalTime.now();
 			long dist1 = intOrderedStream
 					.parallel()
-					.limit(1_000_000)
+					.distinct()
 					.count();
 			finish = LocalTime.now();
-			System.out.println("dist1 using time: "+Duration.between(start, finish).toMillis()+" ms\n");
+			System.out.println("ordered distinct using time: "+Duration.between(start, finish).toMillis()+" ms");
 		}
 		
 		{
@@ -137,10 +229,10 @@ public class IntermediateOperations {
 			long dist2 = intUnorderedStream
 					.parallel()
 					.unordered()
-					.limit(1_000_000)
+					.distinct()
 					.count();
 			finish = LocalTime.now();
-			System.out.println("dist2 using time: "+Duration.between(start, finish).toMillis()+" ms\n");
+			System.out.println("unordered distinct using time: "+Duration.between(start, finish).toMillis()+" ms");
 		}
 		
 	}
