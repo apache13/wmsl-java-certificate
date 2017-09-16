@@ -37,7 +37,7 @@ public class IntermediateOperations {
 		
 		
 		/*2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.*/ 
-		/*System.out.println("2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.");
+		System.out.println("2. Stream<T> sequential()   Type: N/A   Returns an equivalent stream that is sequential.");
 		start = LocalTime.now();
 		IntStream.rangeClosed(1, 20)
 				.sequential()
@@ -49,11 +49,11 @@ public class IntermediateOperations {
 					}
 				} );
 		finish = LocalTime.now();
-		System.out.println("Sequential using time: "+Duration.between(start, finish).toMillis()+" ms\n");*/
+		System.out.println("Sequential using time: "+Duration.between(start, finish).toMillis()+" ms\n");
 		
-		/*
-		3. Stream<T> unordered()   Type: N/A   Returns an equivalent stream that is unordered. 
-		System.out.println("3. Stream<T> unordered()   Type: N/A   Returns an equivalent stream that is unordered.");
+		
+		/*3. Stream<T> unordered()   Type: N/A   Returns an equivalent stream that is unordered. */
+		/*System.out.println("3. Stream<T> unordered()   Type: N/A   Returns an equivalent stream that is unordered.");
 		//IntStream.range(1, 21).unordered().peek(n -> System.out.print(n)).forEach(e -> System.out.println());
 		List<Integer> numberStream = IntStream.rangeClosed(1, 20).boxed().collect(Collectors.toList());
 		System.out.println("skip-skip-unordered-toList: " +
@@ -80,8 +80,8 @@ public class IntermediateOperations {
 	            .unordered()
 	            .skip(1)
 	            .skip(1)	            
-	            .collect(Collectors.toList()));
-		*/
+	            .collect(Collectors.toList()));*/
+		
 		
 		
 		/*		
