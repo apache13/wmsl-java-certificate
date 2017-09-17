@@ -64,6 +64,11 @@ public class Foreach {
 			.parallel()
 			.forEachOrdered(Foreach::printForEach);
 			
+			System.out.println("----- 4. Ordered + forEachOrdered -----");
+			integerList.stream()
+			.peek(Foreach::printPeek)
+//			.parallel()
+			.forEachOrdered(Foreach::printForEach);
 		}
 		
 	}

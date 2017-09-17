@@ -1,7 +1,5 @@
 package com.wealth.certificate.study_1z0_809.chapter01.singleton7;
 
-import java.time.LocalDate;
-
 public class Singleton7 {
 	public static void main(String[] args) {
 		SingletonEnum.INSTANCE.doStuff();

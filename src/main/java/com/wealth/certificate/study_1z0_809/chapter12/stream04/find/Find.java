@@ -18,7 +18,7 @@ public class Find {
 		{
 			Optional<String> result = words.stream()
 			.peek(Find::printPeek)
-			//.parallel()
+//			.parallel()
 			.findAny();
 			System.out.println("findAny : "+result.orElse("Not found"));
 		}
@@ -27,7 +27,7 @@ public class Find {
 		{
 			Optional<String> result = words.stream()
 			.peek(Find::printPeek)
-			//.parallel()
+//			.parallel()
 			.findFirst();
 			System.out.println("findFirst : "+result.orElse("Not found"));
 		}

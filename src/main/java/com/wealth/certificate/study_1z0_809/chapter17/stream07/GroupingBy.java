@@ -62,7 +62,7 @@ public class GroupingBy {
 		 * 3. groupingBy(Function, Supplier, Collector)
 		 */
 
-		List<Item> words = Arrays.asList(
+		List<Item> itemList = Arrays.asList(
 				new Item[] { new Item("Apple", 200.0, Locale.US)
 						, new Item("Apple", 100.0,Locale.CHINA)
 						, new Item("Apple", 150.0,Locale.CHINA)
@@ -73,20 +73,20 @@ public class GroupingBy {
 
 		/*groupingBy(Function) */
 		{
-			Map<Locale, List<Item>> map = words.stream()
+			Map<Locale, List<Item>> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn()));
 			System.out.println(map);
 		}
 		
 		/*groupingBy(Function, Collector) */
 		{
-			Map<Locale, List<Item>> map = words.stream()
+			Map<Locale, List<Item>> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.toList()));
 			System.out.println(map);			
 		}
 		
 		{
-			Map<Locale, Map<String, List<Item>> > map = words.stream()
+			Map<Locale, Map<String, List<Item>> > map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.groupingBy(e -> e.getName() )));
 			System.out.println(map);
 			System.out.println(map.get(Locale.CHINA).get("Apple"));
@@ -109,21 +109,21 @@ public class GroupingBy {
 		
 		/*counting*/
 		{
-			Map<Locale, Long> map = words.stream()
+			Map<Locale, Long> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.counting()));
 			System.out.println(map);
 		}
 		
 		/*summingDouble*/
 		{
-			Map<Locale, Double> map = words.stream()
+			Map<Locale, Double> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.<Item>summingDouble(i->i.getPrice())));
 			System.out.println(map);
 		}
 		
 		/*averagingDouble*/
 		{
-			Map<Locale, Double> map = words.stream()
+			Map<Locale, Double> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.<Item>averagingDouble(i->i.getPrice())));
 			System.out.println(map);
 		}
@@ -138,14 +138,14 @@ public class GroupingBy {
 				}
 			};
 			
-			Map<Locale, Optional<Item>> map = words.stream()
+			Map<Locale, Optional<Item>> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.<Item>minBy( compareItem )));
 			System.out.println(map);
 		}
 		
 		/*summarizingDouble*/
 		{
-			Map<Locale, DoubleSummaryStatistics> map = words.stream()
+			Map<Locale, DoubleSummaryStatistics> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(), Collectors.<Item>summarizingDouble(i->i.getPrice())));
 			System.out.println(map);
 		}
@@ -153,7 +153,7 @@ public class GroupingBy {
 		
 		/*groupingBy(Function, Supplier, Collector)*/
 		{
-			Map<Locale, List<Item>> map = words.stream()
+			Map<Locale, List<Item>> map = itemList.stream()
 					.collect(Collectors.groupingBy(e -> e.getMadeIn(),HashMap::new,Collectors.toList()));
 			System.out.println(map);
 			System.out.println(map.getClass().toGenericString());
