@@ -1,16 +1,10 @@
 package com.wealth.certificate.study_1z0_809.chapter12.stream04;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.IntSummaryStatistics;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import java.util.Spliterator;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class TerminalOperations {
 
@@ -204,7 +198,6 @@ public class TerminalOperations {
 		myListString.stream().filter(s -> s.startsWith("c")).map(String::toUpperCase).sorted().forEach(System.out::print);
 		System.out.println();
 		
-		
 		// ======== void forEachOrdered(Consumer<? super T> action) =====
 		Performs an action for each element of this stream, in the encounter order of the stream if the stream has a defined encounter order.
 		Stream<String> streamOfString = Stream.of("three", "four", "five", "one", "two"); 
@@ -317,11 +310,86 @@ public class TerminalOperations {
 		Spliterator<T> spliterator()
 		Returns a spliterator for the elements of the stream.
 	*/
+		
+		// ======== Iterator<T> iterator() =================================
+		/*Returns an iterator for the elements of the stream.*/
+		List<String> nameList = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		Iterator<String> itr = nameList
+				.stream()
+				.peek(m -> {System.out.println("== "+m);})
+				.iterator();
+		
+		while (itr.hasNext()) {
+			System.out.println("name iterator - " + itr.next());
+		}
+		
+
+		// ======== Spliterator<T> spliterator() ===========================
+		/*Returns a spliterator for the elements of the stream.*/
+
+		List<String> nameList2 = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		Spliterator<String> splitStr = nameList2.stream().spliterator();
+		while (splitStr.tryAdvance((n) -> System.out.println("name spliterator - " + n)))
+			;
+		
+		List<Person> persons3 = Arrays.asList(
+		        new Person("Max", 18),
+		        new Person("Peter", 23),
+		        new Person("Pamela", 23),
+		        new Person("Ed", 24),
+		        new Person("David", 12)
+		        );
+		Spliterator<Person> peopleSpliterator = persons3.spliterator();
+
+		while (peopleSpliterator.tryAdvance((s) -> System.out.println("Person name: "+s)))
+			;
+		
+		List<String> name_List = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		//		List<String> nameList3 = Arrays.asList("Ram");
+		Spliterator<String> splitName_1 = name_List.stream().spliterator();
+		System.out.println("Size: " + splitName_1.estimateSize());
+		
+		Spliterator<String> splitName_2 = splitName_1.trySplit();
+		System.out.println("Size: " + splitName_2.estimateSize());
+
+		Spliterator<String> splitName_3 = splitName_2.trySplit();
+		System.out.println("Size: " + splitName_3.estimateSize());
+		 		
+		/*Iterator<T> iterator()	
+		Returns an iterator for the elements of the stream.*/
+		Spliterator<String> splitName_4 = splitName_3.trySplit();
+		System.out.println("Size: " + splitName_4.estimateSize());
+		
+//		Spliterator<String> splitName_5 = splitName_1.trySplit();
+//		System.out.println(splitName_5+ ", Size: " + splitName_4.estimateSize());
+		 		
+		/*Spliterator<T> spliterator()
+		Returns a spliterator for the elements of the stream.*/
+		System.out.println("Spliterator_1");
+		while (splitName_1.tryAdvance((n) -> System.out.println("name_1 - " + n)))
+			;
+
+		System.out.println("Spliterator_2");
+		while (splitName_2.tryAdvance((n) -> System.out.println("name_2 - " + n)))
+			;
+		
+		System.out.println("Spliterator_3");
+		while (splitName_3.tryAdvance((n) -> System.out.println("name_3 - " + n)))
+			;
+
+		System.out.println("Spliterator_4");
+		while (splitName_4.tryAdvance((n) -> System.out.println("name_4 - " + n)))
+			;
+		 
+//		System.out.println("Spliterator_5");
+//		while (splitName_5.tryAdvance((n) -> System.out.println("name_5 - " + n)))
+//			;
+
 	}
 
 }
 
-/*class Person {
+class Person {
     String name;
     int age;
 
@@ -334,4 +402,4 @@ public class TerminalOperations {
     public String toString() {
         return name;
     }
-}*/
+}
