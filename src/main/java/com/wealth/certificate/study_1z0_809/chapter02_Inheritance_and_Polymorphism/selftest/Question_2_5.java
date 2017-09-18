@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter02.selftest;
+package com.wealth.certificate.study_1z0_809.chapter02_Inheritance_and_Polymorphism.selftest;
 
 abstract class SuperClass2 {
 	public static void print() {

@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter02.polymorshism;
+package com.wealth.certificate.study_1z0_809.chapter02_Inheritance_and_Polymorphism.polymorshism;
 
 public class Polymorshism {
 	public static void main(String[] args) {
