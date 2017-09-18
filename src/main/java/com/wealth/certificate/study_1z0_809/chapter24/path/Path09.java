@@ -22,14 +22,16 @@ public class Path09 {
 		System.out.println(relPath.startsWith("temp\\dir1")); 	// true
 
 		// boolean endsWith(Path other)
-		System.out.println(absPath.endsWith("file.txt")); 					// true
-		System.out.println(absPath.endsWith("d:\\temp\\dir1\\file.txt")); 	// false
-		System.out.println(relPath.endsWith(absPath)); 						// false
+		System.out.println(absPath.endsWith(Paths.get("file.txt"))); 					// true
+		System.out.println(absPath.endsWith(Paths.get("d:\\temp\\dir1\\file.txt"))); 	// false
+		System.out.println(relPath.endsWith(absPath)); 									// false
 
 		// boolean endsWith(String other)
 		System.out.println(relPath.endsWith("txt")); 				// false
 		System.out.println(relPath.endsWith("file.txt")); 			// true
 		System.out.println(relPath.endsWith("\\dir1\\file.txt")); 	// false
+		System.out.println(relPath.endsWith("dir1\\file.txt")); 	// true
+		System.out.println(absPath.endsWith("dir1\\file.txt")); 	// true
 	}
 	
 }
