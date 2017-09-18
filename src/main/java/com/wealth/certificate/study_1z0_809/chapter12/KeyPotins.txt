@@ -34,10 +34,12 @@ int[] nums = {1, 2, 3, 4, 5};
 IntStream s1 = Arrays.stream(nums);
 IntStream s2 = IntStream.of(nums);
 
-- Intermediate operations such as map or filter always return a new stream and are divided into stateless and stateful operations, and they are lazy, meaning that they are deferred until a terminal operation is invoked.
+- Intermediate operations such as map or filter always return a new stream and are divided into stateless and stateful operations
+, and they are lazy, meaning that they are deferred until a terminal operation is invoked.
 
 - Terminal operations such as count or forEach always return something other than a stream.
 
 - Short-circuit operations cause intermediate operations to be processed until a result can be produced.
 
-- In such a way, because of lazy and short-circuit operations, streams don't execute all operations on all their elements, but until the point a result can be deduced or generated.
+- In such a way, because of lazy and short-circuit operations, streams don't execute all operations on all their elements
+, but until the point a result can be deduced or generated.
