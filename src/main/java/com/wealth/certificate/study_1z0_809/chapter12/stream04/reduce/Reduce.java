@@ -2,126 +2,212 @@ package com.wealth.certificate.study_1z0_809.chapter12.stream04.reduce;
 
 import java.util.Arrays;
 import java.util.List;
-
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Reduce {
+
+	/*
+	 * A reduction is an operation that takes many elements and combines them (o reduce them) 
+	 * into a single value or object, and it is done by applying an operation multiple times.
+	 * 
+	 * 
+	 * The Stream interface has two methods for reduction:
+	 * reduce()
+	 * collect()
+	 * 
+	 */
 	
-	public static void printPeek(String s) {
-		System.out.println("@"+Thread.currentThread().getId()+"-peek : "+s);
-	}
-	public static void printPeek(Person s) {
-		System.out.println("@"+Thread.currentThread().getId()+"-peek : "+s);
-	}
 	
 	public static void main(String[] args) {
-		
-		List<Person> personList = Arrays.asList(
-				new Person("Max", 18),
-				new Person("Peter", 23),
-				new Person("Pamela", 23),
-				new Person("Ed", 24),
-				new Person("David", 12)
-				);
-		
-		// ======== T reduce(T identity, BinaryOperator<T> accumulator)	
-		/*Performs a reduction on the elements of this stream, using the provided identity value and an associative accumulation function, and returns the reduced value.*/
-		personList
-		    .stream()
-		    .reduce((p1, p2) -> p1.age > p2.age ? p1 : p2)
-		    .ifPresent((p) -> System.out.println(p + " is Max age."));	// Ed
-		System.out.println("------------------------------------");
-		
-		
-		Person result = personList
-		        .stream()
-		        .reduce(
-			        		new Person("", 0), 
-			        		(p1, p2) -> {
-			        					System.out.println("p1 age : "+p1.age+" , p2 age : "+p2.age);
-			        					p2.age += p1.age;
-//			        					p1.name = p2.name;
-			        					return p2;
-		        					}
-		        			);
 
-		System.out.format("name=%s; age=%s", result.name, result.age); 	// name=David; age=100
-		System.out.println();
-		System.out.println("------------------------------------");
+		/*
+		 * reduce()
+		 * 
+		 * This method has three versions:
+		 *	
+		 *	- Optional<T> reduce(BinaryOperator<T> accumulator)
+		 *	- T reduce(T identity, BinaryOperator<T> accumulator)
+		 *	- <U> U reduce(U identity, BiFunction<U,? super T,U> accumulator, BinaryOperator<U> combiner)
+		 * 
+		 * BinaryOperator<T> is equivalent to a BiFunction<T, T, T>, 
+		 * where the two arguments and the return type are all of the same types.
+		 */
 		
+		/*
+		 * Old Style if you want to find values of n1+n2+n3+n4+...+nn
+		 */
+		int[] numbers = {1, 2, 3, 4, 5, 6};
+		int summ = 0;
+		for(int n : numbers) {
+		    summ += n; //this is accumulator
+		}
 		
-		List<Person> personList1 = Arrays.asList(
-				new Person("Max", 18),
-				new Person("Peter", 23),
-				new Person("Pamela", 23),
-				new Person("Ed", 24),
-				new Person("David", 12)
-				);
+		/*
+		 * This code just applies a function for each element, 
+		 * accumulating the result and returning an Optional wrapping that result, 
+		 * or an empty Optional if there were no elements.
+		 * 
+		 */
 		
-		Integer ageSum = personList1
-			    .stream()
-//			    .parallelStream()
-			    .reduce(
-			    			0, 
-			    			(sum, p) -> { 
-			    				System.out.println("sum1 + sum2 : " + (sum + p.age));
-			    				return sum += p.age;
-			    			},
-			    			(sum1, sum2) -> {
-			    				System.out.println("sum1 + sum2 : " + (sum1 + sum2));
-			    				return sum1 + sum2;}
-			    			);
-		System.out.println("Sum of age is " + ageSum); // 100
-		System.out.println("------------------------------------");
+		/*
+		 * primitive version of stream uses the primitive version of Optional
+		 * Method signature :
+		 * Optional<T> reduce(BinaryOperator<T> accumulator)
+		 */
+		System.out.println("Optional<T> reduce(BinaryOperator<T> accumulator)");
+		OptionalInt total = IntStream.of(1, 2, 3, 4, 5, 6)
+                .reduce( (sum, n) -> {
+                	System.out.println("param 1 :"+sum +" param 2 : "+n);
+                	return sum + n ;
+                });
+		total.ifPresent(e -> System.out.println(e));
 		
-		
-		Person person = personList
-			    .stream()
-//			    .parallelStream()
-			    .reduce(
-			    		new Person("First", 0),
-			        (sum, p) -> {
-//			            System.out.format("accumulator: sum=%s; person=%s\n", sum, p);
-			        	System.out.println("current: " + sum + " - next: " + p);
-			            return p;
-			        },
-			        (sum1, sum2) -> {
-//			            System.out.format("combiner: sum1=%s; sum2=%s\n", sum1, sum2);
-			        	System.out.println("comb current: " + sum1 + " - comb next: " + sum2);
-			            return sum2;
-			        });
-		System.out.println("1 last person is " + person);
-		System.out.println("------------------------------------");
-		
-		
-		Person person2 = personList
-//				.stream()
-			    .parallelStream()
-			    .reduce(
-			    		new Person("First", 0),
-			    		(p1, p2) -> {
-			    			System.out.println("current: " + p1 + " - next: " + p2);
-			    			return p2;
-			    		}
-			    		);
-		System.out.println("2 last person is " + person2);
-		System.out.println("------------------------------------");
+		/*
+		 * 
+		 * this is what happens step by step:
 
+			1. An internal variable that accumulates the result is set to the first element of a stream (1).
+			2. This accumulator and the second element of the stream (2) are passed as arguments to the BinaryOperator represented by the lambda expression (sum, n) -> sum + x.
+			3. The result (3) is assigned to the accumulator.
+			4. The accumulator (3) and the third element of the stream (3) are passed as arguments to the BinaryOperator.
+			5. The result (6) is assigned to the accumulator.
+			6. Steps 4 and 5 are repeated for the next elements of the stream until there are no more elements.
+			
+			However, what if you need to have an initial value? For cases like that, we have the version that takes two arguments:
+		 * 
+		 */
+		
+		/*
+		 * version that takes two arguments:
+		 *  Method signature :
+		 *	T reduce(T identity, BinaryOperator<T> accumulator)
+		 * 
+		 * The first argument is the initial value, and it is called identity because strictly speaking, 
+		 * this value must be an identity for the accumulator function, 
+		 * in other words, for each value v, accumulator.apply(identity, v) must be equal to v.
+		 * 
+		 */
+		System.out.println("T reduce(T identity, BinaryOperator<T> accumulator)");
+		int result = IntStream.of(1, 2, 3, 4, 5, 6)
+	               .reduce( 4, (sum, n) -> sum + n );  //  4 is identity 
+	    System.out.println("\nResult "+result);               
+	    
+	    result = IntStream.of(1, 2, 3, 4, 5, 6).reduce(4, Integer::sum);
+	    System.out.println("Result "+result);       
+	    
+	    result = IntStream.of(1, 2, 3, 4, 5, 6).reduce(4, Reduce::addIntData); //Method reference Class:static method
+	    System.out.println("Result "+result);     
+	    
+	    result = IntStream.of(1, 2, 3, 4, 5, 6)
+	               .reduce( 10, (a, b) -> a>= b ? a :b );  //  4 is identity 
+	    System.out.println("Result Max "+result);       
+	    
+	    OptionalInt max = IntStream.of(1, 2, 3, 4, 5, 6).reduce(Integer::max);
+	    max.ifPresent( e -> System.out.println("Max :"+e));       
+
+
+		
+	    /* Notice that this version does not return an Optional object because if the stream empty, the identity value is returned.
+	    * However, notice that in the last example, 
+	    * the first value cannot be considered an identity (as in the first example) since,
+	    * for instance, 4 + 1 is not equal to 4.
+		*/
+	    
+	    /*
+	     * However, if you want to return a reduced value of a different type,
+	     *  you have to use the three arguments version of reduce():
+		 * 
+		 * <U> U reduce(U identity,
+         *    BiFunction<U,? super T, U> accumulator,
+         *    BinaryOperator<U> combiner)
+	     * 
+	     * 
+	     */
+	    
+	    System.out.println("<U> U reduce(U identity,BiFunction<U,? super T, U> accumulator, BinaryOperator<U> combiner)");
+	    
+	    
+		int length = Stream.of("Parallel", "streams", "are", "great")
+				.reduce(0,
+				(accumInt, str) -> {
+					System.out.println("accumInt : "+accumInt +" str : "+str);
+					return accumInt + str.length();// accumulator
+				}, 
+				(combine1, combine2) -> {
+					System.out.println("combine1 : "+combine1 +" combine2 :"+combine2); //not execute combiner
+					return combine1 + combine2;// combiner
+				});
+		
+		System.out.println("\nsum of lenght "+length);
+		
+		//
+		length =
+				Stream.of("Parallel", "streams", "are", "great").	
+				reduce(0,
+						(Integer accumInt, String str) -> accumInt + str.length(), // accumulator
+						(Integer accumInt1, Integer accumInt2) -> accumInt1 + accumInt2);// combiner
+		System.out.println("sum of lenght "+length);
+
+		
+		System.out.println("****** Parallel *****");
+		List<Integer> list2 = Arrays.asList(2, 3, 4);
+		int res = list2.parallelStream().reduce(2, (s1, s2) -> {  //with parallel
+				System.out.println("@"+Thread.currentThread().getId() +" param 1 : "+s1+" param 2 : "+s2);
+				return s1 * s2; 
+				},
+			(p, q) -> { 
+				System.out.println("@"+Thread.currentThread().getId() + " combine 1 : "+p+" combine 2 : "+q);
+				return p + q;
+			});
+	     System.out.println(res);
+	     //Here result will be 2*2 + 2*3 + 2*4 that  is 18. 
+	     // for case of parallel will always start with identify and then merge at combiner  
+	     System.out.println();
+	     List<String> list1 = Arrays.asList("Mohan", "Sohan", "Ramesh");
+	     String ans = list1.parallelStream().reduce("-", (s1, s2) -> {
+	    	  System.out.println("@"+Thread.currentThread().getId() +" param 1 : "+s1+" param 2 : "+s2);
+				return s1 + s2; 
+				},
+			(p, q) -> { 
+				System.out.println("@"+Thread.currentThread().getId() + " combine 1 : "+p+" combine 2 : "+q);
+				return p + q;
+			});
+	      System.out.println(ans);
+	      
+	      
+	      /*
+	       * As the accumulator function adds a mapping (transformation) step to the accumulator function, 
+	       * this version of the reduce() can be written as a combination of map() and the other versions of the reduce() method
+	       *  (you may know this as the map-reduce pattern):
+	       * 
+	       */
+	      
+	  	length =
+				Stream.of("Parallel", "streams", "are", "great").mapToInt(s -> s.length()). //Instead use BinaryOperator<U> combiner 
+				reduce(0,( p,  q) -> q + p);
+		System.out.println("sum of lenght "+length);
+		
+		OptionalDouble avg = Stream.of("Parallel", "streams", "are", "great")
+                .mapToInt(s -> s.length())
+                .average();//average count max min sum
+		
+		
+		/*
+		 * It's recommended to use the three version reduce() method when:
+ 		 *
+		 * Working with parallel streams 
+		 * Having one function as a mapper and accumulator is more efficient than having separate mapping and reduction functions.
+		 * 
+		 */
+		
+	}
+	
+	
+	public static int addIntData(int num1, int num2) {
+		return num1 + num2;
 	}
 
-}
-
-
-class Person {
-	String name;
-	int age;
-
-	Person(String name, int age) {
-		this.name = name;
-		this.age = age;
-	}
-
-	@Override
-	public String toString() {
-		return name;
-	}
 }
