@@ -21,7 +21,7 @@ public class Path07 {
 		
 		//If both paths are absolute, the result is system-dependent.
 		Path path7 = Paths.get("c:\\dir1");
-		Path path7ToPath8 = path7.relativize(Paths.get("c:\\\\dir2")); // ../dir2
+		Path path7ToPath8 = path7.relativize(Paths.get("c:\\dir2")); // ../dir2
 		System.out.println(path7ToPath8);
 		
 		//If one of the paths is an absolute path, a relative path cannot be constructed 
