@@ -1,9 +1,11 @@
 package com.wealth.certificate.study_1z0_809.chapter12.stream04.collect;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Collect {
@@ -44,6 +46,7 @@ public class Collect {
 //		listToMap.forEach((key, value) -> System.out.format("key %s: %s\n", key, value));
 		System.out.println("collect to Map(grouping): " + listToMap);
 		System.out.println("------------------------------------");
+		
 		
 		Map<Integer, String> map = personList
 				    .stream()
