@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter02.overload;
+package com.wealth.certificate.study_1z0_809.chapter02_Inheritance_and_Polymorphism.overload;
 
 public class Print {
 	static void printType(short param) {

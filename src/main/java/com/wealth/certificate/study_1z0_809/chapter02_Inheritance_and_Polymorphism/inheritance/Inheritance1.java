@@ -1,4 +1,4 @@
-package com.wealth.certificate.study_1z0_809.chapter02.inheritance;
+package com.wealth.certificate.study_1z0_809.chapter02_Inheritance_and_Polymorphism.inheritance;
 
 public class Inheritance1 {
 
