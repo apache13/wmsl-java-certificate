@@ -24,4 +24,7 @@ FileTime time = FileTime.from(Instance.now());
 Files.getFileAttributeView(path,
       BasicFileAttributeView.class)
    .setTimes(null, null, time);
+   
+The correct answer is D.
+A file creation time attribute can only be set with BasicFileAttributeView. The right way to do it is with a FileTime instance as shown in Option D.
 

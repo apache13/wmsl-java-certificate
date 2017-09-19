@@ -9,3 +9,6 @@ A. /project/work/fun/games
 B. /project/fun/games
 C. /project/work/../fun/games
 D. games
+
+The correct answer is C.
+Path.resolve() doesn't remove redundancy in paths (that's done with Path.normalize() or Path.toRealPath()), it just combines two paths.
