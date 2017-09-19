@@ -98,6 +98,13 @@ public class FlatMap {
 				.flatMapToInt(i -> i)
 				.forEach(i -> System.out.println("after " + i));
 		
+		System.out.println("");
+		Stream<String> flatMapToIntStream1 = Stream.of("1", "2", "3", "4", "5");
+		flatMapToIntStream1.peek(i -> System.out.println("before " + i))
+				.flatMapToInt(i -> IntStream.of(Integer.parseInt(i)))
+				.forEach(i -> System.out.println("after " + i));
+
+		
 		
 		/* 3. LongStream flatMapToLong(Function<? super T, ? extends LongStream> mapper) */
 		System.out.println("\n3. LongStream flatMapToLong(Function<? super T, ? extends LongStream> mapper)");
@@ -106,12 +113,24 @@ public class FlatMap {
 				.flatMapToLong(l -> l)
 				.forEach(i -> System.out.println("after " + i));
 		
+		System.out.println("");
+		Stream<String> flatMapLongStream1 = Stream.of("1", "2", "3", "4", "5");
+		flatMapLongStream1.peek(i -> System.out.println("before " + i))
+				.flatMapToLong(i -> LongStream.of(Integer.parseInt(i)))
+				.forEach(i -> System.out.println("after " + i));
+		
 		
 		/* 4. DoubleStream flatMapToDouble(Function<? super T, ? extends DoubleStream> mapper) */
 		System.out.println("\n4. DoubleStream flatMapToDouble(Function<? super T, ? extends DoubleStream> mapper)");
 		Stream<DoubleStream> flatMapDoubleStream = Stream.of(DoubleStream.of(1, 2, 3, 4, 5),DoubleStream.of(6, 7, 8, 9, 10));
 		flatMapDoubleStream.peek(i -> System.out.println("before " + i))
 				.flatMapToDouble(d -> d)
+				.forEach(i -> System.out.println("after " + i));
+		
+		System.out.println("");
+		Stream<String> flatMapDoubleStream1 = Stream.of("1", "2", "3", "4", "5");
+		flatMapDoubleStream1.peek(i -> System.out.println("before " + i))
+				.flatMapToDouble(i -> DoubleStream.of(Integer.parseInt(i)))
 				.forEach(i -> System.out.println("after " + i));
 		
 		/* This way, with flatMap() you can convert a Stream<List<Object>> to Stream<Object>. However, the important concept is that this method returns a stream and not a single element. */
