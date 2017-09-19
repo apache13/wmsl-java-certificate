@@ -2,42 +2,26 @@ package com.wealth.certificate.study_1z0_809.chapter24.files;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.attribute.FileTime;
-import java.nio.file.attribute.UserPrincipal;
+import java.nio.file.StandardCopyOption;
 
-//metadata
+//move, rename
 public class Files06 {
 	
 	public static void main(String[] args) {
-		Path path = Paths.get(Files01.getCurrentPath() + "\\temp\\dir1\\file.txt");
 		try {
-			//Returns the size of a file (in bytes).
-			System.out.println("size : " + Files.size(path) + " bytes.");
+			String in1 = Files01.getCurrentPath() + "\\temp\\dir6\\in1.txt";
+			String in2 = Files01.getCurrentPath() + "\\temp\\dir6\\in2.txt";
+			String move1 = Files01.getCurrentPath() + "\\temp\\dir7\\move1.txt";
+
+			Files.move(Paths.get(in1), Paths.get(in2), StandardCopyOption.ATOMIC_MOVE);
+			Files.move(Paths.get(in2), Paths.get(move1));
+			Files.move(Paths.get(move1), Paths.get(in1), StandardCopyOption.REPLACE_EXISTING);
 			
-			//Tests whether a file is a directory.
-			System.out.println("isDirectory : " + Files.isDirectory(path));
-			
-			//Tests whether a file is a regular file.
-			System.out.println("isRegularFile : " + Files.isRegularFile(path));
-			
-			//Tests whether a file is a symbolic link.
-			System.out.println("isSymbolicLink : " + Files.isSymbolicLink(path));
-			
-			//Tells whether a file is considered hidden.
-			System.out.println("isHidden : " + Files.isHidden(path));
-			
-			//Returns or updates a file's last modified time.
-			FileTime fileTime = Files.getLastModifiedTime(path);
-			System.out.println("getLastModifiedTime : " + fileTime);
-			Files.setLastModifiedTime(path, fileTime);
-			
-			//Returns or updates the owner of the file.
-			UserPrincipal owner = Files.getOwner(path);
-			System.out.println("getOwner : " + owner);
-			Files.setOwner(path, owner);
-			
+			String dir8 = Files01.getCurrentPath() + "\\temp\\dir8";
+			String dir9 = Files01.getCurrentPath() + "\\temp\\dir9";
+			Files.move(Paths.get(dir8), Paths.get(dir9));
+			Files.move(Paths.get(dir9), Paths.get(dir8));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
