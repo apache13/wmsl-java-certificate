@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+//newBufferedReader
 public class Files02 {
 	
 	public static void main(String[] args) {
