@@ -5,7 +5,7 @@ import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Path05 {
+public class NormalizePath {
 	
 	public static void main(String[] args) {
 		// refers to /temp/file.txt

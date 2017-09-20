@@ -9,12 +9,12 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.DosFileAttributes;
 
 //copy
-public class Files04 {
+public class Copy {
 	
 	public static void main(String[] args) {
 		try {
-			Path in = Paths.get(Files01.getCurrentPath() + "\\temp\\dir1\\in.txt");
-			Path out = Paths.get(Files01.getCurrentPath() + "\\temp\\dir2\\out.txt");
+			Path in = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\in.txt");
+			Path out = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir2\\out.txt");
 			
 			Path result = Files.copy(in, out, StandardCopyOption.REPLACE_EXISTING);
 			System.out.println(result);
@@ -23,8 +23,8 @@ public class Files04 {
 		}
 		
 		try {
-			Path in = Paths.get(Files01.getCurrentPath() + "\\temp\\dir3");
-			Path out = Paths.get(Files01.getCurrentPath() + "\\temp\\dir5");
+			Path in = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir3");
+			Path out = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir5");
 			
 			Path result = Files.copy(in, out, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.COPY_ATTRIBUTES);
 			System.out.println(result);

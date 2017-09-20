@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 //relativize
-public class Path07 {
+public class RelativizePath {
 	
 	public static void main(String[] args) {
 		Path path1 = Paths.get("temp");

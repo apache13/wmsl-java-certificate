@@ -3,7 +3,7 @@ package com.wealth.certificate.study_1z0_809.chapter24.path;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Path09 {
+public class StartWithPath {
 	
 	public static void main(String[] args) {
 		Path absPath = Paths.get("c:\\temp\\dir1\\file.txt");

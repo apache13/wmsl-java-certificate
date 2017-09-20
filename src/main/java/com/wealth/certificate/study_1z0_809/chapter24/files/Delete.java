@@ -7,7 +7,7 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 
 //delete
-public class Files03 {
+public class Delete {
 	
 	public static void main(String[] args) {
 		try {

@@ -8,10 +8,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 //newBufferedReader
-public class Files02 {
+public class Readline {
 	
 	public static void main(String[] args) {
-		Path path = Paths.get(Files01.getCurrentPath() + "\\temp\\dir1\\file.txt");
+		Path path = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\file.txt");
 		
 		// By default it uses StandardCharsets.UTF_8
 		try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.ISO_8859_1)) {
