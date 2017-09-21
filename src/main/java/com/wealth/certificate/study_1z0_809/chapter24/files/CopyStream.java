@@ -10,10 +10,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 //copy - stream
-public class Files05 {
+public class CopyStream {
 	public static void main(String[] args) {
-		try (InputStream in = new FileInputStream(Files01.getCurrentPath() + "\\temp\\dir1\\in.csv"); 
-				OutputStream out = new FileOutputStream(Files01.getCurrentPath() + "\\temp\\dir1\\out.csv")) {
+		try (InputStream in = new FileInputStream(ReadFile.getCurrentPath() + "\\temp\\dir1\\in.csv"); 
+				OutputStream out = new FileOutputStream(ReadFile.getCurrentPath() + "\\temp\\dir1\\out.csv")) {
 			
 			Path path = Paths.get("/temp/in.txt");
 			// Copy stream data to a file

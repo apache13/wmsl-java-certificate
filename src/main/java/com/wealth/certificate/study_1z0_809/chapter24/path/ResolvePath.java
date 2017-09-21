@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 //Combine two paths
-public class Path06 {
+public class ResolvePath {
 
 	public static void main(String[] args) {
 		//second path that doesn't have a root element (a partial path), the second path is appended

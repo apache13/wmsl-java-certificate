@@ -5,7 +5,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Path01 {
+public class GetPath {
 	
 	public static void main(String[] args) {
 		// With an absolute path in windows

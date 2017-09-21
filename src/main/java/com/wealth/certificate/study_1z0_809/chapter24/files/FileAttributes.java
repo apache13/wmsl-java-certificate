@@ -9,11 +9,12 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 
-public class Files09 {
+//FileAttribute
+public class FileAttributes {
 	
 	public static void main(String[] args) {
 		try {
-			Path path = Paths.get(Files01.getCurrentPath() + "\\temp\\dir1\\in.txt");
+			Path path = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\in.txt");
 			BasicFileAttributeView view = Files.getFileAttributeView(path, BasicFileAttributeView.class);
 
 			FileTime lastModifiedTime = FileTime.from(Instant.now());

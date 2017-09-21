@@ -8,9 +8,9 @@ import java.nio.file.attribute.FileTime;
 import java.nio.file.attribute.UserPrincipal;
 
 //metadata
-public class Files07 {
+public class Metadata {
 	public static void main(String[] args) {
-		Path path = Paths.get(Files01.getCurrentPath() + "\\temp\\dir1\\file.txt");
+		Path path = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\file.txt");
 		try {
 			//static long size(Path path) throws IOException
 			// Returns the size of a file (in bytes).

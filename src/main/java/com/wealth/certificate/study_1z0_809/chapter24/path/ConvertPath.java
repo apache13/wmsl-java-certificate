@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Path02 {
+public class ConvertPath {
 	
 	public static void main(String[] args) {
 		File file = new File("/file.txt");
