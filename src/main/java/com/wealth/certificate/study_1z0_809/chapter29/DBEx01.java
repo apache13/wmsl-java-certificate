@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class DBTest01 {
+public class DBEx01 {
 	static Connection newConnection = null;
 	public static final String URL = "jdbc:derby:memory:chapter29;create=true";
 

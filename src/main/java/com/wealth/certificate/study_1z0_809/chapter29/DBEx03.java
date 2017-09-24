@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DBTest03 {
+public class DBEx03 {
 	public static void main(String[] args) {
 
 		String user = null;

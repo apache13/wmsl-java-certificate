@@ -10,7 +10,7 @@ import java.util.Properties;
 
 import com.wealth.certificate.dumps_1z0_809.question103.DBInitializer;
 
-public class DBTest02 {
+public class DBEx02 {
 	static Connection newConnection = null;
 	public static final String URL = "jdbc:derby:memory:chapter29;create=true";
 
