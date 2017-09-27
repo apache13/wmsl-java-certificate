@@ -42,6 +42,7 @@ public class CyclicBarrierExample {
 		
 		e.execute(b::run);
 		
+		e.shutdown();
 	}
 
 }
