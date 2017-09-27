@@ -1,3 +1,4 @@
+duplicate 808-100
 What is the proper way to defined a method that take two int values and returns their sum
 as an int value?
 

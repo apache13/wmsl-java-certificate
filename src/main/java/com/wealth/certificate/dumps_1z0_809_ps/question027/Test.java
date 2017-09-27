@@ -6,22 +6,36 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Test {
-
 	static Connection newConnection =null;
-	
-	public static Connection getDBConnection () throws SQLException { 
-		String url = "jdbc:sqlserver://phonlawat:1433;DatabaseName=master";
-		String username = "user", password = "password";
-		try (Connection con = DriverManager.getConnection(url, username, password)) // closed before use
-		{
+	public static Connection getDBConnection () throws SQLException {
+		try (Connection con = DriverManager.getConnection(URL)) {
 			newConnection = con;
 		}
 		return newConnection;
 	}
 	
 	public static void main (String [] args) throws SQLException {
-		getDBConnection ();
-		Statement st = newConnection.createStatement(); // runtime error cause connection is closed
-		st.executeUpdate("INSERT INTO student VALUES (102, `Kelvin')");
+		initialDatabase(DriverManager.getConnection(URL));
+		getDBConnection();
+		Statement st = newConnection.createStatement();
+		st.executeUpdate("INSERT INTO student VALUES (102, 'Kelvin')");
+	}
+	
+	public static final String URL = "jdbc:derby:memory:question027;create=true";
+
+	public static void initialDatabase(Connection conn) {
+		Statement st = null;
+		try {
+			st = conn.createStatement();
+			st.executeUpdate("CREATE TABLE Student(ID INT PRIMARY KEY,NAME VARCHAR(8))");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				st.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }
