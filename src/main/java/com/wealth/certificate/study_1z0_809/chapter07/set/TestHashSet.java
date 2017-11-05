@@ -14,6 +14,7 @@ public class TestHashSet {
 		*/
 		
 		// Creating a HashSet with an initial capacity of 10
+		System.out.println("\n-----------boolean add(E e)-----------");
 		Set<String> set = new HashSet<>(10);
 		// add() returns true if the element is not already in the set
 		System.out.println(set.add("b")); // true
