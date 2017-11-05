@@ -12,20 +12,14 @@ import java.util.stream.Stream;
 public class Question058 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		/*Path path1 = Paths.get("/software/././sys/readme.txt");
-		Normalizing means that it removes all the . and .. codes in the middle of the path string
+		Path path1 = Paths.get("/software/././sys/readme.txt");
+		/*Normalizing means that it removes all the . and .. codes in the middle of the path string*/
 		Path path2 = path1.normalize();// \software\sys\readme.txt
 		Path path3 = path2.relativize(path1);// ..\..\.\.\sys\readme.txt
-		System.out.println(path3);
+		//System.out.println(path3);
 		System.out.print(path1.getNameCount());
 		System.out.print(":" + path2.getNameCount());
-		System.out.print(":" + path3.getNameCount());*/
-		
-		
-		Path path1 = Paths.get("/software/././sys/readme.txt");
-		Path path2 = Paths.get("/software/sys/readme.txt");
-		Path path3 = path2.relativize(path1);
-		System.out.println(path3);
+		System.out.print(":" + path3.getNameCount());
 
 	}
 }
