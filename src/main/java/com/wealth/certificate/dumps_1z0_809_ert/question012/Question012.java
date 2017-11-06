@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class Question012 {
 	
 	public static void main(String[] args) {
+		// A --> wrong (intermediate operation)
 		/************************ distinct ***********************/
 		System.out.println("Distinct");
 		Collection<String> list = Arrays.asList("A", "B", "C", "D", "A", "B", "C");
@@ -16,6 +17,7 @@ public class Question012 {
 		//Let's verify distinct elements
 		System.out.println(distinctElements); // [A, B, C, D]
 		
+		// B --> wrong (intermediate operation)
 		/************************ filter ***********************/
 		System.out.println("\nFilter");
 		List<Integer> listFilter  = Arrays.asList(3, 12, 23, 44, 20, 10, 17, 8);
@@ -23,17 +25,20 @@ public class Question012 {
 				.collect(Collectors.toList());
 		evenList.forEach(s -> System.out.print(s+" "));
 		
+		// C --> correct (terminal operation)
 		/************************ count ***********************/
 		System.out.println("\nCount");
 		List<String> listCount = Arrays.asList("AA","AB","CC","CC");
         long l= listCount.stream().filter(s-> s.startsWith("C")).distinct().count();
         System.out.println("Number of Matching Element:"+l);
 		
+        // D --> correct (terminal operation)
         /************************ collect ***********************/
         System.out.println("\nCollect");
         List<String> listCollect = Arrays.asList("A","B","C","D","E");
         System.out.println(listCollect.stream().collect(Collectors.joining(", ")));
         
+        // E --> wrong (intermediate operation)
         /************************ peek ***********************/
         System.out.println("\nPeek");
         List<Integer> listPeek = Arrays.asList(10,11,12);

@@ -7,8 +7,11 @@ C) count()
 D) collect()
 E) peek()
 
-Answer A,B,C,D,E 
-(all of these are methods from the java.util.stream.Stream interface)
+Answer C, D (perform mean make stream are executed. Let's say terminal operation)
 
+long	count()
+	Returns the count of elements in this stream.
 
+<R,A> R	collect(Collector<? super T,A,R> collector)
+	Performs a mutable reduction operation on the elements of this stream using a Collector.
   
