@@ -18,7 +18,7 @@ public class Engine {
 	public void stop() { System.out.println("Stopped"); }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+		Engine eng = new Engine(0);
+		eng.start();
 	}
 }
