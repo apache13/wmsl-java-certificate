@@ -1,0 +1,14 @@
+Question No : 12 
+
+Which two methods from the java.util.stream.Stream interface perform?
+A) distinct() 
+B) filter()
+C) count() 
+D) collect()
+E) peek()
+
+Answer A,B,C,D,E 
+(all of these are methods from the java.util.stream.Stream interface)
+
+
+  
