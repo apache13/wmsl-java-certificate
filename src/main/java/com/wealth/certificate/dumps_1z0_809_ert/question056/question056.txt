@@ -1,0 +1,34 @@
+public class Book {
+	private int id;
+	private String name;
+
+	public Book(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+Which statement is true about the Book class?
+A) It is an immutable class.
+B) It demonstrates polymorphism.
+C) It demonstrates encapsulation.
+D) It is defined using the singleton design pattern.
+E) It is defined using the factory design pattern.
+
+Answer : C
