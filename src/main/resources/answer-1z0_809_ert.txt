@@ -9,7 +9,7 @@
 9. 
 10. 
 11. 
-12. C,D
+12. A,B,C,D,E (Not sure but all of these are methods from the java.util.stream.Stream interface)
 13. B
 14. D
 15. B
