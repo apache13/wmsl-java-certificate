@@ -76,7 +76,11 @@ public class PartitioningBy {
 		/*partitioningBy(Predicate, Collector)*/
 		{
 			Map<Boolean, Map<Boolean, List<Item>>> map = itemList.stream()
-					.collect(Collectors.partitioningBy(i -> i.getPrice()<150,Collectors.<Item>partitioningBy(i-> i.getMadeIn().equals(Locale.CHINA))));
+					.collect(
+							Collectors.partitioningBy(
+									i -> i.getPrice()<150,Collectors.<Item>partitioningBy(i-> i.getMadeIn().equals(Locale.CHINA))
+							)
+					);
 			System.out.println(map);
 			System.out.println(map.get(true));
 			System.out.println(map.get(true).get(false));

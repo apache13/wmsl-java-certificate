@@ -2,6 +2,10 @@ package com.wealth.certificate.study_1z0_809.chapter12.stream04.reduce;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 
 public class Reduce {
@@ -56,6 +60,35 @@ public class Reduce {
 				new Person("Ed", 24),
 				new Person("David", 12)
 				);
+		
+		
+//		BiFunction<T, U, R> bff = new BiFunction<T, U, R>() {
+//
+//			@Override
+//			public R apply(T t, U u) {
+//				// TODO Auto-generated method stub
+//				return null;
+//			}
+//		};
+//		
+//		BinaryOperator<T> bop = new BinaryOperator<T>() {
+//
+//			@Override
+//			public T apply(T t, T u) {
+//				// TODO Auto-generated method stub
+//				return null;
+//			}
+//		};
+//		
+//		UnaryOperator<T> uu = new UnaryOperator<T>() {
+//
+//			@Override
+//			public T apply(T t) {
+//				// TODO Auto-generated method stub
+//				return null;
+//			}
+//		};
+		
 		
 		Integer ageSum = personList1
 			    .stream()

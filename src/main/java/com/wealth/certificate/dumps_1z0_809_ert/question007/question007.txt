@@ -1,0 +1,8 @@
+7. Which two are elements of a singleton class?
+A) a public method to instantiate the single instance
+B) a public reference to point to the single instance
+C) a transient reference to point to the single instance
+D) a public static method to return a copy of the singleton reference 
+E) a private constructor to the class
+
+Answer: D, E

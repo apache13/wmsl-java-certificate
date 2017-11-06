@@ -3,3 +3,6 @@ A. NOFOLLOW_LINKS
 B. REPLACE_EXISTING
 C. ATOMIC_MOVE
 D. COPY_ATTRIBUTES
+
+The correct answer is C.
+CopyOption is an interface implemented by the enumerations StandardCopyOptions (with the values ATOMIC_MOVE (not supported), REPLACE_EXISTING, COPY_ATTRIBUTES) and LinkOption (with the value NOFOLLOW_LINKS).

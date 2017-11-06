@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Spliterator;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 
 public class IteratorTest {
@@ -22,8 +24,8 @@ public class IteratorTest {
 		
 		List<String> nameList = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
 		Iterator<String> itr = nameList
-				.stream()
-//				.parallelStream()
+//				.stream()
+				.parallelStream()
 				.peek(IteratorTest::printPeek)
 				.iterator();
 		
@@ -65,7 +67,7 @@ public class IteratorTest {
 		System.out.println("------------------------------------");
 		
 		
-		List<String> name_List = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo");
+		List<String> name_List = Arrays.asList("Ram", "Sheila", "Mukesh", "Rani", "Nick", "Amy", "Desi", "Margo", "Margo2");
 		Spliterator<String> splitName_1 = name_List.stream().spliterator();
 		System.out.println("Size: " + splitName_1.estimateSize());
 		
@@ -98,10 +100,18 @@ public class IteratorTest {
 		System.out.println("Spliterator_4");
 		while (splitName_4.tryAdvance((n) -> System.out.println("name_4 - " + n)))
 			;
+		
+		splitName_4.forEachRemaining((n) -> System.out.println("name_4 - " + n));
+		
+		
+		Stream<String> backToStream = StreamSupport.stream(splitName_1, false);
+		backToStream.forEach(p -> System.out.println("name_"));
 		 
 //		System.out.println("Spliterator_5");
 //		while (splitName_5.tryAdvance((n) -> System.out.println("name_5 - " + n)))
 //			;
+		
+		
 		
 	}
 
