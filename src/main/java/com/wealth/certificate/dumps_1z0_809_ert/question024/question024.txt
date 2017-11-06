@@ -2,15 +2,18 @@
 
 A) class Computer {
 	private Card sCard = new SoundCard(); 
-	private abstract class card { }
+	private abstract class Card { }
 	private class SoundCard extends Card { }
 }
 
 B) class Vehicle { 
-	int id ;
+	int id;
+
 	public void start() {
-		class Engine { int eNo = id; }
-	} 
+		class Engine {
+			int eNo = id;
+		}
+	}
 }
 
 C) class Product {
@@ -24,9 +27,20 @@ C) class Product {
 
 D) class Block {
 	int bno ;
-	static class Counter {} 
+	static class Counter {
+		int locator ;
+		Counter() { 
+			locator = bno; 
+		}
+	}
 }
 
 ----------------------------
 
-Answer B.
+Answer A, B
+
+Note:
+A. Correct 
+B. Correct (Inner class)
+C. Incorrect (You must mark the method as public when it's implemented.)
+D. Incorrect (The static inner class have access to the other members of the enclosing class, but only if they are STATIC.)
