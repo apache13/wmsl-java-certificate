@@ -61,7 +61,7 @@
 61. 
 62. D
 63. A
-64. D
+64. D (Duplicate with 1z0-809 at Question No : 34)
 65. B
 66. C
 67. A, C
