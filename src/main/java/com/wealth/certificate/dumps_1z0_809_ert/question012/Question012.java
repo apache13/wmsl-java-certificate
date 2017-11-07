@@ -1,4 +1,4 @@
-package com.wealth.certificate.dump_1z0_809_72.question012;
+package com.wealth.certificate.dumps_1z0_809_ert.question012;
 
 import java.util.Arrays;
 import java.util.Collection;
