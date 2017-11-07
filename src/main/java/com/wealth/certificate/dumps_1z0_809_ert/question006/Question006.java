@@ -19,7 +19,7 @@ public class Question006 {
 	
 	private static String getCurrentPath()
 	{
-		return "com.wealth.certificate.dumps_1z0_809.question006_ert";
+		return "com.wealth.certificate.dumps_1z0_809_ert.question006";
 	}
 
 }
