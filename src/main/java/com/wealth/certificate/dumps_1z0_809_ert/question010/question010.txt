@@ -30,5 +30,5 @@ public class Foo<K, V> {
  
 
 ===================
-Answer: A, B
+Answer: C
 ===================

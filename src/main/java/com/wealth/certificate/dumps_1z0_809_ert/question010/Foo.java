@@ -10,7 +10,7 @@ public class Foo<K, V> {
 	}
 
 	public static <T> Foo<T, T> twice(T value) { 
-		return new Foo<T, T>;
+		return new Foo<T, T>(value, value);
 	}
 
 	public K getKey() {
@@ -20,4 +20,28 @@ public class Foo<K, V> {
 	public V getValue() {
 		return value;
 	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// A)
+		Foo<String, Integer> mark = new Foo<String, Integer>("Steve", 1);
+		// B)
+		Foo<String, String> pair = Foo.<String>twice("Hello World!");
+		// C)
+		Foo<Object, Object> percentage = new Foo<String, Integer>("Steve", 1);
+		// D)
+		Foo<String, String> grade = new Foo<>("John", "A");
+	}
 }
+
+
+/*
+
+ Which option fails? 
+ A) Foo<String, Integer> mark = new Foo<String, Integer>(“Steve”, 1); 
+ B) Foo<String, String> pair = Foo.<String>twice(“Hello World!”); 
+ C) Foo<object, Object> percentage = new Foo<String, Integer>(“Steve”,1); 
+ D) Foo<String, String> grade = new Foo<>(“John”, “A”);  
+ 
+*/
