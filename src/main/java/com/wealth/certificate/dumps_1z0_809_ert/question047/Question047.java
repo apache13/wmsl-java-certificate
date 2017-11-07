@@ -41,7 +41,7 @@ public class Question047 {
 					//.filter(p -> p.ProductFilter::isAvailable(p))
 					
 					// D Implement Predicate in the Product.ProductFilter Class and replace
-					//.filter(p -> p.ProdictFilter.test(p)) 
+					//.filter(p -> p.ProductFilter.test(p)) 
 					
 					.forEach(p -> System.out.println(p));
 	}
