@@ -6,6 +6,7 @@ public class TestRunner {
 		System.out.println(r instanceof Vehicle);
 		if (r instanceof Vehicle) {
 			Vehicle v = (Vehicle) r;
+			System.out.println(v.getClass());
 			v.start();
 		}
 	}
