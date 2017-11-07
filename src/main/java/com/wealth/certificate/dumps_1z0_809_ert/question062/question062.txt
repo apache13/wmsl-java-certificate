@@ -16,11 +16,16 @@ public class SolarVehicle extends Vehicle {
 
 and the code fragment 
 
+public static void main(String[] args) throws FuelNotAvailException {
+	Vehicle v = new SolarVehicle();
+	v.ride();
+}
+
 Which modification enables the code fragment to print Happy Journey!? 
 A) Replace line n1 with public void ride() throws FuelNotAvailException 
 B) Replace line n1 with protected void ride() throws Exception { 
 C) Replace line n2 with void ride() throws Exception { 
-D) Replace line n2 with private void ride() throws FuelNotAvailException
+D) Replace line n2 with private void ride() throws FuelNotAvailException {
 
 
 ===================
