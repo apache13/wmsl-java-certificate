@@ -1,4 +1,4 @@
-package com.wealth.certificate.dump_1z0_809_72.question038;
+package com.wealth.certificate.dumps_1z0_809_ert.question038;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -14,10 +14,12 @@ public class Question038 {
 		 */
 		//currentLocale = Locale.getInstance(Locale.GERMAN,Locale.GERMANY) ;
 		
-		/* B
-		 * 
-		 */
-		//currentLocale = Locale.GERMAN;
+		/* B --> wrong 
+		 * Cause Locale.GERMAN --> createConstant("de", "")
+		 * Cause Locale.GERMANY --> createConstant("de", "DE")
+		 * Fixed by using --> currentLocale = Locale.GERMANY
+		 */ 
+		//currentLocale = Locale.GERMAN; 
 		
 		/* C --> correct
 		 * add .build() to return Locale class
@@ -25,11 +27,11 @@ public class Question038 {
 //		currentLocale = new Locale.Builder().setLanguage("de").setRegion("DE").build();
 		
 		/* D --> correct
-		 * 
+		 * new Locale(String language,String country)
 		 */
 		currentLocale = new Locale("de","DE");
 		
-		/* E
+		/* E --> wrong
 		 * 
 		 *
 		currentLocale = new Locale(); // no no-args constructor
@@ -42,7 +44,7 @@ public class Question038 {
 	}
 	
 	private static String getPackagePath(){
-		return "com.wealth.certificate.dump_1z0_809_72.question038";
+		return "com.wealth.certificate.dumps_1z0_809_ert.question038";
 	}
 	
 }
