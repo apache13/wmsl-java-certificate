@@ -7,15 +7,17 @@ public class Question009 {
 	public static void main(String[] args) {
 		
 		// Login time : 2015-01-12T21:58:18.817Z
-				Instant loginTime = Instant.now();
 				try {
+					Instant loginTime = Instant.now();
 					Thread.sleep(1000);
 
 					// Logout time : 2015-01-10T21:58:19.880Z
 					Instant logoutTime = Instant.now();
+					
 					loginTime = loginTime.truncatedTo(ChronoUnit.MINUTES); // line n1
 					logoutTime = logoutTime.truncatedTo(ChronoUnit.MINUTES);
-					System.out.println("loginTime"+loginTime+"logoutTime"+logoutTime);
+					
+					System.out.println("loginTime"+loginTime+"\nlogoutTime"+logoutTime);
 					if (logoutTime.isAfter(loginTime))
 						System.out.println("Logged out at : " + logoutTime);
 					else
@@ -39,8 +41,5 @@ C) Logged out at : 2015-01-12T21:58:00Z
 D) Logged out at : 2015-01-12T21:58:19.880Z
 
 Answer : B
-
-
-
 
 */
