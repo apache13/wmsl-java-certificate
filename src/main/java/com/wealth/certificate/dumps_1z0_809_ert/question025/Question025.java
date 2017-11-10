@@ -1,4 +1,4 @@
-package com.wealth.certificate.dump_1z0_809_72.question025;
+package com.wealth.certificate.dumps_1z0_809_ert.question025;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
