@@ -1,4 +1,4 @@
-package com.wealth.certificate.dump_1z0_809_72.question064;
+package com.wealth.certificate.dumps_1z0_809_ert.question064;
 
 public class Country {
 	public enum Continent {ASIA, EUROPE}
