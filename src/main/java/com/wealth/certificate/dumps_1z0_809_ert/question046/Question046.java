@@ -13,7 +13,7 @@ public class Question046 {
 		//T t = () -> System.out.println("Hello");
 		
 		//B.
-		//Q q = () -> System.out.println("Hello");
+		Q q = () -> System.out.println("Hello");
 		
 		//C.
 		P p = () -> System.out.println("Hello");
@@ -33,7 +33,7 @@ public class Question046 {
 //@FunctionalInterface
 interface P { public void method1(); }
 //@FunctionalInterface
-interface Q extends P { public void methob1() ; }
+interface Q extends P { public void method1() ; }
 //@FunctionalInterface
 interface R extends P {public void method2(); }
 //@FunctionalInterface
