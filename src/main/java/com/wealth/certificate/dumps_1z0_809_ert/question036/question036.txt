@@ -9,5 +9,13 @@ D) The RecursiveTask subclass is used when a task does not need to return.
 
 
 ===================
-Answer: A, B
+Answer: A, C
 ===================
+
+
+Fork/Join
+- Multi-Core
+- Work-Stealing Algorithm
+- Recursive 
+	1. RecursiveTask need to return
+	2. RecursiveAction no need to return.
