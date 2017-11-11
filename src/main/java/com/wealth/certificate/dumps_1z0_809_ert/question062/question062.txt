@@ -29,5 +29,7 @@ D) Replace line n2 with private void ride() throws FuelNotAvailException {
 
 
 ===================
-Answer: D
+Answer: no answer
 ===================
+
+// D. ใกล้เคียงที่สุดคือเปลี่ยน visibility จาก private เป็น public
