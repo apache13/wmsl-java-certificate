@@ -27,11 +27,11 @@ public class Test {
 	    fc.forEach (s -> System.out.println(s));*/
 	    
 		// C
-		/*List<String> fc = readAllLines(file);
-		fc.stream().forEach(s-> System.out.println(s));*/
+		List<String> fc = Files.readAllLines(file);
+		fc.stream().forEach(s-> System.out.println(s));
 		
 		// D
-//		Stream<String> fc = Files.lines(file);
+//		Stream<String> fc = Files.list(file);
 //	    fc.forEach(s -> System.out.println(s));
 	}
 
