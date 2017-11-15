@@ -21,8 +21,8 @@ public class Question027 {
 			System.out.println("Exception–1") ;
 		}
 		
-		try(Resource res2 = new Resource()) { //line n1
-			res2.open() ;
+		try(res1 = new Resource()) { //line n1
+			res1.open() ;
 		} catch(Exception e ) {
 			System.out.println("Exception–2") ;
 		}

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Question033 {
 	public static void main(String[] args) {
-		List<String> valList = Arrays.asList("", "George", "", "XX");
+		List<String> valList = Arrays.asList("", "George", "John", "" , "Jim");
 		Long newVal = valList.stream() //line n1
 						.filter(x -> !x.isEmpty())
 						.count(); // line n2

@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 
 public class Question006 {
 	public static void main(String [] args){
-		Locale currentlocale = new Locale.Builder().setRegion("FR").setLanguage("fr"); //complie error because return to Builder not Locale
+		Locale currentlocale = new Locale.Builder().setRegion("FR").setLanguage("fr").build();
 		//Locale currentlocale = new Locale("FR", "fr");
 		ResourceBundle messages = ResourceBundle.getBundle(getCurrentPath()+".MessagesBundle", currentlocale);
 		Enumeration<String> names = messages.getKeys();
