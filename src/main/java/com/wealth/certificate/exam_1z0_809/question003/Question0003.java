@@ -9,7 +9,7 @@ public class Question0003 {
 	public static void main(String[] args) {
 		String str = "tests";
 		try {
-			Files.write(Paths.get(getCurrentPath()  + "/file.txt"), str.getBytes(), StandardOpenOption.APPEND);
+			Files.write(Paths.get(getCurrentPath()  + "/file.txt"), str.getBytes(), StandardOpenOption.APPEND); //I can't remember the filename, This is just example.
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
