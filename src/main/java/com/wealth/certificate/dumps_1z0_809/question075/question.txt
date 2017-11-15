@@ -1,6 +1,6 @@
 Given the code fragment:
 
-	Path file = Paths.get (“courses.txt”);
+	Path file = Paths.get ("courses.txt");
 	// line n1
 	
 Assume the courses.txt is accessible.
@@ -12,8 +12,8 @@ A. List<String> fc = Files.list(file);
 B. Stream<String> fc = Files.readAllLines(file);
    fc.forEach(s -> System.out.println(s));
    
-C. List<String> fc = readAllLines(file);
-   fc.stream().forEach (s -> System.out.println(s));
+C. List<String> fc = Files.readAllLines(file);
+   fc.stream().forEach(s-> System.out.println(s));
    
-D. Stream<String> fc = Files.lines(file);
+D. Stream<String> fc = Files.list(file);
    fc.forEach(s -> System.out.println(s)); 

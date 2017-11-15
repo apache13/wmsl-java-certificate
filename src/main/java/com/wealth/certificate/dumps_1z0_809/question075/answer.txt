@@ -1,8 +1,7 @@
 [Answer]
-D
+C
 
 [Explanation]
 A. File.list return Stream<Path> and if path is not directory, NotDirectoryException will be thrown and NoSuchFileException if there no such file 
 B. Files.readAllLines(...) return List<>
-C. you cannot call readAllLines which out import static
-D. can work just fine if IOException has been handled
+D. same as A.
