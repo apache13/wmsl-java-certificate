@@ -1,6 +1,6 @@
 1. C,D (Duplicate 1z0-808 Question 66)
 2. A
-3. A 	[**]
+3. A 	[***]
 4. D,F 	[**]
 5. C (Duplicate 1z0-808 Question 1)
 6. B 	[**]
