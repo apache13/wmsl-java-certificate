@@ -26,7 +26,7 @@
 26. B
 27. A,B (Duplicate 1z0-808 Question 129)
 28. D (Duplicate 1z0-808 Question 174, 203)
-29. B	[**]
+29. B	[***]
 30. A,B (Duplicate 1z0-808 Question 112)
 31.	C	[**]
 32. B (Duplicate 1z0-808 Question 101) 
@@ -36,7 +36,7 @@
 36. D (Duplicate 1z0-808 Question 109)
 37. A (Duplicate 1z0-808 Question 65)
 38. D 	[*]
-39. D	[**]
+39. D	[***]
 40. A (Duplicate 1z0-808 Question 183)
 41. C (Duplicate 1z0-808 Question 132)
 42. A (Duplicate 1z0-808 Question 175)
@@ -48,11 +48,11 @@
 48. D
 49. A	[*]
 50. A	[*]
-51. B	[**]
+51. B	[***]
 52. B,E (Duplicate 1z0-808 Question 154)
-53. D	[**]
+53. D	[***]
 54. B	[*]
-55. C	[**]
+55. C	[***]
 56. E	[*]
 57. A	[*]
 58. B	[*]
@@ -72,9 +72,9 @@
 72. B,E
 73.	B (Duplicate 1z0-808 Question 34)
 74. E (Duplicate 1z0-808 Question 42)
-75. D	[**]
+75. D	[***]
 76. B	[*]
-77. A	[**]
+77. A	[***]
 78. C	[*]
 79. A	[*]
 80. A,B,C (Duplicate 1z0-808 Question 139)
@@ -92,15 +92,15 @@
 92. D	[*]
 93. D	[*]
 94. C	[*]
-95. A	[**]
-96. D	[**]
+95. A	[***]
+96. D	[***]
 97. B	[*]
 98. B,C	[*]
 99. D (Duplicate 1z0-808 Question 100)
 100. C	[*]
 101. A (Duplicate 1z0-808 Question 123)
 102. C	[*]
-103. C	[**] 
+103. C	[***] 
 104. D	[*]
 105. A (Duplicate 1z0-808 Question 180)
 106. E (Duplicate 1z0-808 Question 71)
@@ -121,8 +121,8 @@
 121. E (Duplicate 1z0-808 Question 233)
 122. A	[*]
 123. A (Duplicate 1z0-808 Question 47)
-124. D	[**]
+124. D	[***]
 125. A (Duplicate 1z0-808 Question 234)
-126. A	[**]
+126. A	[***]
 127. A (Duplicate 1z0-808 Question 130)
 128. A,B,D (Duplicate 1z0-808 Question 184)
