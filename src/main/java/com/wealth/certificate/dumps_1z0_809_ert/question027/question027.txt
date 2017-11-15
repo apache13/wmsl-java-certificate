@@ -30,6 +30,7 @@ B)  Open-Close-Open-Close-
 C)  Open-Close-
 	Exception –1
 	Open-Close-
+D) Compile error // line n1
 	
 -------------------------------
-Answer B 
+Answer D

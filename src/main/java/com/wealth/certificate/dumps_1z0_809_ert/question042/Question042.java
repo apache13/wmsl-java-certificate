@@ -22,7 +22,7 @@ public class Question042 {
 		List<Person> prog = Arrays.asList(
 			new Person("Smith", 1500),
 			new Person("John", 2000),
-			new Person("joe", 1000));
+			new Person("Joe", 1000));
 			double dVal = prog.stream()
 			.filter(s -> s.getFirstName().startsWith("J") )
 			.mapToInt(Person :: getSalary)
