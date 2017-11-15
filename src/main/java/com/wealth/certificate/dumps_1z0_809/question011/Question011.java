@@ -7,6 +7,10 @@ import java.util.List;
 public class Question011 {
 
 	public static void main(String[] args) {
+		
+		List<Product> products = new ArrayList<>(Arrays.asList(new Product(1, 10), 
+				new Product(2, 30), 
+				new Product(3, 20)));
 
 		Product p = products.stream().reduce(new Product(4, 0), (p1, p2) -> {
 			p1.price += p2.price;
