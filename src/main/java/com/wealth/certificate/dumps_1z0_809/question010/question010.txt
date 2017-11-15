@@ -12,16 +12,16 @@ Which option fails?
 
 A. Foo<String, Integer> mark = new Foo<String, Integer> ("Steve", 100);
 B. Foo<String, String> pair = Foo.<String>twice (“Hello World!”);
-C. Foo<?, ?> percentage = new Foo <> (97, 32);
+C) Foo<Object, Object> percentage = new Foo<String, Integer>("Steve",1);
 D. Foo<String, String> grade = new Foo <> ("John", "A");
 
 ========================
-Answer: 
+Answer: C
 
 
 A Steve 100
 B Hello World! Hello World!
-C 97 32
+C Steve 1
 D John A
 
 
