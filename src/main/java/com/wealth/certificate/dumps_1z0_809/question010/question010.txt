@@ -8,27 +8,26 @@ public class Foo<K, V> {
 	public V getValue () (return value;)
 }
 
-
 Which option fails?
 
-A. Foo<String, Integer> mark = new Foo<String, Integer> (�Steve�, 100);
-B. Foo<String, String> pair = Foo.<String>twice (�Hello World!�);
-C. Foo<?, ?> percentage = new Foo <> (97, 32);
-D. Foo<String, String> grade = new Foo <> (�John�, �A�);
+A. Foo<String, Integer> mark = new Foo<String, Integer> ("Steve", 100);
+B. Foo<String, String> pair = Foo.<String>twice (“Hello World!”);
+C) Foo<Object, Object> percentage = new Foo<String, Integer>("Steve",1);
+D. Foo<String, String> grade = new Foo <> ("John", "A");
 
 ========================
-Answer: 
+Answer: C
 
 
 A Steve 100
 B Hello World! Hello World!
-C 97 32
+C Steve 1
 D John A
 
 
 
 =========================
-A �繡�á�˹����� 㹡�� New Instance �ͧ Foo ���Ѻ੾�� String �Ѻ Interger ��ҹ��
-B �繡�����¡ Method Static ����ա�÷� Method Generic ����繡�úѧ�Ѻ��� ���Ѻ੾�� Type ���� ���觶�������� Generic type �͹���¡�зӡ�ôٵ�� parameter ���������
-C �繡�����ҧ Object ���Ѻ��� ��� Object �� Generic Type �� Wildcard ��� Object ���á��� ��������繵�ͧ����͹�ѹ����
-D �繡�á�˹� Generic �ͧ  Class ��Ҩе�ͧ�Ѻ�� <String,String> ��ҹ�����ǹ��ѧ�ҡ new ����� <> (mirror) ���ͧ����� Type ����͢�ҧ˹�� 
+A à»ç¹¡ÒÃ¡ÓË¹´èÇèÒ ã¹¡ÒÃ New Instance ¢Í§ Foo ¨ÐÃÑºà©¾ÒÐ String ¡Ñº Interger à·èÒ¹Ñé¹
+B à»ç¹¡ÒÃàÃÕÂ¡ Method Static «Öè§ÁÕ¡ÒÃ·Ó Method Generic äÇéà»ç¹¡ÒÃºÑ§¤ÑºÇèÒ ¨ÐÃÑºà©¾ÒÐ Type ÍÐäÃ «Öèè§¶éÒäÁèãÊè Generic type µÍ¹àÃÕÂ¡¨Ð·Ó¡ÒÃ´ÙµÒÁ parameter ·ÕèÊè§à¢éÒä»
+C à»ç¹¡ÒÃÊÃéÒ§ Object ÁÒÃÑº¤èÒ «Öè§ Object ÁÕ Generic Type à»ç¹ Wildcard ¤×Í Object ÍÐäÃ¡çä´é «Öè§äÁè¨Óà»ç¹µéÍ§àËÁ×Í¹¡Ñ¹¡çä´é
+D à»ç¹¡ÒÃ¡ÓË¹´ Generic ¢Í§  Class ÇèÒ¨ÐµéÍ§ÃÑºà»ç¹ <String,String> à·èÒ¹Ñé¹ÊèèÇ¹ËÅÑ§¨Ò¡ new ¨ÐãÊè <> (mirror) ¨ÐÁÍ§ÇèÒà»ç¹ Type àËÁ×Í¢éÒ§Ë¹éÒ 

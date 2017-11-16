@@ -38,6 +38,8 @@ public class Foo<K , V> {
 		//C
 		Foo<?,?> percentage = new Foo <> (97, "cc");//Wildcards
 		System.out.println("C "+ percentage.key+" "+percentage.value);
+		//C edit
+		Foo<Object, Object> percentage = new Foo<String, Integer>("Steve",1);
 
 		//D
 		Foo<String, String> grade = new Foo <> ("John", "A");
