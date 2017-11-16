@@ -69,7 +69,7 @@
 69. A,D (Duplicate 1z0-808 Question 227) 
 70. A	[****]
 71. E (Duplicate 1z0-808 Question 223)
-72. B,E
+72. B,E [*]
 73.	B (Duplicate 1z0-808 Question 34)
 74. E (Duplicate 1z0-808 Question 42)
 75. C	[!******]
